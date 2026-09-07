@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SolarTech - Sign Up</title>
+
+    <link rel="stylesheet" href="sign.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================================
+         TOP CONTROLS
+    ========================================== -->
+
+    <div class="top-controls">
+
+        <button
+            type="button"
+            class="control-btn"
+            id="directionToggle"
+        >
+            RTL
+        </button>
+
+        <button
+            type="button"
+            class="control-btn"
+            id="themeToggle"
+            aria-label="Toggle theme"
+        >
+            <i class="fa-regular fa-moon"></i>
+        </button>
+
+    </div>
+
+
+    <!-- =========================================
+         SIGN UP PAGE
+    ========================================== -->
+
+    <main class="signup-page">
+
+        <div class="solar-glow solar-glow-one"></div>
+        <div class="solar-glow solar-glow-two"></div>
+
+
+        <!-- =====================================
+             SIGN UP CARD
+        ====================================== -->
+
+        <section class="signup-card">
+
+            <!-- BRAND -->
+
+            <div class="brand">
+
+                <div class="brand-logo">
+                    <a href="index.html" class="logo">
+                    <img src="images/logo.png">
+
+                    
+
+                </div>
+
+                <div class="brand-details">
+
+                    <h1>
+                        Solar<span>Tech</span>
+                    </h1>
+
+                   </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HEADING -->
+
+            <div class="signup-heading">
+
+                <h2>
+                    Create Your Account
+                </h2>
+
+                <p>
+                    Join SolarTech and start your clean energy journey
+                </p>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form id="signupForm">
+
+                <!-- FULL NAME -->
+
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <div class="input-container">
+
+                        <i class="fa-regular fa-user input-icon"></i>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <div class="input-container">
+
+                        <i class="fa-regular fa-envelope input-icon"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                
+
+                <!-- PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-container">
+
+                        <i class="fa-solid fa-lock input-icon"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="eye-button"
+                            id="passwordToggle"
+                            aria-label="Show password"
+                        >
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <div class="input-container">
+
+                        <i class="fa-solid fa-lock input-icon"></i>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="eye-button"
+                            id="confirmPasswordToggle"
+                            aria-label="Show password"
+                        >
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TERMS -->
+
+                <label class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        required
+                    >
+
+                    <span class="custom-check">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+
+                    <span>
+                        I agree to the
+                        <a href="#">Terms & Conditions</a>
+                        and
+                        <a href="#">Privacy Policy</a>
+                    </span>
+
+                </label>
+
+
+                <!-- SIGN UP BUTTON -->
+
+                <button
+                    type="submit"
+                    class="signup-button"
+                >
+
+                    <span>
+                        Create Account
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <!-- OR -->
+
+                <div class="divider">
+
+                    <span></span>
+
+                    <p>OR</p>
+
+                    <span></span>
+
+                </div>
+
+
+                <!-- GOOGLE -->
+
+                <div class="social-login">
+
+    <button
+        type="button"
+        class="social-button"
+        id="googleButton"
+    >
+        <i class="fa-brands fa-google"></i>
+        <span>Google</span>
+    </button>
+
+    <button
+        type="button"
+        class="social-button"
+        id="appleButton"
+    >
+        <i class="fa-brands fa-apple"></i>
+        <span>Apple</span>
+    </button>
+
+</div>
+                <!-- LOGIN -->
+
+                <div class="signin-text">
+
+                    <span>
+                        Already have an account?
+                    </span>
+
+                    <a href="login.html" id="signinButton">
+                        Sign In
+                    </a>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- TOAST -->
+
+    <div class="toast" id="toast">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <span id="toastMessage">
+            Account created successfully
+        </span>
+
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       ELEMENTS
+    ====================================================== */
+
+    const form =
+        document.getElementById("signupForm");
+
+    const fullName =
+        document.getElementById("fullName");
+
+    const email =
+        document.getElementById("email");
+
+    const phone =
+        document.getElementById("phone");
+
+    const password =
+        document.getElementById("password");
+
+    const confirmPassword =
+        document.getElementById("confirmPassword");
+
+    const terms =
+        document.getElementById("terms");
+
+    const passwordToggle =
+        document.getElementById("passwordToggle");
+
+    const confirmPasswordToggle =
+        document.getElementById("confirmPasswordToggle");
+
+    const themeToggle =
+        document.getElementById("themeToggle");
+
+    const directionToggle =
+        document.getElementById("directionToggle");
+
+    const googleButton =
+        document.getElementById("googleButton");
+
+    const appleButton =
+        document.getElementById("appleButton");
+
+    const signinButton =
+        document.getElementById("signinButton");
+
+    const toast =
+        document.getElementById("toast");
+
+    const toastMessage =
+        document.getElementById("toastMessage");
+
+
+    /* =====================================================
+       THEME
+    ====================================================== */
+
+    const savedTheme =
+        localStorage.getItem("solarTheme");
+
+
+    if (savedTheme === "dark") {
+
+        document.body.classList.add("dark");
+
+        themeToggle.innerHTML =
+            '<i class="fa-regular fa-sun"></i>';
+    }
+
+
+    themeToggle.addEventListener(
+        "click",
+        function () {
+
+            document.body.classList.toggle("dark");
+
+            const isDark =
+                document.body.classList.contains("dark");
+
+
+            if (isDark) {
+
+                themeToggle.innerHTML =
+                    '<i class="fa-regular fa-sun"></i>';
+
+                localStorage.setItem(
+                    "solarTheme",
+                    "dark"
+                );
+
+            } else {
+
+                themeToggle.innerHTML =
+                    '<i class="fa-regular fa-moon"></i>';
+
+                localStorage.setItem(
+                    "solarTheme",
+                    "light"
+                );
+            }
+
+        }
+    );
+
+
+    /* =====================================================
+       RTL / LTR
+    ====================================================== */
+
+    const savedDirection =
+        localStorage.getItem("solarDirection");
+
+
+    if (savedDirection === "rtl") {
+
+        document.documentElement.setAttribute(
+            "dir",
+            "rtl"
+        );
+
+        directionToggle.textContent = "LTR";
+
+    } else {
+
+        document.documentElement.setAttribute(
+            "dir",
+            "ltr"
+        );
+
+        directionToggle.textContent = "RTL";
+    }
+
+
+    directionToggle.addEventListener(
+        "click",
+        function () {
+
+            const currentDirection =
+                document.documentElement.getAttribute("dir");
+
+
+            if (currentDirection === "ltr") {
+
+                document.documentElement.setAttribute(
+                    "dir",
+                    "rtl"
+                );
+
+                directionToggle.textContent = "LTR";
+
+                localStorage.setItem(
+                    "solarDirection",
+                    "rtl"
+                );
+
+            } else {
+
+                document.documentElement.setAttribute(
+                    "dir",
+                    "ltr"
+                );
+
+                directionToggle.textContent = "RTL";
+
+                localStorage.setItem(
+                    "solarDirection",
+                    "ltr"
+                );
+            }
+
+        }
+    );
+
+
+    /* =====================================================
+       PASSWORD TOGGLE FUNCTION
+    ====================================================== */
+
+    function setupPasswordToggle(
+        input,
+        button
+    ) {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                if (input.type === "password") {
+
+                    input.type = "text";
+
+                    button.innerHTML =
+                        '<i class="fa-regular fa-eye-slash"></i>';
+
+                    button.setAttribute(
+                        "aria-label",
+                        "Hide password"
+                    );
+
+                } else {
+
+                    input.type = "password";
+
+                    button.innerHTML =
+                        '<i class="fa-regular fa-eye"></i>';
+
+                    button.setAttribute(
+                        "aria-label",
+                        "Show password"
+                    );
+                }
+
+            }
+        );
+
+    }
+
+
+    setupPasswordToggle(
+        password,
+        passwordToggle
+    );
+
+
+    setupPasswordToggle(
+        confirmPassword,
+        confirmPasswordToggle
+    );
+
+
+    /* =====================================================
+       SIGN UP FORM
+    ====================================================== */
+
+    form.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+
+            const nameValue =
+                fullName.value.trim();
+
+            const emailValue =
+                email.value.trim();
+
+            const phoneValue =
+                phone.value.trim();
+
+            const passwordValue =
+                password.value;
+
+            const confirmValue =
+                confirmPassword.value;
+
+
+            /* NAME */
+
+            if (!nameValue) {
+
+                showToast(
+                    "Please enter your full name."
+                );
+
+                fullName.focus();
+
+                return;
+            }
+
+
+            if (nameValue.length < 2) {
+
+                showToast(
+                    "Please enter a valid name."
+                );
+
+                fullName.focus();
+
+                return;
+            }
+
+
+            /* EMAIL */
+
+            if (!emailValue) {
+
+                showToast(
+                    "Please enter your email address."
+                );
+
+                email.focus();
+
+                return;
+            }
+
+
+            if (!validateEmail(emailValue)) {
+
+                showToast(
+                    "Please enter a valid email address."
+                );
+
+                email.focus();
+
+                return;
+            }
+
+
+            /* PHONE */
+
+            if (!phoneValue) {
+
+                showToast(
+                    "Please enter your phone number."
+                );
+
+                phone.focus();
+
+                return;
+            }
+
+
+            if (!validatePhone(phoneValue)) {
+
+                showToast(
+                    "Please enter a valid phone number."
+                );
+
+                phone.focus();
+
+                return;
+            }
+
+
+            /* PASSWORD */
+
+            if (!passwordValue) {
+
+                showToast(
+                    "Please create a password."
+                );
+
+                password.focus();
+
+                return;
+            }
+
+
+            if (passwordValue.length < 6) {
+
+                showToast(
+                    "Password must contain at least 6 characters."
+                );
+
+                password.focus();
+
+                return;
+            }
+
+
+            /* CONFIRM PASSWORD */
+
+            if (!confirmValue) {
+
+                showToast(
+                    "Please confirm your password."
+                );
+
+                confirmPassword.focus();
+
+                return;
+            }
+
+
+            if (passwordValue !== confirmValue) {
+
+                showToast(
+                    "Passwords do not match."
+                );
+
+                confirmPassword.focus();
+
+                return;
+            }
+
+
+            /* TERMS */
+
+            if (!terms.checked) {
+
+                showToast(
+                    "Please accept the Terms & Conditions."
+                );
+
+                return;
+            }
+
+
+            /* SUCCESS */
+
+            showToast(
+                "Account created successfully!"
+            );
+
+
+            /*
+                Connect your registration API here.
+
+                Example:
+
+                window.location.href =
+                    "dashboard.html";
+            */
+
+        }
+    );
+
+
+    /* =====================================================
+       VALIDATE EMAIL
+    ====================================================== */
+
+    function validateEmail(value) {
+
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+            .test(value);
+
+    }
+
+
+    /* =====================================================
+       VALIDATE PHONE
+    ====================================================== */
+
+    function validatePhone(value) {
+
+        const cleaned =
+            value.replace(/[\s\-()+]/g, "");
+
+        return /^\d{7,15}$/.test(cleaned);
+
+    }
+
+
+    /* =====================================================
+       GOOGLE
+    ====================================================== */
+
+    googleButton.addEventListener(
+        "click",
+        function () {
+
+            showToast(
+                "Google sign up is ready to connect."
+            );
+
+        }
+    );
+
+
+    /* =====================================================
+       APPLE
+    ====================================================== */
+
+    appleButton.addEventListener(
+        "click",
+        function () {
+
+            showToast(
+                "Apple sign up is ready to connect."
+            );
+
+        }
+    );
+
+
+    
+
+
+    /* =====================================================
+       TOAST
+    ====================================================== */
+
+    function showToast(message) {
+
+        toastMessage.textContent = message;
+
+        toast.classList.add("show");
+
+
+        clearTimeout(
+            window.solarToastTimer
+        );
+
+
+        window.solarToastTimer =
+            setTimeout(
+                function () {
+
+                    toast.classList.remove("show");
+
+                },
+                2800
+            );
+    }
+
+});
+    </script>
+
+</body>
+
+</html>

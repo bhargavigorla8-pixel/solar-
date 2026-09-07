@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solar Tech — Energy Journal</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     GLOBAL HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="container navbar">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+
+            <img
+                src="images/logo.png"
+                alt="Solar Tech Logo"
+            >
+
+            <span class="logo-text">
+                <strong>Solar</strong>
+                <strong> Tech</strong>
+            </span>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+        <nav class="nav-menu" id="navMenu">
+
+            <!-- HOME DROPDOWN -->
+            <div class="nav-item home-dropdown">
+
+                <a href="#" class="nav-link">
+
+                    Home
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="index.html">
+
+                        <i class="fa-solid fa-house"></i>
+
+                        Home 1
+
+                    </a>
+
+                    <a href="home-2.html">
+
+                        <i class="fa-solid fa-house"></i>
+
+                        Home 2
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="nav-item">
+
+                <a href="service.html" class="nav-link">
+                    Services
+                </a>
+
+            </div>
+
+
+            <!-- BLOG -->
+            <div class="nav-item">
+
+                <a href="blog.html" class="nav-link active">
+                    Blog
+                </a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="nav-item">
+
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- DASHBOARD -->
+            <div class="nav-item">
+
+                <a href="dashboard.html" class="nav-link">
+                    Dashboard
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- HEADER ACTIONS -->
+        <div class="header-actions">
+
+            <!-- RTL / LTR -->
+            <button
+                class="header-icon"
+                id="rtlBtn"
+                type="button"
+                aria-label="Toggle RTL"
+            ></button>
+
+
+            <!-- DARK / LIGHT -->
+            <button
+                class="header-icon"
+                id="themeBtn"
+                type="button"
+                aria-label="Toggle Dark Mode"
+            >
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+
+            <!-- LOGIN -->
+            <a
+                href="login.html"
+                class="login-btn"
+            >
+                Login
+            </a>
+
+
+            <!-- MOBILE MENU -->
+            <button
+                class="mobile-menu-btn"
+                id="menuToggle"
+                type="button"
+                aria-label="Open menu"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     BLOG HERO
+===================================================== -->
+
+<section class="blog-hero">
+
+    <div class="hero-glow"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+
+                <i class="fa-solid fa-sun"></i>
+
+                SOLAR ENERGY • INSIGHTS • IDEAS
+
+            </span>
+
+
+            <h1>
+
+                Stories That
+                <span>Power a Better Future</span>
+
+            </h1>
+
+
+            <p>
+
+                Explore practical solar guides, renewable energy
+                insights, installation advice and ideas for building
+                a cleaner, smarter and more independent energy future.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#latest" class="primary-button">
+
+                    Read Latest
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <a href="#topics" class="outline-button">
+
+                    Browse Topics
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-stats">
+
+                <div class="hero-stat">
+
+                    <strong>50+</strong>
+
+                    <span>Energy Articles</span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>15K+</strong>
+
+                    <span>Monthly Readers</span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>7</strong>
+
+                    <span>Expert Topics</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="hero-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=85"
+                    alt="Solar panels in sunlight"
+                >
+
+            </div>
+
+
+            <div class="hero-floating-card">
+
+                <div class="floating-icon">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                </div>
+
+                <div>
+
+                    <strong>Clean Energy</strong>
+
+                    <span>Powering tomorrow</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURED STORY
+===================================================== -->
+
+<section class="featured-section">
+
+    <div class="container">
+
+        <div class="featured-label">
+
+            <span>FEATURED STORY</span>
+
+            <div class="featured-line"></div>
+
+        </div>
+
+
+        <article class="featured-card">
+
+            <div class="featured-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1200&q=85"
+                    alt="Solar panels on a modern building"
+                >
+
+            </div>
+
+
+            <div class="featured-content">
+
+                <div class="article-meta">
+
+                    <span>
+
+                        <i class="fa-solid fa-solar-panel"></i>
+
+                        Solar Guide
+
+                    </span>
+
+                    <span>
+                        9 min read
+                    </span>
+
+                </div>
+
+
+                <h2>
+
+                    The Complete Guide to
+                    <span>Going Solar in 2026</span>
+
+                </h2>
+
+
+                <p>
+
+                    From choosing the right panels to understanding
+                    system size, installation and long-term savings,
+                    here's everything you need to know before making
+                    the switch to solar energy.
+
+                </p>
+
+
+                <div class="featured-author">
+
+                    <div class="author-avatar">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Solar Tech Energy Team</strong>
+
+                        <span>Solar Energy Specialists</span>
+
+                    </div>
+
+                </div>
+  
+
+                <a href="#" class="read-story">
+
+                    Read Full Story
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TOPICS
+===================================================== -->
+
+<section class="topics-section" id="topics">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    EXPLORE TOPICS
+                </span>
+
+                <h2>
+
+                    Find Your
+                    <span>Energy Inspiration</span>
+
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                Explore our collection of practical guides and
+                expert insights covering everything from solar
+                installation to energy independence.
+
+            </p>
+
+        </div>
+
+
+        <div class="topic-list">
+
+            <button
+                class="topic-button active"
+                data-filter="all"
+                type="button"
+            >
+                All Stories
+            </button>
+
+            <button
+                class="topic-button"
+                data-filter="Solar Basics"
+                type="button"
+            >
+                Solar Basics
+            </button>
+
+            <button
+                class="topic-button"
+                data-filter="Installation"
+                type="button"
+            >
+                Installation
+            </button>
+
+            <button
+                class="topic-button"
+                data-filter="Energy Savings"
+                type="button"
+            >
+                Energy Savings
+            </button>
+
+            <button
+                class="topic-button"
+                data-filter="Technology"
+                type="button"
+            >
+                Technology
+            </button>
+
+            <button
+                class="topic-button"
+                data-filter="Sustainability"
+                type="button"
+            >
+                Sustainability
+            </button>
+
+            <button
+                class="topic-button"
+                data-filter="Solar Living"
+                type="button"
+            >
+                Solar Living
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LATEST ARTICLES
+===================================================== -->
+
+<section class="latest-section" id="latest">
+
+    <div class="container">
+
+        <div class="latest-header">
+
+            <div>
+
+                <span class="section-label">
+                    OUR JOURNAL
+                </span>
+
+                <h2>
+
+                    Latest From
+                    <span>The Solar Journal</span>
+
+                </h2>
+
+            </div>
+
+
+            <a href="#" class="view-all">
+
+                View All Stories
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="article-grid">
+
+
+            <!-- ARTICLE 1 -->
+            <article
+                class="article-card"
+                data-category="Installation"
+            >
+
+                <div class="article-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=900&q=85"
+                        alt="Solar panel installation"
+                    >
+
+                    <span class="article-category">
+                        Installation
+                    </span>
+
+                </div>
+
+
+                <div class="article-body">
+
+                    <div class="article-date">
+
+                        Sep 02, 2026
+                        <span>•</span>
+                        7 min read
+
+                    </div>
+
+
+                    <h3>
+
+                        What to Expect During
+                        Your Solar Installation
+
+                    </h3>
+
+
+                    <p>
+
+                        A step-by-step look at what happens before,
+                        during and after your solar installation.
+
+                    </p>
+
+
+                    <a href="blog-1.html" class="article-link">
+
+                        Read Article
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE 2 -->
+            <article
+                class="article-card"
+                data-category="Technology"
+            >
+
+                <div class="article-image">
+
+                    <img
+                    src="images/technology.png"
+                        alt="Solar technology"
+                    >
+
+                    <span class="article-category">
+                        Technology
+                    </span>
+
+                </div>
+
+
+                <div class="article-body">
+
+                    <div class="article-date">
+
+                        Aug 27, 2026
+                        <span>•</span>
+                        6 min read
+
+                    </div>
+
+
+                    <h3>
+
+                        Solar Panels Explained:
+                        Monocrystalline vs Polycrystalline
+
+                    </h3>
+
+
+                    <p>
+
+                        Learn the difference between popular solar
+                        panel technologies and which may suit your home.
+
+                    </p>
+
+
+                    <a href="blog-1.html" class="article-link">
+
+                        Read Article
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE 3 -->
+            <article
+                class="article-card"
+                data-category="Sustainability"
+            >
+
+                <div class="article-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=85"
+                        alt="Renewable energy"
+                    >
+
+                    <span class="article-category">
+                        Sustainability
+                    </span>
+
+                </div>
+
+
+                <div class="article-body">
+
+                    <div class="article-date">
+
+                        Aug 20, 2026
+                        <span>•</span>
+                        5 min read
+
+                    </div>
+
+
+                    <h3>
+
+                        How Solar Energy Helps
+                        Build a Cleaner Future
+
+                    </h3>
+
+
+                    <p>
+
+                        Discover how switching to renewable energy
+                        can reduce emissions and protect our planet.
+
+                    </p>
+
+
+                    <a href="blog-1.html" class="article-link">
+
+                        Read Article
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE 4 -->
+            <article
+                class="article-card"
+                data-category="Solar Basics"
+            >
+
+                <div class="article-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=900&q=85"
+                        alt="Renewable energy landscape"
+                    >
+
+                    <span class="article-category">
+                        Solar Basics
+                    </span>
+
+                </div>
+
+
+                <div class="article-body">
+
+                    <div class="article-date">
+
+                        Aug 14, 2026
+                        <span>•</span>
+                        8 min read
+
+                    </div>
+
+
+                    <h3>
+
+                        How Solar Panels
+                        Actually Generate Electricity
+
+                    </h3>
+
+
+                    <p>
+
+                        Understand the simple science behind converting
+                        sunlight into usable electricity.
+
+                    </p>
+
+
+                    <a href="blog-1.html" class="article-link">
+
+                        Read Article
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE 5 -->
+            <article
+                class="article-card"
+                data-category="Energy Savings"
+            >
+
+                <div class="article-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=900&q=85"
+                        alt="Solar battery storage"
+                    >
+
+                    <span class="article-category">
+                        Energy Savings
+                    </span>
+
+                </div>
+
+
+                <div class="article-body">
+
+                    <div class="article-date">
+
+                        Aug 07, 2026
+                        <span>•</span>
+                        6 min read
+
+                    </div>
+
+
+                    <h3>
+
+                        Solar Batteries:
+                        Is Energy Storage Worth It?
+
+                    </h3>
+
+
+                    <p>
+
+                        Explore how battery storage works and how it
+                        can increase your home's energy independence.
+
+                    </p>
+
+
+                    <a href="blog-1.html" class="article-link">
+
+                        Read Article
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARTICLE 6 -->
+            <article
+                class="article-card"
+                data-category="Solar Living"
+            >
+
+                <div class="article-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&fit=crop&w=900&q=85"
+                        alt="Residential solar home"
+                    >
+
+                    <span class="article-category">
+                        Solar Living
+                    </span>
+
+                </div>
+
+
+                <div class="article-body">
+
+                    <div class="article-date">
+
+                        Jul 30, 2026
+                        <span>•</span>
+                        5 min read
+
+                    </div>
+
+
+                    <h3>
+
+                        7 Simple Ways to
+                        Get More From Your Solar System
+
+                    </h3>
+
+
+                    <p>
+
+                        Small changes that can help you improve energy
+                        efficiency and maximize your solar investment.
+
+                    </p>
+
+
+                    <a href="blog-1.html" class="article-link">
+
+                        Read Article
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INFO BANNER
+===================================================== -->
+
+<section class="info-section">
+
+    <div class="container info-container">
+
+        <div class="info-image">
+
+            <img
+            src="images/storage.jpeg"
+                alt="Solar energy field"
+            >
+
+        </div>
+
+
+        <div class="info-content">
+
+            <span class="section-label">
+                SMART ENERGY
+            </span>
+
+
+            <h2>
+
+                Better Knowledge.
+                <span>Better Energy Decisions.</span>
+
+            </h2>
+
+
+            <p>
+
+                Solar technology is evolving quickly. Our journal
+                makes complex energy topics simple, practical and
+                useful so you can make confident decisions about
+                your energy future.
+
+            </p>
+
+
+            <div class="info-points">
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <span>
+                        Expert-backed solar guides
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <span>
+                        Practical energy-saving advice
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <span>
+                        Latest renewable technology insights
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="#" class="primary-button">
+
+                Explore Solar Guides
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="faq-section">
+
+    <div class="container faq-container">
+
+        <div class="faq-intro">
+
+            <span class="section-label">
+                GOT QUESTIONS?
+            </span>
+
+
+            <h2>
+
+                Solar Answers,
+                <span>Made Simple</span>
+
+            </h2>
+
+
+            <p>
+
+                Find quick answers to some of the most common
+                questions about our solar journal and energy guides.
+
+            </p>
+
+
+            <a href="#" class="outline-button">
+
+                Contact Our Team
+
+            </a>
+
+        </div>
+
+
+        <div class="faq-list">
+
+            <details open>
+
+                <summary>
+
+                    How often do you publish new articles?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </summary>
+
+                <p>
+
+                    We publish new solar guides, technology updates
+                    and energy-saving articles regularly so you can
+                    stay informed about the renewable energy industry.
+
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+
+                    Are your solar guides suitable for beginners?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </summary>
+
+                <p>
+
+                    Yes. Our articles are written in simple language
+                    and explain technical solar concepts step by step.
+
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+
+                    Can I request a topic?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </summary>
+
+                <p>
+
+                    Absolutely. Send us a topic you would like to
+                    learn about and our team can consider it for
+                    a future article.
+
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+
+                    Can I get a personalized solar consultation?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </summary>
+
+                <p>
+
+                    Yes. Our solar specialists can help you understand
+                    your energy requirements and explore a suitable
+                    solar installation solution.
+
+                </p>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NEWSLETTER
+===================================================== -->
+
+<section class="newsletter-section">
+
+    <div class="container newsletter-container">
+
+        <div class="newsletter-content">
+
+            <span class="section-label">
+                THE SOLAR DISPATCH
+            </span>
+
+
+            <h2>
+
+                Energy Insights
+                <span>Delivered to You</span>
+
+            </h2>
+
+
+            <p>
+
+                Join our community and receive useful solar tips,
+                renewable energy news and practical guides directly
+                in your inbox.
+
+            </p>
+
+
+            <form
+                class="newsletter-form"
+                id="newsletterForm"
+            >
+
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+
+                <button type="submit">
+
+                    Subscribe
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+
+            <small>
+                No spam. Just useful energy insights.
+            </small>
+
+        </div>
+
+
+        <div class="newsletter-visual">
+
+            <div class="sun-circle">
+
+                <i class="fa-solid fa-sun"></i>
+
+            </div>
+
+
+            <div class="solar-panel-decoration">
+
+                <i class="fa-solid fa-solar-panel"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+
+            <a href="home-1.html" class="footer-logo">
+                    <img src="images/logo.png">
+
+                    
+                    <div class="footer-logo-text">
+                        <span>Solar</span><strong>Tech</strong>
+                    </div>
+
+                </a>
+
+
+            <p>
+
+                Clean solar energy solutions for a smarter,
+                greener and more sustainable future.
+
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICES -->
+        <div class="footer-column">
+
+            <h4>
+                Services
+            </h4>
+
+            <a href="service.html">
+                Solar Installation
+            </a>
+
+            <a href="#">
+                Solar Maintenance
+            </a>
+
+            <a href="#">
+                Battery Storage
+            </a>
+
+            <a href="#">
+                EV Charging
+            </a>
+
+        </div>
+
+
+        <!-- COMPANY -->
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="#">
+                Our Projects
+            </a>
+
+            <a href="#">
+                Testimonials
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+        <!-- CONTACT -->
+        <div class="footer-column footer-contact">
+
+            <h4>
+                Contact
+            </h4>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span>
+                    Hyderabad, India
+                </span>
+
+            </a>
+
+
+            <a href="tel:+919876543210">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>
+                    +91 98765 43210
+                </span>
+
+            </a>
+
+
+            <a href="mailto:hello@solartech.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <span>
+                    hello@solartech.com
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-inner">
+
+            <p>
+                © 2026 Solar Tech. All Rights Reserved.
+            </p>
+
+
+            <div class="footer-bottom-links">
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* =====================================================
+   DOM ELEMENTS
+===================================================== */
+
+const body = document.body;
+const html = document.documentElement;
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const navMenu =
+    document.getElementById("navMenu");
+
+const themeBtn =
+    document.getElementById("themeBtn");
+
+const rtlBtn =
+    document.getElementById("rtlBtn");
+
+const homeDropdown =
+    document.querySelector(".home-dropdown");
+
+const homeLink =
+    homeDropdown
+        ? homeDropdown.querySelector(".nav-link")
+        : null;
+
+const topicButtons =
+    document.querySelectorAll(".topic-button");
+
+const articleCards =
+    document.querySelectorAll(".article-card");
+
+const newsletterForm =
+    document.getElementById("newsletterForm");
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+if (menuToggle && navMenu) {
+
+    menuToggle.addEventListener("click", function () {
+
+        navMenu.classList.toggle("active");
+
+        const icon =
+            menuToggle.querySelector("i");
+
+        if (navMenu.classList.contains("active")) {
+
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Close menu"
+            );
+
+        } else {
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open menu"
+            );
+
+            if (homeDropdown) {
+                homeDropdown.classList.remove("open");
+            }
+
+        }
+
+    });
+
+}
+
+
+/* =====================================================
+   MOBILE HOME DROPDOWN
+===================================================== */
+
+if (homeLink && homeDropdown) {
+
+    homeLink.addEventListener(
+        "click",
+        function (event) {
+
+            if (window.innerWidth <= 768) {
+
+                event.preventDefault();
+
+                homeDropdown.classList.toggle("open");
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   DARK / LIGHT MODE
+===================================================== */
+
+function updateThemeIcon() {
+
+    if (!themeBtn) {
+        return;
+    }
+
+    const icon =
+        themeBtn.querySelector("i");
+
+    if (!icon) {
+        return;
+    }
+
+    if (body.classList.contains("dark")) {
+
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+
+    } else {
+
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+
+    }
+
+}
+
+
+if (themeBtn) {
+
+    themeBtn.addEventListener(
+        "click",
+        function () {
+
+            body.classList.toggle("dark");
+
+            const isDark =
+                body.classList.contains("dark");
+
+            localStorage.setItem(
+                "sunova-theme",
+                isDark ? "dark" : "light"
+            );
+
+            updateThemeIcon();
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   LOAD SAVED THEME
+===================================================== */
+
+const savedTheme =
+    localStorage.getItem("sunova-theme");
+
+if (savedTheme === "dark") {
+
+    body.classList.add("dark");
+
+}
+
+updateThemeIcon();
+
+
+/* =====================================================
+   RTL / LTR
+===================================================== */
+
+function updateDirectionButton() {
+
+    if (!rtlBtn) {
+        return;
+    }
+
+    const currentDirection =
+        html.getAttribute("dir");
+
+    rtlBtn.textContent =
+        currentDirection === "rtl"
+            ? "LTR"
+            : "RTL";
+
+}
+
+
+if (rtlBtn) {
+
+    rtlBtn.addEventListener(
+        "click",
+        function () {
+
+            const currentDirection =
+                html.getAttribute("dir");
+
+            if (currentDirection === "ltr") {
+
+                html.setAttribute(
+                    "dir",
+                    "rtl"
+                );
+
+                localStorage.setItem(
+                    "sunova-direction",
+                    "rtl"
+                );
+
+            } else {
+
+                html.setAttribute(
+                    "dir",
+                    "ltr"
+                );
+
+                localStorage.setItem(
+                    "sunova-direction",
+                    "ltr"
+                );
+
+            }
+
+            updateDirectionButton();
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   LOAD SAVED DIRECTION
+===================================================== */
+
+const savedDirection =
+    localStorage.getItem("sunova-direction");
+
+if (savedDirection === "rtl") {
+
+    html.setAttribute(
+        "dir",
+        "rtl"
+    );
+
+} else {
+
+    html.setAttribute(
+        "dir",
+        "ltr"
+    );
+
+}
+
+updateDirectionButton();
+
+
+/* =====================================================
+   TOPIC FILTER
+===================================================== */
+
+topicButtons.forEach(function (button) {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            topicButtons.forEach(
+                function (item) {
+
+                    item.classList.remove(
+                        "active"
+                    );
+
+                }
+            );
+
+            button.classList.add("active");
+
+            const filter =
+                button.getAttribute(
+                    "data-filter"
+                );
+
+
+            articleCards.forEach(
+                function (card) {
+
+                    const category =
+                        card.getAttribute(
+                            "data-category"
+                        );
+
+                    if (
+                        filter === "all" ||
+                        category === filter
+                    ) {
+
+                        card.classList.remove(
+                            "hidden"
+                        );
+
+                    } else {
+
+                        card.classList.add(
+                            "hidden"
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+});
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+const faqItems =
+    document.querySelectorAll(
+        ".faq-list details"
+    );
+
+faqItems.forEach(function (item) {
+
+    item.addEventListener(
+        "toggle",
+        function () {
+
+            const icon =
+                item.querySelector(
+                    "summary i"
+                );
+
+            if (!icon) {
+                return;
+            }
+
+            if (item.open) {
+
+                icon.style.transform =
+                    "rotate(45deg)";
+
+            } else {
+
+                icon.style.transform =
+                    "rotate(0deg)";
+
+            }
+
+        }
+    );
+
+});
+
+
+/* =====================================================
+   NEWSLETTER
+===================================================== */
+
+if (newsletterForm) {
+
+    newsletterForm.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+            const email =
+                document
+                    .getElementById(
+                        "newsletterEmail"
+                    )
+                    .value
+                    .trim();
+
+            if (!email) {
+                return;
+            }
+
+            alert(
+                "Thank you for subscribing to the Solar Tech Journal!"
+            );
+
+            newsletterForm.reset();
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   CLOSE MOBILE MENU AFTER NAVIGATION
+===================================================== */
+
+const navLinks =
+    document.querySelectorAll(
+        ".nav-menu a"
+    );
+
+navLinks.forEach(function (link) {
+
+    link.addEventListener(
+        "click",
+        function () {
+
+            if (
+                window.innerWidth <= 768 &&
+                !link.closest(".home-dropdown")
+            ) {
+
+                navMenu.classList.remove(
+                    "active"
+                );
+
+                if (homeDropdown) {
+                    homeDropdown.classList.remove(
+                        "open"
+                    );
+                }
+
+                const icon =
+                    menuToggle.querySelector("i");
+
+                icon.classList.remove(
+                    "fa-xmark"
+                );
+
+                icon.classList.add(
+                    "fa-bars"
+                );
+
+            }
+
+        }
+    );
+
+});
+
+
+/* =====================================================
+   CLOSE DROPDOWN WHEN CLICKING OUTSIDE
+===================================================== */
+
+document.addEventListener(
+    "click",
+    function (event) {
+
+        if (
+            homeDropdown &&
+            !homeDropdown.contains(event.target)
+        ) {
+
+            homeDropdown.classList.remove(
+                "open"
+            );
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   ESCAPE KEY
+===================================================== */
+
+document.addEventListener(
+    "keydown",
+    function (event) {
+
+        if (event.key === "Escape") {
+
+            navMenu.classList.remove(
+                "active"
+            );
+
+            if (homeDropdown) {
+
+                homeDropdown.classList.remove(
+                    "open"
+                );
+
+            }
+
+            const icon =
+                menuToggle.querySelector("i");
+
+            if (icon) {
+
+                icon.classList.remove(
+                    "fa-xmark"
+                );
+
+                icon.classList.add(
+                    "fa-bars"
+                );
+
+            }
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   RESET MOBILE MENU ON RESIZE
+===================================================== */
+
+window.addEventListener(
+    "resize",
+    function () {
+
+        if (window.innerWidth > 768) {
+
+            navMenu.classList.remove(
+                "active"
+            );
+
+            if (homeDropdown) {
+
+                homeDropdown.classList.remove(
+                    "open"
+                );
+
+            }
+
+            const icon =
+                menuToggle.querySelector("i");
+
+            if (icon) {
+
+                icon.classList.remove(
+                    "fa-xmark"
+                );
+
+                icon.classList.add(
+                    "fa-bars"
+                );
+
+            }
+
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>

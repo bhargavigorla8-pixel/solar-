@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SolarTech | Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================================
+         LOGIN PAGE
+    ====================================================== -->
+
+    <main class="login-page">
+
+
+        <!-- =================================================
+             TOP CONTROLS
+        ================================================== -->
+
+        <div class="top-controls">
+
+            <button
+                type="button"
+                id="rtlToggle"
+                class="control-btn"
+            >
+                RTL
+            </button>
+
+            <button
+                type="button"
+                id="themeToggle"
+                class="control-btn"
+                aria-label="Toggle theme"
+            >
+                <i class="fa-regular fa-moon"></i>
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             LOGIN CARD
+        ================================================== -->
+
+        <section class="login-card">
+
+
+            <!-- =============================================
+                 LOGO
+            ============================================== -->
+
+            <div class="brand">
+
+                <div class="brand-logo">
+                    <a href="index.html" class="logo">
+                    <img src="images/logo.png">
+
+                    
+
+                </div>
+
+                <div class="brand-details">
+
+                    <h1>
+                        Solar<span>Tech</span>
+                    </h1>
+
+                   </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =============================================
+                 HEADING
+            ============================================== -->
+
+            <div class="login-heading">
+
+                <h2>
+                    Welcome Back
+                </h2>
+
+                <p>
+                    Sign in to your solar energy account
+                </p>
+
+            </div>
+
+
+            <!-- =============================================
+                 FORM
+            ============================================== -->
+
+            <form id="loginForm">
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="passwordToggle"
+                            class="password-toggle"
+                            aria-label="Show password"
+                        >
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                     REMEMBER / FORGOT
+                ========================================== -->
+
+                <div class="login-options">
+
+                    <label class="remember">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                        >
+
+                        <span class="checkmark">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <span>
+                            Remember Me
+                        </span>
+
+                    </label>
+
+
+                    <a
+                        href="#"
+                        class="forgot-password"
+                        id="forgotPassword"
+                    >
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <!-- =========================================
+                     LOGIN BUTTON
+                ========================================== -->
+
+                <button
+                    type="submit"
+                    class="login-button"
+                >
+
+                    <span>
+                        Login
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <!-- =========================================
+                     OR DIVIDER
+                ========================================== -->
+
+                <div class="divider">
+
+                    <span></span>
+
+                    <p>
+                        OR
+                    </p>
+
+                    <span></span>
+
+                </div>
+
+
+                <!-- =========================================
+                     GOOGLE
+                ========================================== -->
+
+                <button
+                    type="button"
+                    class="social-button"
+                    id="googleLogin"
+                >
+
+                    <i class="fa-brands fa-google"></i>
+
+                    <span>
+                        Continue with Google
+                    </span>
+
+                </button>
+
+
+                <!-- =========================================
+                     APPLE
+                ========================================== -->
+
+                <button
+                    type="button"
+                    class="social-button"
+                    id="appleLogin"
+                >
+
+                    <i class="fa-brands fa-apple"></i>
+
+                    <span>
+                        Continue with Apple
+                    </span>
+
+                </button>
+
+
+                <!-- =========================================
+                     REGISTER
+                ========================================== -->
+
+                <div class="register-text">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <a href="sign.html" id="signupLink">
+                        Sign Up
+                    </a>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div class="toast" id="toast">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <span id="toastText">
+            Login successful
+        </span>
+
+    </div>
+
+
+    <!-- JS -->
+    <script>
+        /* =========================================================
+   SOLARTECH LOGIN
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =====================================================
+       ELEMENTS
+    ====================================================== */
+
+    const loginForm =
+        document.getElementById("loginForm");
+
+    const emailInput =
+        document.getElementById("email");
+
+    const passwordInput =
+        document.getElementById("password");
+
+    const passwordToggle =
+        document.getElementById("passwordToggle");
+
+    const remember =
+        document.getElementById("remember");
+
+    const themeToggle =
+        document.getElementById("themeToggle");
+
+    const rtlToggle =
+        document.getElementById("rtlToggle");
+
+    const forgotPassword =
+        document.getElementById("forgotPassword");
+
+    const signupLink =
+        document.getElementById("signupLink");
+
+    const googleLogin =
+        document.getElementById("googleLogin");
+
+    const appleLogin =
+        document.getElementById("appleLogin");
+
+    const toast =
+        document.getElementById("toast");
+
+    const toastText =
+        document.getElementById("toastText");
+
+
+    /* =====================================================
+       LOAD SAVED THEME
+    ====================================================== */
+
+    const savedTheme =
+        localStorage.getItem("solarTheme");
+
+
+    if (savedTheme === "dark") {
+
+        document.body.classList.add("dark-mode");
+
+        themeToggle.innerHTML =
+            '<i class="fa-regular fa-sun"></i>';
+
+    }
+
+
+    /* =====================================================
+       THEME TOGGLE
+    ====================================================== */
+
+    themeToggle.addEventListener("click", function () {
+
+        document.body.classList.toggle("dark-mode");
+
+
+        const isDark =
+            document.body.classList.contains("dark-mode");
+
+
+        if (isDark) {
+
+            themeToggle.innerHTML =
+                '<i class="fa-regular fa-sun"></i>';
+
+            localStorage.setItem(
+                "solarTheme",
+                "dark"
+            );
+
+        } else {
+
+            themeToggle.innerHTML =
+                '<i class="fa-regular fa-moon"></i>';
+
+            localStorage.setItem(
+                "solarTheme",
+                "light"
+            );
+
+        }
+
+    });
+
+
+    /* =====================================================
+       RTL / LTR
+    ====================================================== */
+
+    rtlToggle.addEventListener("click", function () {
+
+        const currentDirection =
+            document.documentElement.getAttribute("dir") ||
+            "ltr";
+
+
+        if (currentDirection === "ltr") {
+
+            document.documentElement.setAttribute(
+                "dir",
+                "rtl"
+            );
+
+            rtlToggle.textContent = "LTR";
+
+            localStorage.setItem(
+                "solarDirection",
+                "rtl"
+            );
+
+        } else {
+
+            document.documentElement.setAttribute(
+                "dir",
+                "ltr"
+            );
+
+            rtlToggle.textContent = "RTL";
+
+            localStorage.setItem(
+                "solarDirection",
+                "ltr"
+            );
+
+        }
+
+    });
+
+
+    /* =====================================================
+       LOAD SAVED DIRECTION
+    ====================================================== */
+
+    const savedDirection =
+        localStorage.getItem("solarDirection");
+
+
+    if (savedDirection === "rtl") {
+
+        document.documentElement.setAttribute(
+            "dir",
+            "rtl"
+        );
+
+        rtlToggle.textContent = "LTR";
+
+    } else {
+
+        document.documentElement.setAttribute(
+            "dir",
+            "ltr"
+        );
+
+        rtlToggle.textContent = "RTL";
+
+    }
+
+
+    /* =====================================================
+       PASSWORD SHOW / HIDE
+    ====================================================== */
+
+    passwordToggle.addEventListener("click", function () {
+
+        if (passwordInput.type === "password") {
+
+            passwordInput.type = "text";
+
+            passwordToggle.innerHTML =
+                '<i class="fa-regular fa-eye-slash"></i>';
+
+            passwordToggle.setAttribute(
+                "aria-label",
+                "Hide password"
+            );
+
+        } else {
+
+            passwordInput.type = "password";
+
+            passwordToggle.innerHTML =
+                '<i class="fa-regular fa-eye"></i>';
+
+            passwordToggle.setAttribute(
+                "aria-label",
+                "Show password"
+            );
+
+        }
+
+    });
+
+
+    /* =====================================================
+       REMEMBER EMAIL
+    ====================================================== */
+
+    const savedEmail =
+        localStorage.getItem(
+            "solarRememberEmail"
+        );
+
+
+    if (savedEmail) {
+
+        emailInput.value = savedEmail;
+
+        remember.checked = true;
+
+    }
+
+
+    /* =====================================================
+       LOGIN FORM
+    ====================================================== */
+
+    loginForm.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+
+            const email =
+                emailInput.value.trim();
+
+            const password =
+                passwordInput.value.trim();
+
+
+            /* EMAIL */
+
+            if (!email) {
+
+                showToast(
+                    "Please enter your email."
+                );
+
+                emailInput.focus();
+
+                return;
+            }
+
+
+            if (!validateEmail(email)) {
+
+                showToast(
+                    "Please enter a valid email."
+                );
+
+                emailInput.focus();
+
+                return;
+            }
+
+
+            /* PASSWORD */
+
+            if (!password) {
+
+                showToast(
+                    "Please enter your password."
+                );
+
+                passwordInput.focus();
+
+                return;
+            }
+
+
+            if (password.length < 6) {
+
+                showToast(
+                    "Password must contain at least 6 characters."
+                );
+
+                passwordInput.focus();
+
+                return;
+            }
+
+
+            /* REMEMBER */
+
+            if (remember.checked) {
+
+                localStorage.setItem(
+                    "solarRememberEmail",
+                    email
+                );
+
+            } else {
+
+                localStorage.removeItem(
+                    "solarRememberEmail"
+                );
+
+            }
+
+
+            /* SUCCESS */
+
+            showToast(
+                "Login successful!"
+            );
+
+
+            /*
+                Connect your real authentication here.
+
+                Example:
+
+                window.location.href =
+                    "dashboard.html";
+            */
+
+        }
+    );
+
+
+    /* =====================================================
+       EMAIL VALIDATION
+    ====================================================== */
+
+    function validateEmail(email) {
+
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+            .test(email);
+
+    }
+
+
+    /* =====================================================
+       TOAST
+    ====================================================== */
+
+    function showToast(message) {
+
+        toastText.textContent = message;
+
+        toast.classList.add("show");
+
+
+        clearTimeout(
+            window.solarToastTimer
+        );
+
+
+        window.solarToastTimer =
+            setTimeout(function () {
+
+                toast.classList.remove("show");
+
+            }, 2800);
+
+    }
+
+
+    /* =====================================================
+       FORGOT PASSWORD
+    ====================================================== */
+
+    forgotPassword.addEventListener(
+        "click",
+        function (event) {
+
+            event.preventDefault();
+
+            showToast(
+                "Password reset is ready to connect."
+            );
+
+        }
+    );
+
+
+    
+
+
+    /* =====================================================
+       GOOGLE
+    ====================================================== */
+
+    googleLogin.addEventListener(
+        "click",
+        function () {
+
+            showToast(
+                "Google login is ready to connect."
+            );
+
+        }
+    );
+
+
+    /* =====================================================
+       APPLE
+    ====================================================== */
+
+    appleLogin.addEventListener(
+        "click",
+        function () {
+
+            showToast(
+                "Apple login is ready to connect."
+            );
+
+        }
+    );
+
+});
+    </script>
+
+</body>
+
+</html>
