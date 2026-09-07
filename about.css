@@ -931,51 +931,18 @@ body.dark .site-header {
         var(--black);
 
 }
-
-
-body.dark .btn-outline {
-
-    border-color:
-        var(--secondary);
-
-    color:
-        var(--secondary);
-
-}
-
-
 .btn-outline:hover {
-
-    
-
-    color:var(--primary);
-
+    color: var(--white);
 }
 
 
-.btn-light {
-
-    background:
-        #ffffff;
-
-    color:
-        var(--primary);
-
-}
 
 
-.btn-light:hover {
 
-    background:
-        var(--secondary);
 
-    color:
-        var(--black);
 
-    transform:
-        translateY(-3px);
 
-}
+
 
 
 
@@ -2584,88 +2551,54 @@ body.dark .footer-column h4 {
 /* =========================================================
    FOOTER BOTTOM
 ========================================================= */
-
 .footer-bottom {
-
-    min-height:
-        55px;
-
-    padding-top:
-        25px;
 
     border-top:
         1px solid var(--border);
 
-    display:
-        flex;
+    padding:
+        20px 0;
+}
 
-    align-items:
-        center;
 
-    justify-content:
-        space-between;
+.footer-bottom-inner {
 
-    gap:
-        20px;
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.footer-bottom p,
+.footer-bottom a {
 
     color:
         var(--muted);
 
-    font-size:
-        13px;
-
+    font-size: 11px;
 }
 
 
-.footer-bottom-actions {
+.footer-bottom-inner > div {
 
-    display:
-        flex;
+    display: flex;
 
-    gap:
-        10px;
-
+    gap: 20px;
 }
 
 
-.footer-bottom-actions button {
-
-    padding:
-        10px 15px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius:
-        9px;
-
-    background:
-        var(--background);
+.footer-bottom a:hover {
 
     color:
         var(--primary);
-
-    cursor:
-        pointer;
-
-    transition:
-        var(--transition);
-
 }
 
 
-.footer-bottom-actions button:hover {
-
-    background:
-        var(--soft);
-
-    border-color:
-        var(--secondary);
-
-}
-
-
-body.dark .footer-bottom-actions button {
+body.dark .footer-bottom button {
 
     color:
         var(--secondary);
@@ -2703,6 +2636,7 @@ html[dir="rtl"] .dropdown-menu {
         0;
 
 }
+
 
 
 html[dir="rtl"] .story-quote {
