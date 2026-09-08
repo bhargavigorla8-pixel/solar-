@@ -956,7 +956,8 @@ body.dark .site-header {
         850px;
 
     
-    
+    padding-bottom:
+        90px;
 
     display:
         flex;
@@ -2193,12 +2194,12 @@ body.dark .hero-content h1 span {
     background:
         linear-gradient(
             90deg,
-            rgba(9, 87, 99, 0.98),
-            rgba(9, 87, 99, 0.70)
+            white(9, 87, 99, 0.98),
+            white(9, 87, 99, 0.70)
         ),
         url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=85")
         center / cover;
-
+        border: 2px solid #095763;
 }
 
 
@@ -2234,11 +2235,14 @@ body.dark .hero-content h1 span {
         30px;
 
     color:
-        #e1f3f5;
+        black;
 
     line-height:
         1.8;
 
+}
+body.dark .cta-content p{
+    color: white;
 }
 
 

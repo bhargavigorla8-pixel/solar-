@@ -1674,12 +1674,17 @@ body.dark .site-header {
         1fr .8fr;
 
     background:
-        var(--primary);
+        var(--white);
 
     border-radius: 30px;
 
     color:
-        white;
+        black;
+        border: 2px solid #095763;
+}
+body.dark .cta-container{
+    background: var(--black);
+    color: white;
 }
 
 
@@ -1723,7 +1728,7 @@ body.dark .site-header {
 .cta-content p {
 
     color:
-        rgba(255,255,255,.72);
+    black(255,255,255,.72);
 
     max-width: 510px;
 

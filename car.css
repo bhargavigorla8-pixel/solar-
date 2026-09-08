@@ -1860,12 +1860,16 @@ body.dark-mode
     background:
         linear-gradient(
             135deg,
-            var(--primary),
-            #073f48
+            var(--white),
+        
         );
 
-    color: white;
+    color: black;
+    border: 2px solid #095763;
 
+}
+body.dark-mode .cta{
+    color: white;
 }
 
 
@@ -1888,6 +1892,9 @@ body.dark-mode
         var(--secondary);
 
 }
+body.dark-mode .cta h2 span{
+    color: white;
+}
 
 
 .cta p {
@@ -1895,8 +1902,11 @@ body.dark-mode
     max-width: 650px;
 
     color:
-        #c9e5e9;
+        black;
 
+}
+body.dark-mode .cta p{
+    color: white;
 }
 
 
@@ -1906,7 +1916,7 @@ body.dark-mode
 
 
     color:
-        var(white);
+        var(--white);
         transition: var(--transition);
 
     

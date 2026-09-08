@@ -1845,14 +1845,17 @@ summary i {
     align-items: center;
 
     background:
-        var(--primary);
+        var(--white);
 
     border-radius: 30px;
 
     color:
-        white;
+        black;
+        border: 2px solid #095763;
 }
-
+body.dark .newsletter-container{
+    background: black;
+}
 
 .newsletter-content {
 
@@ -1879,11 +1882,14 @@ summary i {
     max-width: 570px;
 
     color:
-        rgba(255,255,255,0.72);
+        black(255,255,255,0.72);
 
     font-size: 14px;
 
     margin: 18px 0 25px;
+}
+body.dark .newsletter-content{
+    color: white;
 }
 
 
@@ -1896,7 +1902,7 @@ summary i {
     padding: 5px;
 
     background:
-        white;
+        black;
 
     border-radius: 50px;
 }

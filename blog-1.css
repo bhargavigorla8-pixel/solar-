@@ -2275,17 +2275,20 @@ button {
     background:
         linear-gradient(
             120deg,
-            var(--primary),
-            #0a6974
+            var(--black),
+            
         );
+border: 2px solid #095763;
 
     color:
-        #ffffff;
+        black;
 
     box-shadow:
         var(--shadow-lg);
 }
-
+body.dark .cta-box{
+    color: white;
+}
 
 .cta-box > div > span {
 
@@ -2322,7 +2325,7 @@ button {
 .cta-box p {
 
     color:
-        rgba(255,255,255,0.74);
+        black(255,255,255,0.74);
 
     font-size:
         11px;

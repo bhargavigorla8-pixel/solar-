@@ -1445,14 +1445,16 @@ body.dark-mode .nav-link.active {
     background:
         linear-gradient(
             120deg,
-            var(--primary),
-            #087586
+            var(--white),
+            
         );
 
     border-radius: 20px;
 
-    color: white;
+    color: black;
+    border: 2px solid #095763;
 }
+
 
 .cta-icon {
     width: 62px;
@@ -1477,11 +1479,14 @@ body.dark-mode .nav-link.active {
 }
 
 .cta-content span {
-    color: #a9eaf1;
+    color: black;
 
     font-size: 10px;
 
     letter-spacing: 1.5px;
+}
+body.dark .cta-content span{
+    color: white;
 }
 
 .cta-content h2 {

@@ -2342,12 +2342,16 @@ body.dark-mode
     border-radius: 25px;
 
     background:
-        var(--primary);
+        var(--white);
 
     color:
-        white;
+        black;
+        border: 2px solid #095763;
 }
-
+body.dark-mode .cta-content{
+    color: black;
+    background: #000000;
+}
 
 .cta-icon {
 
@@ -2404,6 +2408,9 @@ body.dark-mode
     font-size: 25px;
 
     line-height: 1.3;
+}
+body.dark-mode .cta-content h2{
+    color: white;
 }
 
 
