@@ -316,10 +316,10 @@ body.dark .site-header {
 .nav-link:hover,
 .nav-link.active {
 
-    color: var(--primary);
+    color: var(--black);
 
     background:
-        var(--primary-light);
+        var(--secondary);
 }
 
 body.dark .nav-link.active{
@@ -2923,701 +2923,604 @@ html[dir="rtl"] .footer-column a:hover {
         gap:
             12px 20px;
     }
-}/* =========================================================
-   SOLARPRO — DARK MODE VISIBILITY FIX
-   Add this at the VERY END of your CSS
-========================================================= */
+}/* =====================================================
+   FINAL DARK MODE VISIBILITY FIX
+===================================================== */
 
-html.dark body,
+/* ================= BODY ================= */
+
 body.dark {
-    background: #061316 !important;
-    color: #f5fdff !important;
+    background: #07181b;
+    color: #f5fbfc;
 }
 
 
-/* =========================================================
-   MAIN CONTENT
-========================================================= */
+/* ================= HEADER ================= */
 
-body.dark .main-content,
-body.dark .dashboard-content,
-body.dark main {
-    background: #061316 !important;
-    color: #f5fdff !important;
+body.dark .site-header {
+    background: rgba(7, 24, 27, 0.97);
+    border-bottom-color: rgba(120, 220, 235, 0.20);
 }
 
-
-/* =========================================================
-   STICKY LEFT SIDEBAR
-========================================================= */
-
-body.dark .sidebar {
-    background: #0a2025 !important;
-    border-right: 1px solid #24515a !important;
-    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.35);
+body.dark .logo-text strong:first-child {
+    color: #30cbe3;
 }
 
-body.dark .sidebar * {
-    border-color: #24515a;
+body.dark .logo-text strong:last-child {
+    color: #ffffff;
 }
-
-body.dark .sidebar .menu-title {
-    color: #7faeb5 !important;
-}
-
-body.dark .sidebar a,
-body.dark .sidebar .menu-item {
-    color: #c9e0e4 !important;
-}
-
-body.dark .sidebar a:hover,
-body.dark .sidebar .menu-item:hover {
-    background: #123d45 !important;
-    color: #ffffff !important;
-}
-
-body.dark .sidebar a.active,
-body.dark .sidebar .menu-item.active {
-    background: #0a6876 !important;
-    color: #ffffff !important;
-    box-shadow: 0 5px 18px rgba(48, 203, 227, 0.18);
-}
-
-body.dark .sidebar i {
-    color: #45d9ef !important;
-}
-
-body.dark .sidebar a.active i,
-body.dark .sidebar .menu-item.active i {
-    color: #ffffff !important;
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-body.dark .site-header,
-body.dark header {
-    background: #081b20 !important;
-    border-bottom: 1px solid #24515a !important;
-}
-
-body.dark .site-header * {
-    border-color: #24515a;
-}
-
-body.dark .logo,
-body.dark .logo-text {
-    color: #ffffff !important;
-}
-
-body.dark .logo span,
-body.dark .logo strong {
-    color: #45d9ef !important;
-}
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
 
 body.dark .nav-link {
-    color: #c9e0e4 !important;
+    color: #eaf7f9;
 }
 
-body.dark .nav-link:hover {
-    color: #ffffff !important;
-    background: #123d45 !important;
-}
-
+body.dark .nav-link:hover,
 body.dark .nav-link.active {
-    color: #ffffff !important;
-    background: #0a6876 !important;
+    background: #30cbe3;
+    color: #062328 !important;
 }
 
 
-/* =========================================================
-   LTR / RTL BUTTON
-========================================================= */
+/* ================= DROPDOWN ================= */
 
-body.dark #rtlBtn,
-body.dark .rtl-btn,
-body.dark .direction-btn {
-    background: #102d33 !important;
-    color: #45d9ef !important;
-    border: 1px solid #39717a !important;
+body.dark .dropdown-menu {
+    background: #102a2f;
+    border-color: #31545a;
+    box-shadow: 0 20px 50px rgba(0,0,0,.50);
 }
 
-body.dark #rtlBtn:hover,
-body.dark .rtl-btn:hover,
-body.dark .direction-btn:hover {
-    background: #0a6876 !important;
-    color: #ffffff !important;
+body.dark .dropdown-menu a {
+    color: #d6e6e8;
 }
 
-
-/* =========================================================
-   DARK MODE BUTTON
-========================================================= */
-
-body.dark #themeToggle,
-body.dark .theme-toggle,
-body.dark .dark-mode-btn {
-    background: #102d33 !important;
-    color: #ffffff !important;
-    border: 1px solid #39717a !important;
+body.dark .dropdown-menu a:hover {
+    background: #123b41;
+    color: #48d9ed;
 }
 
-body.dark #themeToggle:hover,
-body.dark .theme-toggle:hover,
-body.dark .dark-mode-btn:hover {
-    background: #0a6876 !important;
-    color: #ffffff !important;
+body.dark .dropdown-menu i {
+    color: #48d9ed;
 }
 
 
-/* =========================================================
-   ALL DASHBOARD CARDS
-========================================================= */
+/* ================= HEADER BUTTONS ================= */
 
-body.dark .card,
-body.dark .dashboard-card,
-body.dark .stat-card,
-body.dark .chart-card,
-body.dark .activity-card,
-body.dark .table-card,
-body.dark .project-card,
-body.dark .service-card {
-    background: #102b31 !important;
-    color: #f5fdff !important;
-    border: 1px solid #2d5961 !important;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+body.dark .header-icon {
+    background: #102a2f;
+    color: #48d9ed;
+    border-color: #416970;
+}
+
+body.dark .header-icon:hover {
+    background: #30cbe3;
+    color: #062328;
+    border-color: #30cbe3;
+}
+
+body.dark #rtlBtn {
+    background: #102a2f;
+    color: #48d9ed;
+    border-color: #416970;
+}
+
+body.dark #rtlBtn:hover {
+    background: #30cbe3;
+    color: #062328;
+    border-color: #30cbe3;
+}
+
+body.dark .login-btn {
+    background: #30cbe3;
+    color: #062328;
+}
+
+body.dark .login-btn:hover {
+    background: #48d9ed;
+    color: #062328;
+}
+
+body.dark .mobile-menu-btn {
+    background: #30cbe3;
+    color: #062328;
 }
 
 
-/* =========================================================
-   CARD HOVER
-========================================================= */
+/* =====================================================
+   BLOG HERO
+===================================================== */
 
-body.dark .card:hover,
-body.dark .dashboard-card:hover,
-body.dark .stat-card:hover,
-body.dark .project-card:hover,
-body.dark .service-card:hover {
-    border-color: #45d9ef !important;
+body.dark .blog-hero {
+    background:
+        linear-gradient(
+            125deg,
+            #0c2529 0%,
+            #07181b 100%
+        );
+}
+
+body.dark .hero-content h1 {
+    color: #f5fbfc;
+}
+
+body.dark .hero-content h1 span {
+    color: #30cbe3;
+}
+
+body.dark .hero-content > p {
+    color: #c7d8da;
+}
+
+body.dark .eyebrow {
+    color: #48d9ed;
+}
+
+body.dark .eyebrow i {
+    color: #48d9ed;
 }
 
 
-/* =========================================================
-   CARD HEADINGS
-========================================================= */
+/* ================= HERO BUTTONS ================= */
 
-body.dark .card h1,
-body.dark .card h2,
-body.dark .card h3,
-body.dark .card h4,
-body.dark .card h5,
-body.dark .dashboard-card h1,
-body.dark .dashboard-card h2,
-body.dark .dashboard-card h3,
-body.dark .dashboard-card h4,
-body.dark .stat-card h1,
-body.dark .stat-card h2,
-body.dark .stat-card h3,
-body.dark .stat-card h4 {
-    color: #ffffff !important;
+body.dark .primary-button {
+    background: #30cbe3;
+    color: #062328;
+}
+
+body.dark .primary-button:hover {
+    background: #48d9ed;
+    color: #062328;
+}
+
+body.dark .outline-button {
+    background: transparent;
+    color: #f5fbfc;
+    border-color: #526f75;
+}
+
+body.dark .outline-button:hover {
+    background: #123b41;
+    color: #48d9ed;
+    border-color: #30cbe3;
 }
 
 
-/* =========================================================
-   CARD TEXT
-========================================================= */
+/* ================= HERO STATS ================= */
 
-body.dark .card p,
-body.dark .dashboard-card p,
-body.dark .stat-card p {
-    color: #b9d0d4 !important;
+body.dark .hero-stats {
+    border-top-color: rgba(120,220,235,.22);
 }
 
-body.dark small {
-    color: #91b1b6 !important;
+body.dark .hero-stat strong {
+    color: #48d9ed;
 }
 
-
-/* =========================================================
-   STAT NUMBERS
-========================================================= */
-
-body.dark .stat-number,
-body.dark .stat-value,
-body.dark .amount,
-body.dark .price,
-body.dark .count {
-    color: #ffffff !important;
+body.dark .hero-stat span {
+    color: #b8cacc;
 }
 
 
-/* =========================================================
-   ICON BOXES
-========================================================= */
+/* ================= FLOATING CARD ================= */
 
-body.dark .icon-box,
-body.dark .stat-icon,
-body.dark .feature-icon,
-body.dark .icon {
-    background: #16434b !important;
-    color: #45d9ef !important;
-    border: 1px solid #39717a !important;
+body.dark .hero-floating-card {
+    background: #102a2f;
+    border-color: #31545a;
+    color: #f5fbfc;
+    box-shadow: 0 20px 50px rgba(0,0,0,.50);
+}
+
+body.dark .floating-icon {
+    background: #30cbe3;
+    color: #062328;
+}
+
+body.dark .hero-floating-card strong {
+    color: #f5fbfc;
+}
+
+body.dark .hero-floating-card span {
+    color: #b8cacc;
 }
 
 
-/* =========================================================
-   BUTTONS
-========================================================= */
+/* =====================================================
+   FEATURED SECTION
+===================================================== */
 
-body.dark .btn-primary,
-body.dark .primary-btn {
-    background: #0a6876 !important;
-    color: #ffffff !important;
-    border: 1px solid #15899a !important;
+body.dark .featured-section {
+    background: #07181b;
 }
 
-body.dark .btn-primary:hover,
-body.dark .primary-btn:hover {
-    background: #30cbe3 !important;
-    color: #061316 !important;
+body.dark .featured-label span {
+    color: #48d9ed;
 }
 
-
-body.dark .btn-secondary,
-body.dark .secondary-btn {
-    background: #163b42 !important;
-    color: #ffffff !important;
-    border: 1px solid #39717a !important;
+body.dark .featured-line {
+    background: #31545a;
 }
 
-body.dark .btn-secondary:hover,
-body.dark .secondary-btn:hover {
-    background: #205963 !important;
-    color: #ffffff !important;
+body.dark .featured-card {
+    background: #102a2f;
+    border-color: #31545a;
 }
 
-
-/* =========================================================
-   OUTLINE BUTTONS
-========================================================= */
-
-body.dark .btn-outline,
-body.dark .outline-btn {
-    background: transparent !important;
-    color: #45d9ef !important;
-    border: 1px solid #45d9ef !important;
+body.dark .featured-content {
+    color: #f5fbfc;
 }
 
-body.dark .btn-outline:hover,
-body.dark .outline-btn:hover {
-    background: #0a6876 !important;
-    color: #ffffff !important;
+body.dark .article-meta {
+    color: #aebfc2;
 }
 
-
-/* =========================================================
-   INPUTS
-========================================================= */
-
-body.dark input,
-body.dark select,
-body.dark textarea {
-    background: #091e23 !important;
-    color: #ffffff !important;
-    border: 1px solid #39666e !important;
+body.dark .article-meta span:first-child {
+    color: #48d9ed;
 }
 
-body.dark input:focus,
-body.dark select:focus,
-body.dark textarea:focus {
-    background: #0d252b !important;
-    color: #ffffff !important;
-    border-color: #45d9ef !important;
-    box-shadow: 0 0 0 3px rgba(69, 217, 239, 0.12) !important;
+body.dark .featured-content h2 {
+    color: #f5fbfc;
 }
 
-body.dark input::placeholder,
-body.dark textarea::placeholder {
-    color: #78979c !important;
+body.dark .featured-content h2 span {
+    color: #30cbe3;
+}
+
+body.dark .featured-content > p {
+    color: #b8cacc;
+}
+
+body.dark .featured-author {
+    border-top-color: #31545a;
+}
+
+body.dark .featured-author strong {
+    color: #f5fbfc;
+}
+
+body.dark .featured-author span {
+    color: #aebfc2;
+}
+
+body.dark .read-story,
+body.dark .article-link,
+body.dark .view-all {
+    color: #48d9ed;
 }
 
 
-/* =========================================================
-   SELECT DROPDOWN
-========================================================= */
+/* =====================================================
+   TOPICS
+===================================================== */
 
-body.dark select option {
-    background: #102b31 !important;
-    color: #ffffff !important;
+body.dark .topics-section {
+    background: #0c2529;
+}
+
+body.dark .section-label {
+    color: #48d9ed;
+}
+
+body.dark .section-heading h2,
+body.dark .latest-header h2,
+body.dark .info-content h2,
+body.dark .faq-intro h2,
+body.dark .newsletter-content h2 {
+    color: #f5fbfc;
+}
+
+body.dark .section-heading h2 span,
+body.dark .latest-header h2 span,
+body.dark .info-content h2 span,
+body.dark .faq-intro h2 span,
+body.dark .newsletter-content h2 span {
+    color: #30cbe3;
+}
+
+body.dark .section-heading > p {
+    color: #b8cacc;
 }
 
 
-/* =========================================================
-   TABLE
-========================================================= */
+/* ================= TOPIC BUTTONS ================= */
 
-body.dark table {
-    background: #102b31 !important;
-    color: #ffffff !important;
-    border-color: #2d5961 !important;
+body.dark .topic-button {
+    background: transparent;
+    color: #dcebed;
+    border-color: #3b5c62;
 }
 
-body.dark thead,
-body.dark th {
-    background: #163e45 !important;
-    color: #ffffff !important;
-    border-color: #39717a !important;
-}
-
-body.dark td {
-    color: #c7dce0 !important;
-    border-color: #28535b !important;
-}
-
-body.dark tbody tr:hover {
-    background: #14383f !important;
-}
-
-body.dark tbody tr:hover td {
-    color: #ffffff !important;
+body.dark .topic-button:hover,
+body.dark .topic-button.active {
+    background: #30cbe3;
+    border-color: #30cbe3;
+    color: #062328;
 }
 
 
-/* =========================================================
-   TABLE ACTION BUTTONS
-========================================================= */
+/* =====================================================
+   LATEST ARTICLES
+===================================================== */
 
-body.dark .table-action,
-body.dark .action-btn {
-    background: #163e45 !important;
-    color: #45d9ef !important;
-    border: 1px solid #39717a !important;
+body.dark .latest-section {
+    background: #0c2529;
 }
 
-body.dark .table-action:hover,
-body.dark .action-btn:hover {
-    background: #0a6876 !important;
-    color: #ffffff !important;
+body.dark .article-card {
+    background: #102a2f;
+    border-color: #31545a;
 }
 
-
-/* =========================================================
-   STATUS BADGES
-========================================================= */
-
-body.dark .status,
-body.dark .badge {
-    border: 1px solid transparent;
+body.dark .article-card:hover {
+    border-color: #30cbe3;
+    box-shadow: 0 20px 50px rgba(0,0,0,.45);
 }
 
-
-/* Green */
-body.dark .status.completed,
-body.dark .status.success,
-body.dark .badge-success {
-    background: rgba(67, 220, 148, 0.16) !important;
-    color: #58e5a5 !important;
-    border-color: rgba(88, 229, 165, 0.35) !important;
+body.dark .article-category {
+    background: #30cbe3;
+    color: #062328;
 }
 
+body.dark .article-date {
+    color: #aebfc2;
+}
 
-/* Yellow */
-body.dark .status.pending,
-body.dark .badge-warning {
-    background: rgba(255, 207, 90, 0.16) !important;
-    color: #ffd85c !important;
-    border-color: rgba(255, 216, 92, 0.35) !important;
+body.dark .article-body h3 {
+    color: #f5fbfc;
+}
+
+body.dark .article-body p {
+    color: #b8cacc;
 }
 
 
-/* Red */
-body.dark .status.cancelled,
-body.dark .status.danger,
-body.dark .badge-danger {
-    background: rgba(255, 92, 106, 0.16) !important;
-    color: #ff8790 !important;
-    border-color: rgba(255, 135, 144, 0.35) !important;
+/* =====================================================
+   INFO SECTION
+===================================================== */
+
+body.dark .info-section {
+    background: #07181b;
+}
+
+body.dark .info-content > p {
+    color: #b8cacc;
+}
+
+body.dark .info-points div {
+    color: #e4f0f2;
+}
+
+body.dark .info-points i {
+    color: #48d9ed;
 }
 
 
-/* Blue */
-body.dark .status.processing,
-body.dark .badge-info {
-    background: rgba(69, 217, 239, 0.15) !important;
-    color: #45d9ef !important;
-    border-color: rgba(69, 217, 239, 0.35) !important;
+/* =====================================================
+   FAQ
+===================================================== */
+
+body.dark .faq-section {
+    background: #0c2529;
+}
+
+body.dark .faq-intro > p {
+    color: #b8cacc;
+}
+
+body.dark .faq-list details {
+    background: #102a2f;
+    border-color: #31545a;
+}
+
+body.dark .faq-list summary {
+    color: #f5fbfc;
+}
+
+body.dark .faq-list summary i {
+    color: #48d9ed;
+}
+
+body.dark .faq-list details p {
+    color: #b8cacc;
 }
 
 
-/* =========================================================
-   PROGRESS BAR
-========================================================= */
+/* =====================================================
+   NEWSLETTER
+===================================================== */
 
-body.dark .progress,
-body.dark .progress-bg {
-    background: #1a3d44 !important;
+/* IMPORTANT:
+   Remove the black background from your newsletter.
+*/
+
+body.dark .newsletter-container {
+    background:
+        linear-gradient(
+            135deg,
+            #0d353c 0%,
+            #095763 100%
+        );
+
+    color: #ffffff;
+    border-color: #30cbe3;
 }
 
-body.dark .progress-bar {
-    background: linear-gradient(
-        90deg,
-        #095763,
-        #30cbe3
-    ) !important;
+body.dark .newsletter-content {
+    background: transparent;
+    color: #ffffff;
 }
 
-
-/* =========================================================
-   CHART CONTAINER
-========================================================= */
-
-body.dark .chart-container,
-body.dark .chart-box {
-    background: #102b31 !important;
-    border: 1px solid #2d5961 !important;
+body.dark .newsletter-content .section-label {
+    color: #48d9ed;
 }
 
-
-/* Chart text */
-body.dark .chart-container text,
-body.dark .chart-box text {
-    fill: #c9e0e4 !important;
+body.dark .newsletter-content h2 {
+    color: #ffffff;
 }
 
-
-/* =========================================================
-   ACTIVITY LIST
-========================================================= */
-
-body.dark .activity-item {
-    border-bottom: 1px solid #28535b !important;
+body.dark .newsletter-content h2 span {
+    color: #48d9ed;
 }
 
-body.dark .activity-item:hover {
-    background: #14383f !important;
-}
-
-body.dark .activity-title {
-    color: #ffffff !important;
-}
-
-body.dark .activity-time {
-    color: #91b1b6 !important;
+body.dark .newsletter-content > p {
+    color: rgba(255,255,255,.82);
 }
 
 
-/* =========================================================
-   DIVIDERS
-========================================================= */
+/* ================= NEWSLETTER FORM ================= */
 
-body.dark hr {
-    border: 0 !important;
-    border-top: 1px solid #28535b !important;
+body.dark .newsletter-form {
+    background: #07181b;
+    border: 1px solid rgba(255,255,255,.18);
+}
+
+body.dark .newsletter-form input {
+    color: #ffffff;
+    background: transparent;
+}
+
+body.dark .newsletter-form input::placeholder {
+    color: #91aaaf;
+}
+
+body.dark .newsletter-form button {
+    background: #30cbe3;
+    color: #062328;
+}
+
+body.dark .newsletter-form button:hover {
+    background: #48d9ed;
+    color: #062328;
+}
+
+body.dark .newsletter-content small {
+    color: rgba(255,255,255,.65);
 }
 
 
-/* =========================================================
-   LINKS
-========================================================= */
+/* ================= NEWSLETTER VISUAL ================= */
 
-body.dark a {
-    color: #45d9ef;
+body.dark .sun-circle {
+    background: #30cbe3;
+    color: #062328;
 }
 
-body.dark a:hover {
+body.dark .solar-panel-decoration {
+    border-color: #ffffff;
     color: #ffffff;
 }
 
 
-/* =========================================================
-   MODAL
-========================================================= */
+/* =====================================================
+   FOOTER
+===================================================== */
 
-body.dark .modal,
-body.dark .modal-content {
-    background: #102b31 !important;
-    color: #ffffff !important;
-    border: 1px solid #39717a !important;
+body.dark .footer {
+    background: #061519;
+    color: #f5fbfc;
+    border-top-color: #25474d;
 }
 
-body.dark .modal-header,
-body.dark .modal-footer {
-    border-color: #28535b !important;
+body.dark .footer-logo-text {
+    color: #ffffff;
 }
 
-
-/* =========================================================
-   DROPDOWN MENU
-========================================================= */
-
-body.dark .dropdown-menu {
-    background: #102b31 !important;
-    border: 1px solid #39717a !important;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+body.dark .footer-logo-text span {
+    color: #30cbe3;
 }
 
-body.dark .dropdown-menu a {
-    color: #c9e0e4 !important;
+body.dark .footer-logo-text strong {
+    color: #48d9ed;
 }
 
-body.dark .dropdown-menu a:hover {
-    background: #143e45 !important;
-    color: #ffffff !important;
+body.dark .footer-brand p {
+    color: #aebfc2;
 }
 
-
-/* =========================================================
-   NOTIFICATIONS
-========================================================= */
-
-body.dark .notification-panel {
-    background: #102b31 !important;
-    border: 1px solid #39717a !important;
+body.dark .footer-logo-icon {
+    color: #48d9ed;
+    border-color: #48d9ed;
 }
 
-body.dark .notification-item {
-    border-bottom: 1px solid #28535b !important;
+body.dark .social-links a {
+    background: #102a2f;
+    border-color: #31545a;
+    color: #48d9ed;
 }
 
-body.dark .notification-item:hover {
-    background: #14383f !important;
+body.dark .social-links a:hover {
+    background: #30cbe3;
+    color: #062328;
 }
 
-body.dark .notification-item strong {
-    color: #ffffff !important;
+body.dark .footer-column h4 {
+    color: #f5fbfc;
 }
 
-body.dark .notification-item span {
-    color: #a8c3c7 !important;
+body.dark .footer-column a {
+    color: #b8cacc;
 }
 
-
-/* =========================================================
-   SEARCH BOX
-========================================================= */
-
-body.dark .search-box,
-body.dark .search-container {
-    background: #091e23 !important;
-    border: 1px solid #39666e !important;
+body.dark .footer-column a:hover {
+    color: #48d9ed;
 }
 
-body.dark .search-box input,
-body.dark .search-container input {
-    background: transparent !important;
-    border: 0 !important;
-    color: #ffffff !important;
+body.dark .footer-column i {
+    color: #48d9ed;
 }
 
-body.dark .search-box i,
-body.dark .search-container i {
-    color: #45d9ef !important;
+body.dark .footer-bottom {
+    border-top-color: #25474d;
+}
+
+body.dark .footer-bottom p,
+body.dark .footer-bottom a {
+    color: #91aaaf;
+}
+
+body.dark .footer-bottom a:hover {
+    color: #48d9ed;
 }
 
 
-/* =========================================================
-   MOBILE SIDEBAR
-========================================================= */
+/* =====================================================
+   MOBILE DARK MODE
+===================================================== */
 
 @media (max-width: 768px) {
 
-    body.dark .sidebar {
-        background: #0a2025 !important;
-        box-shadow: 10px 0 35px rgba(0, 0, 0, 0.5);
+    body.dark .nav-menu {
+        background: #102a2f;
+        border-color: #31545a;
+        box-shadow: 0 20px 50px rgba(0,0,0,.50);
     }
 
-    body.dark .sidebar a {
-        color: #c9e0e4 !important;
+    body.dark .nav-link {
+        color: #f5fbfc;
     }
 
-    body.dark .sidebar a.active {
-        background: #0a6876 !important;
-        color: #ffffff !important;
+    body.dark .nav-link:hover,
+    body.dark .nav-link.active {
+        background: #30cbe3;
+        color: #062328 !important;
+    }
+
+    body.dark .dropdown-menu {
+        background: #0b2226;
+    }
+
+    body.dark .newsletter-form {
+        background: #07181b;
+    }
+
+    body.dark .newsletter-form input {
+        color: #ffffff;
     }
 }
 
 
-/* =========================================================
-   SCROLLBAR
-========================================================= */
+/* =====================================================
+   SELECTION
+===================================================== */
 
-body.dark::-webkit-scrollbar {
-    width: 9px;
-}
-
-body.dark::-webkit-scrollbar-track {
-    background: #061316;
-}
-
-body.dark::-webkit-scrollbar-thumb {
-    background: #28535b;
-    border-radius: 10px;
-}
-
-body.dark::-webkit-scrollbar-thumb:hover {
+body.dark ::selection {
     background: #30cbe3;
-}
-
-
-/* =========================================================
-   FORCE VISIBILITY FOR COMMON TEXT CLASSES
-========================================================= */
-
-body.dark .text-dark,
-body.dark .text-black {
-    color: #ffffff !important;
-}
-
-body.dark .text-muted {
-    color: #91b1b6 !important;
-}
-
-body.dark .text-secondary {
-    color: #b9d0d4 !important;
-}
-
-
-/* =========================================================
-   FIX INLINE LIGHT-MODE COLORS
-========================================================= */
-
-body.dark [style*="color: #000"],
-body.dark [style*="color:#000"],
-body.dark [style*="color: black"] {
-    color: #ffffff !important;
-}
-
-body.dark [style*="background: #fff"],
-body.dark [style*="background:#fff"],
-body.dark [style*="background: white"],
-body.dark [style*="background-color: #fff"],
-body.dark [style*="background-color:#fff"],
-body.dark [style*="background-color: white"] {
-    background: #102b31 !important;
-}
-
-
-/* =========================================================
-   IMPORTANT: ICON VISIBILITY
-========================================================= */
-
-body.dark .fa,
-body.dark .fas,
-body.dark .far,
-body.dark .fab,
-body.dark i {
-    color: inherit;
-}
-
-body.dark .sidebar i,
-body.dark .stat-icon i,
-body.dark .icon-box i {
-    color: #45d9ef !important;
+    color: #062328;
 }

@@ -335,10 +335,10 @@ html.dark .site-header {
 .nav-link:hover,
 .nav-link.active {
 
-    color: var(--primary);
+    color: var(--black);
 
     background:
-        var(--primary-light);
+        var(--secondary);
 }
 html.dark .nav-link.active{
     color: white;
@@ -2765,4 +2765,719 @@ html[dir="rtl"]
     .stat-item span {
         font-size: 10px;
     }
+}
+/* =========================================================
+   FINAL DARK MODE — VISIBILITY FIX
+========================================================= */
+
+html.dark {
+    --white: #f4fbfc;
+    --black: #ffffff;
+
+    --text: #f2fbfc;
+    --text-light: #c0d4d8;
+    --muted: #9eb6ba;
+
+    --bg: #07181c;
+    --bg-soft: #0c2429;
+    --card: #102f35;
+
+    --border: #285158;
+
+    --primary: #30cbe3;
+    --primary-dark: #1fa8bd;
+    --primary-light: #123f47;
+
+    --secondary: #54d9ed;
+    --secondary-light: #12383e;
+
+    --shadow-sm:
+        0 8px 25px rgba(0, 0, 0, 0.30);
+
+    --shadow:
+        0 10px 35px rgba(0, 0, 0, 0.32);
+
+    --shadow-md:
+        0 18px 50px rgba(0, 0, 0, 0.42);
+
+    --shadow-lg:
+        0 30px 80px rgba(0, 0, 0, 0.55);
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+html.dark body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+html.dark .site-header {
+    background: rgba(5, 18, 21, 0.96);
+    border-bottom: 1px solid #285158;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+html.dark .logo-text strong:first-child {
+    color: #54d9ed;
+}
+
+html.dark .logo-text strong:last-child {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+html.dark .nav-link {
+    color: #e9f7f9;
+}
+
+html.dark .nav-link:hover,
+html.dark .nav-link.active {
+    color: #06181c;
+    background: #54d9ed;
+}
+
+html.dark .nav-link i {
+    color: #54d9ed;
+}
+
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+html.dark .dropdown-menu {
+    background: #102f35;
+    border-color: #285158;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+}
+
+html.dark .dropdown-menu a {
+    color: #c8dadd;
+}
+
+html.dark .dropdown-menu a:hover {
+    color: #ffffff;
+    background: #123f47;
+}
+
+html.dark .dropdown-menu i {
+    color: #54d9ed;
+}
+
+
+/* =========================================================
+   HEADER ICONS
+========================================================= */
+
+html.dark .header-icon {
+    background: #102f35;
+    color: #54d9ed;
+    border-color: #39717a;
+}
+
+html.dark .header-icon:hover {
+    background: #30cbe3;
+    color: #06181c;
+    border-color: #30cbe3;
+}
+
+
+/* =========================================================
+   RTL BUTTON
+========================================================= */
+
+html.dark #rtlBtn {
+    background: #102f35;
+    color: #54d9ed;
+    border: 1px solid #39717a;
+}
+
+html.dark #rtlBtn:hover {
+    background: #30cbe3;
+    color: #06181c;
+    border-color: #30cbe3;
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+html.dark .mobile-menu-btn {
+    background: #30cbe3;
+    color: #06181c;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+html.dark .hero-section {
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(48, 203, 227, 0.16),
+            transparent 30%
+        ),
+        #07181c;
+}
+
+html.dark .section-tag {
+    color: #54d9ed;
+}
+
+html.dark .hero-content h1 {
+    color: #f2fbfc;
+}
+
+html.dark .hero-content h1 span {
+    color: #54d9ed;
+}
+
+html.dark .hero-content > p {
+    color: #c0d4d8;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+html.dark .primary-btn {
+    background: #30cbe3;
+    color: #06181c;
+}
+
+html.dark .primary-btn:hover {
+    background: #54d9ed;
+    color: #06181c;
+}
+
+html.dark .secondary-btn {
+    color: #f2fbfc;
+    border-color: #54d9ed;
+}
+
+html.dark .secondary-btn:hover {
+    background: #54d9ed;
+    color: #06181c;
+}
+
+
+/* =========================================================
+   HERO STATS
+========================================================= */
+
+html.dark .hero-stats {
+    border-color: #285158;
+}
+
+html.dark .stat-item strong {
+    color: #54d9ed;
+}
+
+html.dark .stat-item span {
+    color: #b8ced2;
+}
+
+
+/* =========================================================
+   FLOATING CARD
+========================================================= */
+
+html.dark .floating-card {
+    background: #102f35;
+    border-color: #39717a;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+html.dark .floating-icon {
+    background: rgba(48, 203, 227, 0.18);
+    color: #54d9ed;
+}
+
+html.dark .floating-card strong {
+    color: #ffffff;
+}
+
+html.dark .floating-card span {
+    color: #b8ced2;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+html.dark .about-section {
+    background: #0c2429;
+}
+
+html.dark .about-content h2,
+html.dark .why-content h2,
+html.dark .contact-content h2 {
+    color: #f2fbfc;
+}
+
+html.dark .about-content h2 span,
+html.dark .why-content h2 span,
+html.dark .contact-content h2 span {
+    color: #54d9ed;
+}
+
+html.dark .about-content > p {
+    color: #c0d4d8;
+}
+
+html.dark .about-feature h4 {
+    color: #ffffff;
+}
+
+html.dark .about-feature p {
+    color: #b8ced2;
+}
+
+html.dark .about-feature > i {
+    color: #54d9ed;
+}
+
+
+/* =========================================================
+   EXPERIENCE CARD
+========================================================= */
+
+html.dark .experience-card {
+    background: #30cbe3;
+    color: #06181c;
+}
+
+html.dark .experience-card strong {
+    color: #06181c;
+}
+
+html.dark .experience-card span {
+    color: #102f35;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+html.dark .section-heading h2 {
+    color: #f2fbfc;
+}
+
+html.dark .section-heading h2 span {
+    color: #54d9ed;
+}
+
+html.dark .section-heading p {
+    color: #c0d4d8;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+html.dark .services-section {
+    background: #07181c;
+}
+
+html.dark .service-card {
+    background: #102f35;
+    border-color: #285158;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+html.dark .service-card:hover {
+    border-color: #54d9ed;
+}
+
+html.dark .service-content h3 {
+    color: #ffffff;
+}
+
+html.dark .service-content p {
+    color: #b8ced2;
+}
+
+html.dark .service-icon {
+    background: rgba(48, 203, 227, 0.18);
+    color: #54d9ed;
+}
+
+html.dark .service-link {
+    color: #54d9ed;
+}
+
+html.dark .service-link:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   WHY SECTION
+========================================================= */
+
+html.dark .why-section {
+    background: #0c2429;
+}
+
+html.dark .why-content > p {
+    color: #c0d4d8;
+}
+
+html.dark .why-item h3 {
+    color: #ffffff;
+}
+
+html.dark .why-item p {
+    color: #b8ced2;
+}
+
+html.dark .why-icon {
+    background: #30cbe3;
+    color: #06181c;
+}
+
+
+/* =========================================================
+   ENERGY CARD
+========================================================= */
+
+html.dark .energy-card {
+    background: #102f35;
+    border: 1px solid #39717a;
+}
+
+html.dark .energy-circle {
+    background: rgba(48, 203, 227, 0.18);
+    color: #54d9ed;
+}
+
+html.dark .energy-card h3 {
+    color: #ffffff;
+}
+
+html.dark .energy-card > p {
+    color: #c0d4d8;
+}
+
+html.dark .energy-line {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+html.dark .energy-numbers strong {
+    color: #54d9ed;
+}
+
+html.dark .energy-numbers span {
+    color: #c0d4d8;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+html.dark .process-section {
+    background: #07181c;
+}
+
+html.dark .process-card {
+    background: #102f35;
+    border-color: #285158;
+}
+
+html.dark .process-card:hover {
+    border-color: #54d9ed;
+}
+
+html.dark .process-card h3 {
+    color: #ffffff;
+}
+
+html.dark .process-card p {
+    color: #b8ced2;
+}
+
+html.dark .process-number {
+    color: #54d9ed;
+}
+
+html.dark .process-card > i {
+    background: rgba(48, 203, 227, 0.18);
+    color: #54d9ed;
+}
+
+
+/* =========================================================
+   BLOG
+========================================================= */
+
+html.dark .blog-section {
+    background: #0c2429;
+}
+
+html.dark .blog-card {
+    background: #102f35;
+    border-color: #285158;
+}
+
+html.dark .blog-card:hover {
+    border-color: #54d9ed;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+html.dark .blog-content > span {
+    color: #54d9ed;
+}
+
+html.dark .blog-content h3 {
+    color: #ffffff;
+}
+
+html.dark .blog-content p {
+    color: #b8ced2;
+}
+
+html.dark .blog-content a {
+    color: #54d9ed;
+}
+
+html.dark .blog-content a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
+
+html.dark .contact-section {
+    background: #0a2024 !important;
+    color: #ffffff !important;
+    border: 2px solid #30cbe3;
+}
+
+html.dark .contact-content h2 {
+    color: #ffffff !important;
+}
+
+html.dark .contact-content > p {
+    color: #c5dadd !important;
+}
+
+
+/* =========================================================
+   CONTACT BOX
+========================================================= */
+
+html.dark .contact-box {
+    background: #102f35;
+    border: 1px solid #39717a;
+}
+
+html.dark .contact-box-item {
+    border-bottom: 1px solid #285158;
+}
+
+html.dark .contact-box-item > i {
+    background: rgba(48, 203, 227, 0.18);
+    color: #54d9ed;
+}
+
+html.dark .contact-box-item span {
+    color: #a9c2c6 !important;
+}
+
+html.dark .contact-box-item strong {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+html.dark .site-footer {
+    background: #07181c;
+    color: #f2fbfc;
+    border-top: 1px solid #285158;
+}
+
+html.dark .footer-logo-text {
+    color: #ffffff;
+}
+
+html.dark .footer-logo-text span {
+    color: #54d9ed;
+}
+
+html.dark .footer-logo-text strong {
+    color: #30cbe3;
+}
+
+html.dark .footer-brand p {
+    color: #b8ced2;
+}
+
+html.dark .footer-column h3 {
+    color: #54d9ed;
+}
+
+html.dark .footer-column > a {
+    color: #b8ced2;
+}
+
+html.dark .footer-column > a:hover {
+    color: #54d9ed;
+}
+
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+html.dark .social-links a {
+    background: #12383e;
+    color: #54d9ed;
+    border: 1px solid #285158;
+}
+
+html.dark .social-links a:hover {
+    background: #30cbe3;
+    color: #06181c;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+html.dark .footer-bottom {
+    border-top-color: #285158;
+}
+
+html.dark .footer-bottom p {
+    color: #a9c2c6;
+}
+
+html.dark .footer-controls button {
+    background: #102f35;
+    color: #54d9ed;
+    border-color: #39717a;
+}
+
+html.dark .footer-controls button:hover {
+    background: #30cbe3;
+    color: #06181c;
+}
+
+
+/* =========================================================
+   FOOTER LINKS
+========================================================= */
+
+html.dark .footer-links a {
+    color: #a9c2c6;
+}
+
+html.dark .footer-links a:hover {
+    color: #54d9ed;
+}
+
+
+/* =========================================================
+   GENERAL TEXT FIX
+========================================================= */
+
+html.dark p {
+    color: #c0d4d8;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+    color: #f2fbfc;
+}
+
+
+/* =========================================================
+   FORM / INPUT SUPPORT
+========================================================= */
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+    background: #0d292e;
+    color: #ffffff;
+    border-color: #39717a;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+    color: #829da2;
+}
+
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus {
+    border-color: #54d9ed;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(48, 203, 227, 0.12);
+}
+
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+html.dark ::selection {
+    background: #30cbe3;
+    color: #06181c;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+html.dark::-webkit-scrollbar {
+    width: 10px;
+}
+
+html.dark::-webkit-scrollbar-track {
+    background: #07181c;
+}
+
+html.dark::-webkit-scrollbar-thumb {
+    background: #285158;
+    border-radius: 10px;
+}
+
+html.dark::-webkit-scrollbar-thumb:hover {
+    background: #30cbe3;
 }

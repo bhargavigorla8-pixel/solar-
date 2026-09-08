@@ -239,8 +239,8 @@ body.dark .site-header {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--primary);
-    background: var(--primary-light);
+    color: var(--black);
+    background: var(--secondary);
 }
 body.dark .nav-link.active{
     color: white;
@@ -2927,6 +2927,680 @@ body.dark #rtlBtn{
         grid-column: auto;
     }
 }
-body.dark .solution-content h3{
-    color: white;
+/* =========================================================
+   SOLARA - DARK MODE FIX
+   ========================================================= */
+
+body.dark {
+    /* Main colors */
+    --white: #10282d;
+    --black: #ffffff;
+
+    --text: #f2fbfc;
+    --text-light: #b8ced2;
+    --muted: #91aaaf;
+
+    --bg: #07191d;
+    --bg-soft: #0c252a;
+
+    --border: #25474d;
+
+    /* Important missing variables */
+    --section-bg: #07191d;
+    --card-bg: #10282d;
+    --background: #07191d;
+
+    --primary-light: #123f46;
+    --secondary-light: #10383e;
+
+    --shadow-sm: 0 8px 25px rgba(0, 0, 0, 0.30);
+    --shadow-md: 0 18px 50px rgba(0, 0, 0, 0.40);
+    --shadow-lg: 0 30px 80px rgba(0, 0, 0, 0.50);
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body.dark {
+    background: var(--bg);
+    color: var(--text);
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+body.dark .site-header {
+    background: rgba(7, 25, 29, 0.97);
+    border-color: #25474d;
+}
+
+
+/* Logo */
+
+body.dark .logo-text strong:first-child {
+    color: #30cbe3;
+}
+
+body.dark .logo-text strong:last-child {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+body.dark .nav-link {
+    color: #eaf8fa;
+}
+
+body.dark .nav-link:hover {
+    color: #062126;
+    background: #30cbe3;
+}
+
+body.dark .nav-link.active {
+    color: #062126 !important;
+    background: #30cbe3;
+}
+
+
+/* =========================================================
+   DROPDOWN
+   ========================================================= */
+
+body.dark .dropdown-menu {
+    background: #10282d;
+    border-color: #31545a;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+}
+
+body.dark .dropdown-menu a {
+    color: #c0d4d8;
+}
+
+body.dark .dropdown-menu a:hover {
+    color: #30cbe3;
+    background: #123b42;
+}
+
+
+/* =========================================================
+   HEADER ICONS
+   ========================================================= */
+
+body.dark .header-icon {
+    background: #10282d;
+    color: #30cbe3;
+    border-color: #41666c;
+}
+
+body.dark .header-icon:hover {
+    background: #30cbe3;
+    color: #062126;
+    border-color: #30cbe3;
+}
+
+
+/* Login */
+
+body.dark .login-btn {
+    background: #30cbe3;
+    color: #062126;
+}
+
+body.dark .login-btn:hover {
+    background: #ffffff;
+    color: #095763;
+}
+
+
+/* =========================================================
+   RTL BUTTON
+   ========================================================= */
+
+body.dark #rtlBtn {
+    background: #10282d;
+    color: #30cbe3;
+    border-color: #41666c;
+}
+
+body.dark #rtlBtn:hover {
+    background: #30cbe3;
+    color: #062126;
+    border-color: #30cbe3;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+body.dark .hero-section {
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(48, 203, 227, 0.14),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #07191d 0%,
+            #0c252a 100%
+        );
+}
+
+body.dark .hero-content h1 {
+    color: #f2fbfc;
+}
+
+body.dark .hero-content h1 span {
+    color: #30cbe3;
+}
+
+body.dark .hero-description {
+    color: #b8ced2;
+}
+
+body.dark .eyebrow {
+    color: #30cbe3;
+}
+
+body.dark .eyebrow-line {
+    background: #30cbe3;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+body.dark .button-primary {
+    background: #30cbe3;
+    color: #062126;
+}
+
+body.dark .button-primary:hover {
+    background: #ffffff;
+    color: #095763;
+}
+
+body.dark .button-outline {
+    background: transparent;
+    color: #eaf8fa;
+    border-color: #30cbe3;
+}
+
+body.dark .button-outline:hover {
+    background: #30cbe3;
+    color: #062126;
+}
+
+
+/* =========================================================
+   TRUST
+   ========================================================= */
+
+body.dark .trust-text strong {
+    color: #f2fbfc;
+}
+
+body.dark .trust-text span {
+    color: #b8ced2;
+}
+
+body.dark .trust-avatars span {
+    border-color: #07191d;
+}
+
+
+/* =========================================================
+   FLOATING CARDS
+   ========================================================= */
+
+body.dark .saving-card,
+body.dark .energy-card {
+    background: #10282d;
+    border-color: #31545a;
+    color: #f2fbfc;
+}
+
+body.dark .saving-card span,
+body.dark .saving-card small,
+body.dark .energy-top,
+body.dark .energy-card small {
+    color: #abc3c7;
+}
+
+body.dark .saving-card strong,
+body.dark .energy-card > strong {
+    color: #30cbe3;
+}
+
+body.dark .saving-icon {
+    background: #123b42;
+    color: #30cbe3;
+}
+
+body.dark .energy-bar {
+    background: #173c42;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+body.dark .section-label {
+    color: #30cbe3;
+    background: rgba(48, 203, 227, 0.12);
+}
+
+body.dark .section-header h2,
+body.dark .process-intro h2 {
+    color: #f2fbfc;
+}
+
+body.dark .section-header h2 span,
+body.dark .process-intro h2 span {
+    color: #30cbe3;
+}
+
+body.dark .section-header > p,
+body.dark .process-intro > p {
+    color: #b8ced2;
+}
+
+
+/* =========================================================
+   BENEFITS
+   ========================================================= */
+
+body.dark .benefits-section {
+    background: #0c2024;
+}
+
+body.dark .benefit-card {
+    background: #10282d;
+    border-color: #294b51;
+}
+
+body.dark .benefit-card h3 {
+    color: #f2fbfc;
+}
+
+body.dark .benefit-card p {
+    color: #b8ced2;
+}
+
+body.dark .benefit-number {
+    color: #91aaaf;
+}
+
+body.dark .benefit-icon {
+    background: #123b42;
+    color: #30cbe3;
+}
+
+body.dark .benefit-arrow {
+    color: #30cbe3;
+}
+
+
+/* Highlight card */
+
+body.dark .benefit-highlight {
+    background: #095763;
+    border-color: #30cbe3;
+}
+
+body.dark .benefit-highlight h3 {
+    color: #ffffff;
+}
+
+body.dark .benefit-highlight p {
+    color: rgba(255,255,255,0.82);
+}
+
+body.dark .benefit-highlight .benefit-icon {
+    background: rgba(48,203,227,0.20);
+    color: #30cbe3;
+}
+
+
+/* =========================================================
+   SOLAR SOLUTIONS
+   ========================================================= */
+
+body.dark .solar-solutions {
+    background: #07191d;
+    color: #f2fbfc;
+}
+
+body.dark .section-heading h2 {
+    color: #f2fbfc !important;
+}
+
+body.dark .section-heading h2 span {
+    color: #30cbe3;
+}
+
+body.dark .section-heading p {
+    color: #b8ced2;
+}
+
+body.dark .section-heading .section-label {
+    color: #30cbe3;
+    background: rgba(48,203,227,0.12);
+}
+
+
+/* Solution Cards */
+
+body.dark .solution-card {
+    background: #10282d;
+    border-color: #294b51;
+}
+
+body.dark .solution-card:hover {
+    border-color: #30cbe3;
+}
+
+body.dark .solution-content h3 {
+    color: #f2fbfc !important;
+}
+
+body.dark .solution-content p {
+    color: #b8ced2;
+}
+
+body.dark .solution-link {
+    color: #30cbe3;
+}
+
+body.dark .solution-link:hover {
+    color: #ffffff;
+}
+
+body.dark .solution-icon {
+    background: rgba(48,203,227,0.12);
+    color: #30cbe3;
+}
+
+
+/* Featured solution */
+
+body.dark .solution-card.featured {
+    background: linear-gradient(
+        135deg,
+        #095763,
+        #0b6977
+    );
+}
+
+body.dark .solution-card.featured h3 {
+    color: #ffffff !important;
+}
+
+body.dark .solution-card.featured p {
+    color: rgba(255,255,255,0.82);
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+body.dark .process-section {
+    background: #0c2024;
+}
+
+body.dark .process-line::before {
+    background: #294b51;
+}
+
+body.dark .step-circle {
+    background: #10282d;
+    color: #30cbe3;
+    border-color: #31545a;
+}
+
+body.dark .step-active {
+    background: #30cbe3;
+    color: #062126;
+    border-color: #30cbe3;
+}
+
+body.dark .process-step h3 {
+    color: #f2fbfc;
+}
+
+body.dark .process-step p {
+    color: #b8ced2;
+}
+
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+body.dark .projects-section {
+    background: #07191d;
+}
+
+body.dark .project-card {
+    background: #10282d;
+    border-color: #294b51;
+}
+
+body.dark .project-info h3 {
+    color: #f2fbfc;
+}
+
+body.dark .project-info span {
+    color: #abc3c7;
+}
+
+body.dark .project-info strong {
+    color: #30cbe3;
+}
+
+body.dark .text-link {
+    color: #30cbe3;
+}
+
+
+/* =========================================================
+   CONTACT SECTION
+   ========================================================= */
+
+body.dark .contact-section {
+    background: #07191d;
+}
+
+
+/* IMPORTANT:
+   Your original contact-box background is incomplete.
+   Give it a proper dark background.
+*/
+
+body.dark .contact-box {
+    background: linear-gradient(
+        135deg,
+        #095763 0%,
+        #0b6977 100%
+    );
+}
+
+
+/* Contact heading */
+
+body.dark .contact-content h2 {
+    color: #ffffff !important;
+}
+
+body.dark .contact-content h2 span {
+    color: #30cbe3;
+}
+
+body.dark .contact-content p {
+    color: rgba(255,255,255,0.78);
+}
+
+body.dark .contact-phone small {
+    color: rgba(255,255,255,0.65);
+}
+
+body.dark .contact-phone strong {
+    color: #ffffff !important;
+}
+
+body.dark .contact-phone-icon {
+    background: rgba(48,203,227,0.18);
+    color: #30cbe3;
+}
+
+
+/* Contact button */
+
+body.dark .button-white {
+    background: #30cbe3;
+    color: #062126;
+}
+
+body.dark .button-white:hover {
+    background: #ffffff;
+    color: #095763;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+body.dark .site-footer {
+    background: #061519;
+    color: #f2fbfc;
+    border-color: #25474d;
+}
+
+body.dark .footer-brand p {
+    color: #abc3c7;
+}
+
+body.dark .footer-logo-text span {
+    color: #30cbe3;
+}
+
+body.dark .footer-logo-text strong {
+    color: #30cbe3;
+}
+
+body.dark .footer-column h4 {
+    color: #30cbe3;
+}
+
+body.dark .footer-column a {
+    color: #9eb8bd;
+}
+
+body.dark .footer-column a:hover {
+    color: #30cbe3;
+}
+
+body.dark .footer-contact p {
+    color: #9eb8bd;
+}
+
+body.dark .footer-contact p i {
+    color: #30cbe3;
+}
+
+
+/* Social */
+
+body.dark .social-icons a {
+    background: #102f35;
+    color: #30cbe3;
+    border: 1px solid #294b51;
+}
+
+body.dark .social-icons a:hover {
+    background: #30cbe3;
+    color: #062126;
+}
+
+
+/* Footer bottom */
+
+body.dark .footer-bottom {
+    border-color: #294b51;
+}
+
+body.dark .footer-bottom p,
+body.dark .footer-bottom a {
+    color: #91aaaf;
+}
+
+body.dark .footer-bottom a:hover {
+    color: #30cbe3;
+}
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    body.dark .nav-menu {
+        background: #10282d;
+        border-color: #31545a;
+    }
+
+    body.dark .nav-link {
+        color: #eaf8fa;
+    }
+
+    body.dark .nav-link:hover,
+    body.dark .nav-link.active {
+        background: #30cbe3;
+        color: #062126 !important;
+    }
+
+    body.dark .dropdown-menu {
+        background: #0c252a;
+        border-color: #294b51;
+    }
+}
+
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+body.dark ::selection {
+    background: #30cbe3;
+    color: #062126;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+body.dark::-webkit-scrollbar-track {
+    background: #07191d;
+}
+
+body.dark::-webkit-scrollbar-thumb {
+    background: #095763;
+}
+
+body.dark::-webkit-scrollbar-thumb:hover {
+    background: #30cbe3;
 }

@@ -332,10 +332,10 @@ body.dark .site-header {
 .nav-link:hover,
 .nav-link.active {
 
-    color: var(--primary);
+    color: var(--black);
 
     background:
-        var(--primary-light);
+        var(--secondary);
 }
 body.dark .nav-link.active{
     color: white;
@@ -2624,4 +2624,570 @@ html[dir="rtl"] .dropdown-menu {
             repeat(2,1fr);
     }
 
+}
+/* =====================================================
+   DARK MODE — CLEAR & HIGH CONTRAST
+===================================================== */
+
+body.dark {
+    --primary: #30cbe3;
+    --secondary: #48d9ed;
+
+    --primary-light: #12383e;
+    --secondary-light: #103238;
+
+    --bg: #07181b;
+    --soft-bg: #0b2226;
+
+    --text: #f5fbfc;
+    --muted: #b7cacc;
+    --text-light: #c4d5d8;
+
+    --white: #102a2f;
+    --black: #ffffff;
+
+    --border: rgba(112, 220, 235, 0.22);
+
+    --shadow:
+        0 20px 60px rgba(0, 0, 0, 0.40);
+
+    --shadow-sm:
+        0 8px 25px rgba(0, 0, 0, 0.30);
+
+    --shadow-md:
+        0 18px 50px rgba(0, 0, 0, 0.42);
+
+    --shadow-lg:
+        0 30px 80px rgba(0, 0, 0, 0.55);
+}
+/* =====================================================
+   FINAL DARK MODE VISIBILITY FIX
+===================================================== */
+
+/* ---------- BODY ---------- */
+
+body.dark {
+    background: #07181b;
+    color: #f5fbfc;
+}
+
+
+/* ---------- HEADER ---------- */
+
+body.dark .site-header {
+    background: rgba(7, 24, 27, 0.96);
+    border-bottom-color: rgba(112, 220, 235, 0.20);
+}
+
+body.dark .site-header .logo-text strong:first-child {
+    color: #30cbe3;
+}
+
+body.dark .site-header .logo-text strong:last-child {
+    color: #ffffff;
+}
+
+body.dark .nav-link {
+    color: #eaf7f9;
+}
+
+body.dark .nav-link:hover,
+body.dark .nav-link.active {
+    background: #30cbe3;
+    color: #062328 !important;
+}
+
+body.dark .dropdown-menu {
+    background: #102a2f;
+    border-color: #31555b;
+    box-shadow: 0 20px 50px rgba(0,0,0,.45);
+}
+
+body.dark .dropdown-menu a {
+    color: #d5e5e8;
+}
+
+body.dark .dropdown-menu a:hover {
+    background: #12383e;
+    color: #48d9ed;
+}
+
+
+/* ---------- HEADER ICONS ---------- */
+
+body.dark .header-icon {
+    background: #102a2f;
+    color: #48d9ed;
+    border-color: #416970;
+}
+
+body.dark .header-icon:hover {
+    background: #30cbe3;
+    color: #062328;
+    border-color: #30cbe3;
+}
+
+
+/* ---------- RTL BUTTON ---------- */
+
+body.dark #rtlBtn {
+    background: #102a2f;
+    color: #48d9ed;
+    border-color: #416970;
+}
+
+body.dark #rtlBtn:hover {
+    background: #30cbe3;
+    color: #062328;
+    border-color: #30cbe3;
+}
+
+
+/* ---------- LOGIN ---------- */
+
+body.dark .login-btn {
+    background: #30cbe3;
+    color: #062328;
+}
+
+body.dark .login-btn:hover {
+    background: #48d9ed;
+    color: #062328;
+}
+
+
+/* ---------- MOBILE MENU ---------- */
+
+body.dark .mobile-menu-btn {
+    background: #30cbe3;
+    color: #062328;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+body.dark .hero {
+    background:
+        linear-gradient(
+            120deg,
+            #0b2226 0%,
+            #07181b 100%
+        );
+}
+
+body.dark .hero h1 {
+    color: #f5fbfc;
+}
+
+body.dark .hero h1 span {
+    color: #30cbe3;
+}
+
+body.dark .hero p {
+    color: #c4d5d8;
+}
+
+body.dark .eyebrow {
+    color: #48d9ed;
+}
+
+body.dark .eyebrow i {
+    color: #48d9ed;
+}
+
+body.dark .hero-bg {
+    background:
+        radial-gradient(
+            circle,
+            rgba(48,203,227,.16),
+            transparent 68%
+        );
+}
+
+
+/* ---------- HERO BUTTONS ---------- */
+
+body.dark .primary-btn {
+    background: #30cbe3;
+    color: #062328;
+}
+
+body.dark .primary-btn:hover {
+    background: #48d9ed;
+    color: #062328;
+}
+
+body.dark .secondary-btn {
+    background: transparent;
+    color: #f5fbfc;
+    border-color: #416970;
+}
+
+body.dark .secondary-btn:hover {
+    background: #12383e;
+    color: #48d9ed;
+    border-color: #30cbe3;
+}
+
+
+/* ---------- HERO STATS ---------- */
+
+body.dark .hero-stats {
+    border-top-color: rgba(112,220,235,.20);
+}
+
+body.dark .hero-stat strong {
+    color: #48d9ed;
+}
+
+body.dark .hero-stat span {
+    color: #b7cacc;
+}
+
+
+/* ---------- FLOATING CARD ---------- */
+
+body.dark .floating-card {
+    background: #102a2f;
+    border-color: #31555b;
+    color: #f5fbfc;
+    box-shadow: 0 20px 50px rgba(0,0,0,.45);
+}
+
+body.dark .floating-icon {
+    background: #30cbe3;
+    color: #062328;
+}
+
+body.dark .floating-card strong {
+    color: #f5fbfc;
+}
+
+body.dark .floating-card span {
+    color: #b7cacc;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+body.dark .services-section {
+    background: #07181b;
+}
+
+body.dark .section-heading h2 {
+    color: #f5fbfc;
+}
+
+body.dark .section-heading h2 span {
+    color: #30cbe3;
+}
+
+body.dark .section-heading > p {
+    color: #b7cacc;
+}
+
+
+/* ---------- SERVICE CARDS ---------- */
+
+body.dark .service-card {
+    background: #102a2f;
+    border-color: #294c52;
+}
+
+body.dark .service-card:hover {
+    border-color: #30cbe3;
+    box-shadow: 0 20px 50px rgba(0,0,0,.45);
+}
+
+body.dark .service-number {
+    background: rgba(7,24,27,.90);
+    color: #48d9ed;
+}
+
+body.dark .popular-badge {
+    background: #30cbe3;
+    color: #062328;
+}
+
+body.dark .service-icon {
+    background: rgba(48,203,227,.14);
+    color: #48d9ed;
+}
+
+body.dark .service-content h3 {
+    color: #f5fbfc;
+}
+
+body.dark .service-content > p {
+    color: #b7cacc;
+}
+
+body.dark .service-content li {
+    color: #e4f0f2;
+}
+
+body.dark .service-content li i {
+    color: #48d9ed;
+}
+
+body.dark .service-link {
+    color: #48d9ed;
+}
+
+body.dark .service-link:hover {
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   WHY SECTION
+===================================================== */
+
+body.dark .why-section {
+    background: #0b2226;
+}
+
+body.dark .why-content h2 {
+    color: #f5fbfc;
+}
+
+body.dark .why-content h2 span {
+    color: #30cbe3;
+}
+
+body.dark .why-content > p {
+    color: #c4d5d8;
+}
+
+body.dark .benefit h4 {
+    color: #f5fbfc;
+}
+
+body.dark .benefit p {
+    color: #b7cacc;
+}
+
+body.dark .benefit-icon {
+    background: #30cbe3;
+    color: #062328;
+}
+
+body.dark .experience-card {
+    background: #095763;
+    color: #ffffff;
+}
+
+body.dark .experience-card strong {
+    color: #48d9ed;
+}
+
+
+/* =====================================================
+   PROCESS
+===================================================== */
+
+body.dark .process-section {
+    background: #07181b;
+}
+
+body.dark .process-card {
+    background: #102a2f;
+    border-color: #294c52;
+}
+
+body.dark .process-card:hover {
+    border-color: #30cbe3;
+    background: #123136;
+}
+
+body.dark .process-number {
+    color: #48d9ed;
+}
+
+body.dark .process-icon {
+    background: #30cbe3;
+    color: #062328;
+}
+
+body.dark .process-card h3 {
+    color: #f5fbfc;
+}
+
+body.dark .process-card p {
+    color: #b7cacc;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+body.dark .cta-section {
+    background: #07181b;
+}
+
+body.dark .cta-container {
+    background: #102a2f;
+    color: #f5fbfc;
+    border-color: #30cbe3;
+}
+
+body.dark .cta-content {
+    background: #102a2f;
+}
+
+body.dark .cta-content h2 {
+    color: #f5fbfc;
+}
+
+body.dark .cta-content h2 span {
+    color: #30cbe3;
+}
+
+body.dark .cta-content p {
+    color: #c4d5d8;
+}
+
+body.dark .cta-content .section-label {
+    color: #48d9ed;
+}
+
+
+/* ---------- CTA BUTTONS ---------- */
+
+body.dark .white-btn {
+    background: #30cbe3;
+    color: #062328;
+    border-color: #30cbe3;
+}
+
+body.dark .white-btn:hover {
+    background: #48d9ed;
+    color: #062328;
+}
+
+body.dark .outline-btn {
+    background: transparent;
+    color: #f5fbfc;
+    border-color: #648187;
+}
+
+body.dark .outline-btn:hover {
+    background: #12383e;
+    color: #48d9ed;
+    border-color: #30cbe3;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+body.dark .footer {
+    background: #061519;
+    color: #f5fbfc;
+    border-top-color: #25474d;
+}
+
+body.dark .footer-logo-text {
+    color: #f5fbfc;
+}
+
+body.dark .footer-logo-text span {
+    color: #30cbe3;
+}
+
+body.dark .footer-logo-text strong {
+    color: #48d9ed;
+}
+
+body.dark .footer-brand p {
+    color: #aebfc3;
+}
+
+body.dark .footer-logo-icon {
+    color: #48d9ed;
+    border-color: #48d9ed;
+}
+
+body.dark .social-links a {
+    background: #102a2f;
+    border-color: #31555b;
+    color: #48d9ed;
+}
+
+body.dark .social-links a:hover {
+    background: #30cbe3;
+    color: #062328;
+}
+
+body.dark .footer-column h4 {
+    color: #f5fbfc;
+}
+
+body.dark .footer-column a {
+    color: #b7cacc;
+}
+
+body.dark .footer-column a:hover {
+    color: #48d9ed;
+}
+
+body.dark .footer-column i {
+    color: #48d9ed;
+}
+
+body.dark .footer-bottom {
+    border-top-color: #25474d;
+}
+
+body.dark .footer-bottom p,
+body.dark .footer-bottom a {
+    color: #91aaaf;
+}
+
+body.dark .footer-bottom a:hover {
+    color: #48d9ed;
+}
+
+
+/* =====================================================
+   MOBILE DARK MODE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    body.dark .nav-menu {
+        background: #102a2f;
+        border-color: #31555b;
+    }
+
+    body.dark .nav-link {
+        color: #f5fbfc;
+    }
+
+    body.dark .nav-link:hover,
+    body.dark .nav-link.active {
+        background: #30cbe3;
+        color: #062328 !important;
+    }
+
+    body.dark .dropdown-menu {
+        background: #0b2226;
+        border-color: #31555b;
+    }
+}
+
+
+/* =====================================================
+   TEXT SELECTION
+===================================================== */
+
+body.dark ::selection {
+    background: #30cbe3;
+    color: #062328;
 }
