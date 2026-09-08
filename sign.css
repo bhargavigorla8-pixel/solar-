@@ -105,19 +105,22 @@ a {
    SIGN UP PAGE - CENTER
 ========================================================= */
 
-.signup-page {
-    min-height: 100vh;
+/* =========================================================
+   SIGN UP PAGE - FIXED / NO SCROLL
+========================================================= */
 
+.signup-page {
     width: 100%;
+    height: 100vh;
 
     position: fixed;
+    inset: 0;
 
     display: flex;
-
     justify-content: center;
     align-items: center;
 
-    padding: 40px 20px;
+    padding: 20px;
 
     background:
         radial-gradient(
@@ -131,18 +134,20 @@ a {
             transparent 28%
         ),
         var(--page-bg);
+
+    overflow: hidden;
 }
 
 
 /* =========================================================
-   CENTERED STICKY SIGNUP CARD
+   FIXED SIGNUP CARD - NO SCROLL
 ========================================================= */
 
 .signup-card {
     width: 100%;
-    max-width: 475px;
+    max-width: 595px;
 
-    padding: 32px 34px 28px;
+    padding: 25px 42px 20px;
 
     background: var(--card-bg);
 
@@ -152,19 +157,21 @@ a {
 
     box-shadow: var(--shadow);
 
-    /*
-       Sticky card
-    */
     position: fixed;
 
-    top: 30px;
+    top: 50%;
+    left: 50%;
 
-    margin-left: auto;
-    margin-right: auto;
+    transform: translate(-50%, -50%);
 
     z-index: 10;
 
-    align-self: center;
+    /*
+       Card must fit inside screen
+    */
+    max-height: calc(100vh - 30px);
+
+    overflow: hidden;
 }
 
 
@@ -255,7 +262,11 @@ a {
 
     transition: var(--transition);
 }
-
+body.dark .control-btn{
+    color: white;
+    background: black;
+    border-color: white;
+}
 
 .control-btn:hover {
 

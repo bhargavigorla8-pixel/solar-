@@ -325,7 +325,9 @@ button {
     background:
         var(--primary-light);
 }
-
+body.dark-mode .nav-link.active{
+    color: white;
+}
 
 .nav-link i {
 
@@ -3439,4 +3441,702 @@ html[dir="rtl"]
         display: none;
     }
 
+}
+/* =========================================================
+   SOLARPRO — DARK MODE VISIBILITY FIX
+   Add this at the VERY END of your CSS
+========================================================= */
+
+html.dark body,
+body.dark {
+    background: #061316 !important;
+    color: #f5fdff !important;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+body.dark .main-content,
+body.dark .dashboard-content,
+body.dark main {
+    background: #061316 !important;
+    color: #f5fdff !important;
+}
+
+
+/* =========================================================
+   STICKY LEFT SIDEBAR
+========================================================= */
+
+body.dark .sidebar {
+    background: #0a2025 !important;
+    border-right: 1px solid #24515a !important;
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.35);
+}
+
+body.dark .sidebar * {
+    border-color: #24515a;
+}
+
+body.dark .sidebar .menu-title {
+    color: #7faeb5 !important;
+}
+
+body.dark .sidebar a,
+body.dark .sidebar .menu-item {
+    color: #c9e0e4 !important;
+}
+
+body.dark .sidebar a:hover,
+body.dark .sidebar .menu-item:hover {
+    background: #123d45 !important;
+    color: #ffffff !important;
+}
+
+body.dark .sidebar a.active,
+body.dark .sidebar .menu-item.active {
+    background: #0a6876 !important;
+    color: #ffffff !important;
+    box-shadow: 0 5px 18px rgba(48, 203, 227, 0.18);
+}
+
+body.dark .sidebar i {
+    color: #45d9ef !important;
+}
+
+body.dark .sidebar a.active i,
+body.dark .sidebar .menu-item.active i {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+body.dark .site-header,
+body.dark header {
+    background: #081b20 !important;
+    border-bottom: 1px solid #24515a !important;
+}
+
+body.dark .site-header * {
+    border-color: #24515a;
+}
+
+body.dark .logo,
+body.dark .logo-text {
+    color: #ffffff !important;
+}
+
+body.dark .logo span,
+body.dark .logo strong {
+    color: #45d9ef !important;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+body.dark .nav-link {
+    color: #c9e0e4 !important;
+}
+
+body.dark .nav-link:hover {
+    color: #ffffff !important;
+    background: #123d45 !important;
+}
+
+body.dark .nav-link.active {
+    color: #ffffff !important;
+    background: #0a6876 !important;
+}
+
+
+/* =========================================================
+   LTR / RTL BUTTON
+========================================================= */
+
+body.dark #rtlBtn,
+body.dark .rtl-btn,
+body.dark .direction-btn {
+    background: #102d33 !important;
+    color: #45d9ef !important;
+    border: 1px solid #39717a !important;
+}
+
+body.dark #rtlBtn:hover,
+body.dark .rtl-btn:hover,
+body.dark .direction-btn:hover {
+    background: #0a6876 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   DARK MODE BUTTON
+========================================================= */
+
+body.dark #themeToggle,
+body.dark .theme-toggle,
+body.dark .dark-mode-btn {
+    background: #102d33 !important;
+    color: #ffffff !important;
+    border: 1px solid #39717a !important;
+}
+
+body.dark #themeToggle:hover,
+body.dark .theme-toggle:hover,
+body.dark .dark-mode-btn:hover {
+    background: #0a6876 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   ALL DASHBOARD CARDS
+========================================================= */
+
+body.dark .card,
+body.dark .dashboard-card,
+body.dark .stat-card,
+body.dark .chart-card,
+body.dark .activity-card,
+body.dark .table-card,
+body.dark .project-card,
+body.dark .service-card {
+    background: #102b31 !important;
+    color: #f5fdff !important;
+    border: 1px solid #2d5961 !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+body.dark .card:hover,
+body.dark .dashboard-card:hover,
+body.dark .stat-card:hover,
+body.dark .project-card:hover,
+body.dark .service-card:hover {
+    border-color: #45d9ef !important;
+}
+
+
+/* =========================================================
+   CARD HEADINGS
+========================================================= */
+
+body.dark .card h1,
+body.dark .card h2,
+body.dark .card h3,
+body.dark .card h4,
+body.dark .card h5,
+body.dark .dashboard-card h1,
+body.dark .dashboard-card h2,
+body.dark .dashboard-card h3,
+body.dark .dashboard-card h4,
+body.dark .stat-card h1,
+body.dark .stat-card h2,
+body.dark .stat-card h3,
+body.dark .stat-card h4 {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+body.dark .card p,
+body.dark .dashboard-card p,
+body.dark .stat-card p {
+    color: #b9d0d4 !important;
+}
+
+body.dark small {
+    color: #91b1b6 !important;
+}
+
+
+/* =========================================================
+   STAT NUMBERS
+========================================================= */
+
+body.dark .stat-number,
+body.dark .stat-value,
+body.dark .amount,
+body.dark .price,
+body.dark .count {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   ICON BOXES
+========================================================= */
+
+body.dark .icon-box,
+body.dark .stat-icon,
+body.dark .feature-icon,
+body.dark .icon {
+    background: #16434b !important;
+    color: #45d9ef !important;
+    border: 1px solid #39717a !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+body.dark .btn-primary,
+body.dark .primary-btn {
+    background: #0a6876 !important;
+    color: #ffffff !important;
+    border: 1px solid #15899a !important;
+}
+
+body.dark .btn-primary:hover,
+body.dark .primary-btn:hover {
+    background: #30cbe3 !important;
+    color: #061316 !important;
+}
+
+
+body.dark .btn-secondary,
+body.dark .secondary-btn {
+    background: #163b42 !important;
+    color: #ffffff !important;
+    border: 1px solid #39717a !important;
+}
+
+body.dark .btn-secondary:hover,
+body.dark .secondary-btn:hover {
+    background: #205963 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   OUTLINE BUTTONS
+========================================================= */
+
+body.dark .btn-outline,
+body.dark .outline-btn {
+    background: transparent !important;
+    color: #45d9ef !important;
+    border: 1px solid #45d9ef !important;
+}
+
+body.dark .btn-outline:hover,
+body.dark .outline-btn:hover {
+    background: #0a6876 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+body.dark input,
+body.dark select,
+body.dark textarea {
+    background: #091e23 !important;
+    color: #ffffff !important;
+    border: 1px solid #39666e !important;
+}
+
+body.dark input:focus,
+body.dark select:focus,
+body.dark textarea:focus {
+    background: #0d252b !important;
+    color: #ffffff !important;
+    border-color: #45d9ef !important;
+    box-shadow: 0 0 0 3px rgba(69, 217, 239, 0.12) !important;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+    color: #78979c !important;
+}
+
+
+/* =========================================================
+   SELECT DROPDOWN
+========================================================= */
+
+body.dark select option {
+    background: #102b31 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+body.dark table {
+    background: #102b31 !important;
+    color: #ffffff !important;
+    border-color: #2d5961 !important;
+}
+
+body.dark thead,
+body.dark th {
+    background: #163e45 !important;
+    color: #ffffff !important;
+    border-color: #39717a !important;
+}
+
+body.dark td {
+    color: #c7dce0 !important;
+    border-color: #28535b !important;
+}
+
+body.dark tbody tr:hover {
+    background: #14383f !important;
+}
+
+body.dark tbody tr:hover td {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   TABLE ACTION BUTTONS
+========================================================= */
+
+body.dark .table-action,
+body.dark .action-btn {
+    background: #163e45 !important;
+    color: #45d9ef !important;
+    border: 1px solid #39717a !important;
+}
+
+body.dark .table-action:hover,
+body.dark .action-btn:hover {
+    background: #0a6876 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   STATUS BADGES
+========================================================= */
+
+body.dark .status,
+body.dark .badge {
+    border: 1px solid transparent;
+}
+
+
+/* Green */
+body.dark .status.completed,
+body.dark .status.success,
+body.dark .badge-success {
+    background: rgba(67, 220, 148, 0.16) !important;
+    color: #58e5a5 !important;
+    border-color: rgba(88, 229, 165, 0.35) !important;
+}
+
+
+/* Yellow */
+body.dark .status.pending,
+body.dark .badge-warning {
+    background: rgba(255, 207, 90, 0.16) !important;
+    color: #ffd85c !important;
+    border-color: rgba(255, 216, 92, 0.35) !important;
+}
+
+
+/* Red */
+body.dark .status.cancelled,
+body.dark .status.danger,
+body.dark .badge-danger {
+    background: rgba(255, 92, 106, 0.16) !important;
+    color: #ff8790 !important;
+    border-color: rgba(255, 135, 144, 0.35) !important;
+}
+
+
+/* Blue */
+body.dark .status.processing,
+body.dark .badge-info {
+    background: rgba(69, 217, 239, 0.15) !important;
+    color: #45d9ef !important;
+    border-color: rgba(69, 217, 239, 0.35) !important;
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+body.dark .progress,
+body.dark .progress-bg {
+    background: #1a3d44 !important;
+}
+
+body.dark .progress-bar {
+    background: linear-gradient(
+        90deg,
+        #095763,
+        #30cbe3
+    ) !important;
+}
+
+
+/* =========================================================
+   CHART CONTAINER
+========================================================= */
+
+body.dark .chart-container,
+body.dark .chart-box {
+    background: #102b31 !important;
+    border: 1px solid #2d5961 !important;
+}
+
+
+/* Chart text */
+body.dark .chart-container text,
+body.dark .chart-box text {
+    fill: #c9e0e4 !important;
+}
+
+
+/* =========================================================
+   ACTIVITY LIST
+========================================================= */
+
+body.dark .activity-item {
+    border-bottom: 1px solid #28535b !important;
+}
+
+body.dark .activity-item:hover {
+    background: #14383f !important;
+}
+
+body.dark .activity-title {
+    color: #ffffff !important;
+}
+
+body.dark .activity-time {
+    color: #91b1b6 !important;
+}
+
+
+/* =========================================================
+   DIVIDERS
+========================================================= */
+
+body.dark hr {
+    border: 0 !important;
+    border-top: 1px solid #28535b !important;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+body.dark a {
+    color: #45d9ef;
+}
+
+body.dark a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+body.dark .modal,
+body.dark .modal-content {
+    background: #102b31 !important;
+    color: #ffffff !important;
+    border: 1px solid #39717a !important;
+}
+
+body.dark .modal-header,
+body.dark .modal-footer {
+    border-color: #28535b !important;
+}
+
+
+/* =========================================================
+   DROPDOWN MENU
+========================================================= */
+
+body.dark .dropdown-menu {
+    background: #102b31 !important;
+    border: 1px solid #39717a !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+}
+
+body.dark .dropdown-menu a {
+    color: #c9e0e4 !important;
+}
+
+body.dark .dropdown-menu a:hover {
+    background: #143e45 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   NOTIFICATIONS
+========================================================= */
+
+body.dark .notification-panel {
+    background: #102b31 !important;
+    border: 1px solid #39717a !important;
+}
+
+body.dark .notification-item {
+    border-bottom: 1px solid #28535b !important;
+}
+
+body.dark .notification-item:hover {
+    background: #14383f !important;
+}
+
+body.dark .notification-item strong {
+    color: #ffffff !important;
+}
+
+body.dark .notification-item span {
+    color: #a8c3c7 !important;
+}
+
+
+/* =========================================================
+   SEARCH BOX
+========================================================= */
+
+body.dark .search-box,
+body.dark .search-container {
+    background: #091e23 !important;
+    border: 1px solid #39666e !important;
+}
+
+body.dark .search-box input,
+body.dark .search-container input {
+    background: transparent !important;
+    border: 0 !important;
+    color: #ffffff !important;
+}
+
+body.dark .search-box i,
+body.dark .search-container i {
+    color: #45d9ef !important;
+}
+
+
+/* =========================================================
+   MOBILE SIDEBAR
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body.dark .sidebar {
+        background: #0a2025 !important;
+        box-shadow: 10px 0 35px rgba(0, 0, 0, 0.5);
+    }
+
+    body.dark .sidebar a {
+        color: #c9e0e4 !important;
+    }
+
+    body.dark .sidebar a.active {
+        background: #0a6876 !important;
+        color: #ffffff !important;
+    }
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+body.dark::-webkit-scrollbar {
+    width: 9px;
+}
+
+body.dark::-webkit-scrollbar-track {
+    background: #061316;
+}
+
+body.dark::-webkit-scrollbar-thumb {
+    background: #28535b;
+    border-radius: 10px;
+}
+
+body.dark::-webkit-scrollbar-thumb:hover {
+    background: #30cbe3;
+}
+
+
+/* =========================================================
+   FORCE VISIBILITY FOR COMMON TEXT CLASSES
+========================================================= */
+
+body.dark .text-dark,
+body.dark .text-black {
+    color: #ffffff !important;
+}
+
+body.dark .text-muted {
+    color: #91b1b6 !important;
+}
+
+body.dark .text-secondary {
+    color: #b9d0d4 !important;
+}
+
+
+/* =========================================================
+   FIX INLINE LIGHT-MODE COLORS
+========================================================= */
+
+body.dark [style*="color: #000"],
+body.dark [style*="color:#000"],
+body.dark [style*="color: black"] {
+    color: #ffffff !important;
+}
+
+body.dark [style*="background: #fff"],
+body.dark [style*="background:#fff"],
+body.dark [style*="background: white"],
+body.dark [style*="background-color: #fff"],
+body.dark [style*="background-color:#fff"],
+body.dark [style*="background-color: white"] {
+    background: #102b31 !important;
+}
+
+
+/* =========================================================
+   IMPORTANT: ICON VISIBILITY
+========================================================= */
+
+body.dark .fa,
+body.dark .fas,
+body.dark .far,
+body.dark .fab,
+body.dark i {
+    color: inherit;
+}
+
+body.dark .sidebar i,
+body.dark .stat-icon i,
+body.dark .icon-box i {
+    color: #45d9ef !important;
 }

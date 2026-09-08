@@ -2,57 +2,49 @@
 <html lang="en" dir="ltr">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="images/logo.png"  href="images/logo.png">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>Solar Tech| Solar Energy Solutions</title>
-
-    <link rel="stylesheet" href="dashboard.css">
+    <title>SolarTech| Solar Installation Dashboard</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
-        rel="stylesheet"
-    >
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="dashboard.css">
+
 </head>
+
 
 <body>
 
-    <!-- =====================================================
-         MOBILE OVERLAY
-    ====================================================== -->
 
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
 
-
-    <!-- =====================================================
-         DASHBOARD WRAPPER
-    ====================================================== -->
-
-    <div class="dashboard-wrapper">
+<aside class="sidebar" id="sidebar">
 
 
-        <!-- =================================================
-             SIDEBAR
-        ================================================== -->
+    <!-- BRAND -->
 
-        <aside class="sidebar" id="sidebar">
-
-            <!-- LOGO -->
-
-           
-            <div class="brand">
+     <div class="brand">
 
                 <div class="brand-logo">
                     <a href="index.html" class="logo">
@@ -75,301 +67,350 @@
             </div>
 
 
-            <!-- NAVIGATION -->
+    <!-- SIDEBAR MENU -->
 
-            <nav class="sidebar-nav">
-
-                <div class="nav-section">
-
-                    <span class="nav-title">
-                        MAIN MENU
-                    </span>
+    <div class="sidebar-scroll">
 
 
-                    <a href="#dashboard" class="nav-link active">
-
-                        <i class="fa-solid fa-grid-2"></i>
-
-                        <span>
-                            Dashboard
-                        </span>
-
-                    </a>
+        <div class="menu-title">
+            MAIN MENU
+        </div>
 
 
-                    <a href="#orders" class="nav-link">
-
-                        <i class="fa-solid fa-file-invoice"></i>
-
-                        <span>
-                            Orders
-                        </span>
-
-                        <b class="nav-count">
-                            12
-                        </b>
-
-                    </a>
+        <nav class="menu">
 
 
-                    <a href="#installations" class="nav-link">
+            <a href="#dashboard"
+               class="menu-link active"
+               data-page="dashboard">
 
-                        <i class="fa-solid fa-solar-panel"></i>
+                <i class="fa-solid fa-grip"></i>
 
-                        <span>
-                            Installations
-                        </span>
+                <span>Dashboard</span>
 
-                    </a>
-
-
-                    <a href="#systems" class="nav-link">
-
-                        <i class="fa-solid fa-bolt"></i>
-
-                        <span>
-                            Solar Systems
-                        </span>
-
-                    </a>
+            </a>
 
 
-                    <a href="#customers" class="nav-link">
+            <a href="#orders"
+               class="menu-link"
+               data-page="orders">
 
-                        <i class="fa-solid fa-users"></i>
+                <i class="fa-solid fa-file-invoice"></i>
 
-                        <span>
-                            Customers
-                        </span>
+                <span>Orders</span>
 
-                    </a>
+                <b>12</b>
 
-                </div>
-
-
-                <div class="nav-section">
-
-                    <span class="nav-title">
-                        MANAGEMENT
-                    </span>
+            </a>
 
 
-                    <a href="#notifications" class="nav-link">
+            <a href="#installations"
+               class="menu-link"
+               data-page="installations">
 
-                        <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-solar-panel"></i>
 
-                        <span>
-                            Notifications
-                        </span>
+                <span>Installations</span>
 
-                        <b class="nav-count">
-                            4
-                        </b>
+                <b>8</b>
 
-                    </a>
+            </a>
 
 
-                    <a href="#analytics" class="nav-link">
+            <a href="#projects"
+               class="menu-link"
+               data-page="projects">
 
-                        <i class="fa-solid fa-chart-line"></i>
+                <i class="fa-solid fa-building"></i>
 
-                        <span>
-                            Analytics
-                        </span>
+                <span>Solar Projects</span>
 
-                    </a>
-
-
-                    <a href="#settings" class="nav-link">
-
-                        <i class="fa-solid fa-gear"></i>
-
-                        <span>
-                            Settings
-                        </span>
-
-                    </a>
-
-                </div>
-
-            </nav>
+            </a>
 
 
-            <!-- SIDEBAR BOTTOM -->
+            <a href="#customers"
+               class="menu-link"
+               data-page="customers">
 
-            <div class="sidebar-bottom">
+                <i class="fa-solid fa-users"></i>
 
-                <a href="#" class="logout-link" id="logoutButton">
+                <span>Customers</span>
 
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
 
-                    <span>
-                        Logout
-                    </span>
 
-                </a>
+            <a href="#pricing"
+               class="menu-link"
+               data-page="pricing">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                <span>Pricing</span>
+
+            </a>
+
+
+        </nav>
+
+
+        <div class="menu-title management-title">
+            MANAGEMENT
+        </div>
+
+
+        <nav class="menu">
+
+
+            <a href="#notifications"
+               class="menu-link"
+               data-page="notifications">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>Notifications</span>
+
+                <b>4</b>
+
+            </a>
+
+
+            <a href="#analytics"
+               class="menu-link"
+               data-page="analytics">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <span>Analytics</span>
+
+            </a>
+
+
+            <a href="#settings"
+               class="menu-link"
+               data-page="settings">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>Settings</span>
+
+            </a>
+
+
+        </nav>
+
+
+    </div>
+
+
+    <!-- LOGOUT -->
+
+    <div class="sidebar-bottom">
+
+        <a href="#logout"
+           class="menu-link logout-link"
+           data-page="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+    </div>
+
+
+</aside>
+
+
+
+<!-- MOBILE OVERLAY -->
+
+<div class="sidebar-overlay"
+     id="sidebarOverlay">
+</div>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- TOP HEADER -->
+
+    <header class="topbar">
+
+
+        <div class="topbar-left">
+
+
+            <button class="mobile-menu"
+                    id="mobileMenu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div>
+
+                <span class="company-label">
+                    SOLARPRO ENERGY
+                </span>
+
+                <h1 id="pageTitle">
+                    Dashboard
+                </h1>
 
             </div>
 
-        </aside>
+
+        </div>
+
+
+        <div class="topbar-right">
+
+
+            <!-- SINGLE LTR / RTL BUTTON -->
+
+            <button class="top-action"
+                    id="directionToggle"
+                    title="Change direction">
+
+                LTR
+
+            </button>
+
+
+            <!-- DARK MODE -->
+
+            <button class="top-action"
+                    id="themeToggle"
+                    title="Toggle theme">
+
+                <i class="fa-regular fa-moon"></i>
+
+            </button>
+
+
+            <!-- NOTIFICATION -->
+
+            <button class="top-action notification-button">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>4</span>
+
+            </button>
+
+
+            <!-- PROFILE -->
+
+            <div class="profile">
+
+                <div class="profile-avatar">
+                    SP
+                </div>
+
+                <div class="profile-details">
+
+                    <strong>
+                        Solar Admin
+                    </strong>
+
+                    <small>
+                        Administrator
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTENT
+    ====================================================== -->
+
+    <div class="content">
+
 
 
         <!-- =================================================
-             MAIN CONTENT
+             DASHBOARD
         ================================================== -->
 
-        <main class="main-content">
+        <section class="page-section active-page"
+                 id="page-dashboard">
 
 
-            <!-- =============================================
-                 TOP HEADER
-            ============================================== -->
+            <!-- WELCOME -->
 
-            <header class="top-header">
+            <div class="welcome-section">
 
-                <div class="header-left">
 
-                    <button
-                        class="mobile-menu-btn"
-                        id="mobileMenuButton"
-                    >
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
+                <div>
 
-                    <div>
+                    <span class="eyebrow">
+                        OVERVIEW
+                    </span>
 
-                        <span class="header-label">
-                            SolarTech Energy
-                        </span>
+                    <h2>
+                        Powering a brighter future
+                    </h2>
 
-                        <h1>
-                            Dashboard
-                        </h1>
-
-                    </div>
+                    <p>
+                        Monitor your solar installations,
+                        customers and clean energy production.
+                    </p>
 
                 </div>
 
 
-                <div class="header-right">
+                <button class="primary-button"
+                        onclick="openPage('installations')">
 
-                    <!-- LTR RTL -->
+                    Manage Installations
 
-                    <button
-                        class="header-control"
-                        id="directionToggle"
-                    >
-                        RTL
-                    </button>
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
 
 
-                    <!-- THEME -->
-
-                    <button
-                        class="header-control"
-                        id="themeToggle"
-                        aria-label="Toggle theme"
-                    >
-                        <i class="fa-regular fa-moon"></i>
-                    </button>
+            </div>
 
 
-                    <!-- NOTIFICATION -->
 
-                    <button
-                        class="header-control notification-button"
-                        id="notificationButton"
-                    >
+            <!-- STAT CARDS -->
 
-                        <i class="fa-regular fa-bell"></i>
-
-                        <span>
-                            4
-                        </span>
-
-                    </button>
+            <div class="stats-grid">
 
 
-                    <!-- PROFILE -->
+                <!-- REVENUE -->
 
-                    <div class="profile">
+                <div class="stat-card">
 
-                        <div class="profile-avatar">
-                            ST
-                        </div>
+                    <div class="stat-card-top">
 
-                        <div class="profile-info">
+                        <div>
+
+                            <span>
+                                TOTAL REVENUE
+                            </span>
 
                             <strong>
-                                SolarTech Admin
+                                ₹8,45,800
                             </strong>
 
-                            <small>
-                                Administrator
-                            </small>
-
                         </div>
-
-                        <i class="fa-solid fa-chevron-down profile-arrow"></i>
-
-                    </div>
-
-                </div>
-
-            </header>
-
-
-            <!-- =============================================
-                 DASHBOARD CONTENT
-            ============================================== -->
-
-            <div class="content-area" id="dashboard">
-
-
-                <!-- WELCOME -->
-
-                <section class="welcome-section">
-
-                    <div>
-
-                        <span class="content-label">
-                            OVERVIEW
-                        </span>
-
-                        <h2>
-                            Welcome back,
-                            <span>Solar Manager.</span>
-                        </h2>
-
-                        <p>
-                            Here's what's happening with your
-                            solar installations today.
-                        </p>
-
-                    </div>
-
-
-                    <button class="primary-action">
-
-                        View Installations
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </section>
-
-
-                <!-- =========================================
-                     STATS
-                ========================================== -->
-
-                <section class="stats-grid">
-
-
-                    <!-- REVENUE -->
-
-                    <article class="stat-card">
 
                         <div class="stat-icon">
 
@@ -377,28 +418,41 @@
 
                         </div>
 
-                        <div class="stat-content">
+                    </div>
+
+                    <div class="stat-growth positive">
+
+                        <i class="fa-solid fa-arrow-up"></i>
+
+                        18.6%
+
+                        <span>
+                            this month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- INSTALLATIONS -->
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div>
 
                             <span>
-                                Total Revenue
+                                ACTIVE INSTALLATIONS
                             </span>
 
                             <strong>
-                                ₹2,45,800
+                                143
                             </strong>
 
-                            <small class="positive">
-                                +18.6% this month
-                            </small>
-
                         </div>
-
-                    </article>
-
-
-                    <!-- INSTALLATIONS -->
-
-                    <article class="stat-card">
 
                         <div class="stat-icon">
 
@@ -406,28 +460,41 @@
 
                         </div>
 
-                        <div class="stat-content">
+                    </div>
+
+                    <div class="stat-growth positive">
+
+                        <i class="fa-solid fa-arrow-up"></i>
+
+                        12.5%
+
+                        <span>
+                            this month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ENERGY -->
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div>
 
                             <span>
-                                Installations
+                                ENERGY GENERATED
                             </span>
 
                             <strong>
-                                143
+                                86.4 MWh
                             </strong>
 
-                            <small class="positive">
-                                +12.5% this month
-                            </small>
-
                         </div>
-
-                    </article>
-
-
-                    <!-- ENERGY -->
-
-                    <article class="stat-card">
 
                         <div class="stat-icon">
 
@@ -435,28 +502,41 @@
 
                         </div>
 
-                        <div class="stat-content">
+                    </div>
+
+                    <div class="stat-growth positive">
+
+                        <i class="fa-solid fa-arrow-up"></i>
+
+                        8.2%
+
+                        <span>
+                            this month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CUSTOMERS -->
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div>
 
                             <span>
-                                Energy Generated
+                                TOTAL CUSTOMERS
                             </span>
 
                             <strong>
-                                86.4 MWh
+                                324
                             </strong>
 
-                            <small class="positive">
-                                +8.4% this month
-                            </small>
-
                         </div>
-
-                    </article>
-
-
-                    <!-- CUSTOMERS -->
-
-                    <article class="stat-card">
 
                         <div class="stat-icon">
 
@@ -464,1220 +544,2693 @@
 
                         </div>
 
-                        <div class="stat-content">
+                    </div>
 
-                            <span>
-                                Customers
-                            </span>
+                    <div class="stat-growth positive">
 
-                            <strong>
-                                324
-                            </strong>
+                        <i class="fa-solid fa-arrow-up"></i>
 
-                            <small class="positive">
-                                +24 new this month
-                            </small>
+                        24
+
+                        <span>
+                            new this month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- CHART AREA -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- ENERGY PRODUCTION -->
+
+                <div class="panel energy-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h3>
+                                Energy Production
+                            </h3>
+
+                            <p>
+                                Monthly clean energy generated
+                            </p>
 
                         </div>
 
-                    </article>
 
-                </section>
+                        <select>
+
+                            <option>
+                                Last 6 Months
+                            </option>
+
+                            <option>
+                                This Year
+                            </option>
+
+                            <option>
+                                Last Year
+                            </option>
+
+                        </select>
+
+                    </div>
 
 
-                <!-- =========================================
-                     CHART + SYSTEM STATUS
-                ========================================== -->
+                    <div class="energy-value">
 
-                <section class="dashboard-grid">
+                        86.4
+
+                        <small>
+                            MWh
+                        </small>
+
+                    </div>
 
 
-                    <!-- ENERGY CHART -->
+                    <div class="energy-change">
 
-                    <article
-                        class="dashboard-card chart-card"
-                        id="analytics"
-                    >
+                        <i class="fa-solid fa-arrow-up"></i>
 
-                        <div class="card-header">
+                        8.2% compared to last month
 
-                            <div>
+                    </div>
 
-                                <h3>
-                                    Energy Overview
-                                </h3>
 
-                                <p>
-                                    Monthly energy generation
-                                </p>
+                    <div class="chart-area">
+
+
+                        <div class="chart-grid-line"
+                             style="bottom:25%"></div>
+
+                        <div class="chart-grid-line"
+                             style="bottom:50%"></div>
+
+                        <div class="chart-grid-line"
+                             style="bottom:75%"></div>
+
+
+                        <div class="chart-bars">
+
+
+                            <div class="chart-column"
+                                 style="height:42%">
+
+                                <span></span>
+
+                                <small>Mar</small>
 
                             </div>
 
-                            <span class="growth-badge">
-                                +18.6%
-                            </span>
 
-                        </div>
+                            <div class="chart-column"
+                                 style="height:53%">
 
+                                <span></span>
 
-                        <div class="chart-total">
-
-                            <strong>
-                                86.4 MWh
-                            </strong>
-
-                            <span>
-                                Total generated
-                            </span>
-
-                        </div>
-
-
-                        <div class="energy-chart">
-
-                            <div class="y-axis">
-
-                                <span>100</span>
-                                <span>80</span>
-                                <span>60</span>
-                                <span>40</span>
-                                <span>20</span>
-                                <span>0</span>
+                                <small>Apr</small>
 
                             </div>
 
 
-                            <div class="chart-area">
+                            <div class="chart-column"
+                                 style="height:48%">
 
-                                <div class="chart-grid-lines">
+                                <span></span>
 
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-
-                                </div>
-
-
-                                <svg
-                                    class="chart-svg"
-                                    viewBox="0 0 700 240"
-                                    preserveAspectRatio="none"
-                                >
-
-                                    <defs>
-
-                                        <linearGradient
-                                            id="chartGradient"
-                                            x1="0"
-                                            y1="0"
-                                            x2="0"
-                                            y2="1"
-                                        >
-
-                                            <stop
-                                                offset="0%"
-                                                stop-color="#30cbe3"
-                                                stop-opacity="0.25"
-                                            />
-
-                                            <stop
-                                                offset="100%"
-                                                stop-color="#30cbe3"
-                                                stop-opacity="0"
-                                            />
-
-                                        </linearGradient>
-
-                                    </defs>
-
-
-                                    <path
-                                        class="chart-fill"
-                                        d="
-                                        M 0 190
-                                        C 80 175,
-                                        115 155,
-                                        175 165
-                                        C 230 173,
-                                        260 130,
-                                        315 145
-                                        C 375 162,
-                                        420 100,
-                                        475 120
-                                        C 530 140,
-                                        555 70,
-                                        610 85
-                                        C 650 95,
-                                        670 50,
-                                        700 35
-                                        L 700 240
-                                        L 0 240
-                                        Z
-                                        "
-                                    ></path>
-
-
-                                    <path
-                                        class="chart-line"
-                                        d="
-                                        M 0 190
-                                        C 80 175,
-                                        115 155,
-                                        175 165
-                                        C 230 173,
-                                        260 130,
-                                        315 145
-                                        C 375 162,
-                                        420 100,
-                                        475 120
-                                        C 530 140,
-                                        555 70,
-                                        610 85
-                                        C 650 95,
-                                        670 50,
-                                        700 35
-                                        "
-                                    ></path>
-
-                                </svg>
-
-
-                                <div class="chart-months">
-
-                                    <span>JAN</span>
-                                    <span>FEB</span>
-                                    <span>MAR</span>
-                                    <span>APR</span>
-                                    <span>MAY</span>
-                                    <span>JUN</span>
-                                    <span>JUL</span>
-
-                                </div>
+                                <small>May</small>
 
                             </div>
+
+
+                            <div class="chart-column"
+                                 style="height:69%">
+
+                                <span></span>
+
+                                <small>Jun</small>
+
+                            </div>
+
+
+                            <div class="chart-column"
+                                 style="height:78%">
+
+                                <span></span>
+
+                                <small>Jul</small>
+
+                            </div>
+
+
+                            <div class="chart-column active"
+                                 style="height:91%">
+
+                                <span></span>
+
+                                <small>Aug</small>
+
+                            </div>
+
 
                         </div>
 
-                    </article>
+                    </div>
 
 
-                    <!-- SYSTEM STATUS -->
+                </div>
 
-                    <article
-                        class="dashboard-card status-card"
-                        id="systems"
-                    >
 
-                        <div class="card-header">
 
-                            <div>
+                <!-- INSTALLATION PROGRESS -->
 
-                                <h3>
-                                    System Status
-                                </h3>
+                <div class="panel">
 
-                                <p>
-                                    Current solar systems
-                                </p>
 
-                            </div>
+                    <div class="panel-header">
 
-                            <i class="fa-solid fa-circle-check status-head-icon"></i>
+                        <div>
+
+                            <h3>
+                                Installation Progress
+                            </h3>
+
+                            <p>
+                                Current project status
+                            </p>
 
                         </div>
 
 
-                        <div class="status-list">
+                        <i class="fa-solid fa-chart-pie panel-header-icon"></i>
+
+                    </div>
 
 
-                            <div class="status-row">
+                    <div class="progress-wrapper">
 
-                                <div class="status-name">
+                        <div class="progress-ring">
 
-                                    <span class="status-dot online"></span>
-
-                                    <span>
-                                        Online
-                                    </span>
-
-                                </div>
+                            <div class="progress-ring-inner">
 
                                 <strong>
-                                    118
+                                    82%
                                 </strong>
+
+                                <span>
+                                    Complete
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-list">
+
+
+                        <div class="progress-row">
+
+                            <div>
+
+                                <span class="status-dot survey"></span>
+
+                                Site Survey
+
+                            </div>
+
+                            <strong>
+                                18
+                            </strong>
+
+                        </div>
+
+
+                        <div class="progress-row">
+
+                            <div>
+
+                                <span class="status-dot working"></span>
+
+                                Installation
+
+                            </div>
+
+                            <strong>
+                                32
+                            </strong>
+
+                        </div>
+
+
+                        <div class="progress-row">
+
+                            <div>
+
+                                <span class="status-dot complete"></span>
+
+                                Completed
+
+                            </div>
+
+                            <strong>
+                                86
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- LOWER GRID -->
+
+            <div class="two-column-grid">
+
+
+                <!-- UPCOMING -->
+
+                <div class="panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h3>
+                                Upcoming Installations
+                            </h3>
+
+                            <p>
+                                Your next scheduled projects
+                            </p>
+
+                        </div>
+
+
+                        <a href="#installations"
+                           onclick="openPage('installations'); return false;">
+
+                            View all
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="installation-list">
+
+
+                        <div class="installation-row">
+
+
+                            <div class="date-box">
+
+                                <strong>
+                                    10
+                                </strong>
+
+                                <span>
+                                    SEP
+                                </span>
 
                             </div>
 
 
-                            <div class="status-row">
+                            <div class="installation-info">
 
-                                <div class="status-name">
+                                <strong>
+                                    Sharma Residence
+                                </strong>
 
-                                    <span class="status-dot warning"></span>
+                                <span>
+                                    5 kW Residential System
+                                </span>
 
-                                    <span>
-                                        Attention
-                                    </span>
+                            </div>
 
-                                </div>
+
+                            <span class="status-badge scheduled">
+                                Scheduled
+                            </span>
+
+
+                        </div>
+
+
+
+                        <div class="installation-row">
+
+
+                            <div class="date-box">
 
                                 <strong>
                                     12
                                 </strong>
 
-                            </div>
-
-
-                            <div class="status-row">
-
-                                <div class="status-name">
-
-                                    <span class="status-dot offline"></span>
-
-                                    <span>
-                                        Offline
-                                    </span>
-
-                                </div>
-
-                                <strong>
-                                    3
-                                </strong>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="system-health">
-
-                            <div class="health-header">
-
                                 <span>
-                                    Overall system health
+                                    SEP
                                 </span>
 
+                            </div>
+
+
+                            <div class="installation-info">
+
                                 <strong>
-                                    94%
+                                    GreenTech Pvt Ltd
                                 </strong>
-
-                            </div>
-
-                            <div class="health-progress">
-
-                                <span style="width: 94%;"></span>
-
-                            </div>
-
-                            <p>
-                                Your solar network is operating normally.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                </section>
-
-
-                <!-- =========================================
-                     INSTALLATION PROGRESS
-                ========================================== -->
-
-                <section
-                    class="dashboard-grid second-grid"
-                    id="installations"
-                >
-
-
-                    <!-- INSTALLATION PROGRESS -->
-
-                    <article class="dashboard-card">
-
-                        <div class="card-header">
-
-                            <div>
-
-                                <h3>
-                                    Installation Progress
-                                </h3>
-
-                                <p>
-                                    Current projects
-                                </p>
-
-                            </div>
-
-                            <a href="#">
-                                View All
-                            </a>
-
-                        </div>
-
-
-                        <div class="project-list">
-
-
-                            <div class="project-item">
-
-                                <div class="project-icon">
-
-                                    <i class="fa-solid fa-house"></i>
-
-                                </div>
-
-                                <div class="project-details">
-
-                                    <div class="project-top">
-
-                                        <strong>
-                                            Green Valley Residence
-                                        </strong>
-
-                                        <span>
-                                            85%
-                                        </span>
-
-                                    </div>
-
-                                    <p>
-                                        Residential • 8.5 kW
-                                    </p>
-
-                                    <div class="project-progress">
-                                        <span style="width:85%;"></span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="project-item">
-
-                                <div class="project-icon">
-
-                                    <i class="fa-solid fa-building"></i>
-
-                                </div>
-
-                                <div class="project-details">
-
-                                    <div class="project-top">
-
-                                        <strong>
-                                            Sunrise Business Park
-                                        </strong>
-
-                                        <span>
-                                            65%
-                                        </span>
-
-                                    </div>
-
-                                    <p>
-                                        Commercial • 52 kW
-                                    </p>
-
-                                    <div class="project-progress">
-                                        <span style="width:65%;"></span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="project-item">
-
-                                <div class="project-icon">
-
-                                    <i class="fa-solid fa-industry"></i>
-
-                                </div>
-
-                                <div class="project-details">
-
-                                    <div class="project-top">
-
-                                        <strong>
-                                            Industrial Solar Hub
-                                        </strong>
-
-                                        <span>
-                                            42%
-                                        </span>
-
-                                    </div>
-
-                                    <p>
-                                        Industrial • 250 kW
-                                    </p>
-
-                                    <div class="project-progress">
-                                        <span style="width:42%;"></span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- RECENT ORDERS -->
-
-                    <article
-                        class="dashboard-card"
-                        id="orders"
-                    >
-
-                        <div class="card-header">
-
-                            <div>
-
-                                <h3>
-                                    Recent Orders
-                                </h3>
-
-                                <p>
-                                    Latest solar projects
-                                </p>
-
-                            </div>
-
-                            <a href="#">
-                                View All
-                            </a>
-
-                        </div>
-
-
-                        <div class="orders-list">
-
-
-                            <div class="order-row">
-
-                                <div class="order-avatar">
-                                    RG
-                                </div>
-
-                                <div class="order-info">
-
-                                    <strong>
-                                        Raj Green Homes
-                                    </strong>
-
-                                    <span>
-                                        Solar Rooftop • 5 kW
-                                    </span>
-
-                                </div>
-
-                                <div class="order-right">
-
-                                    <strong>
-                                        ₹78,500
-                                    </strong>
-
-                                    <span class="order-status processing">
-                                        Processing
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="order-row">
-
-                                <div class="order-avatar">
-                                    SP
-                                </div>
-
-                                <div class="order-info">
-
-                                    <strong>
-                                        Sunrise Properties
-                                    </strong>
-
-                                    <span>
-                                        Commercial • 25 kW
-                                    </span>
-
-                                </div>
-
-                                <div class="order-right">
-
-                                    <strong>
-                                        ₹3,20,000
-                                    </strong>
-
-                                    <span class="order-status delivered">
-                                        Delivered
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="order-row">
-
-                                <div class="order-avatar">
-                                    AG
-                                </div>
-
-                                <div class="order-info">
-
-                                    <strong>
-                                        Agro Green Farm
-                                    </strong>
-
-                                    <span>
-                                        Agricultural • 40 kW
-                                    </span>
-
-                                </div>
-
-                                <div class="order-right">
-
-                                    <strong>
-                                        ₹4,85,000
-                                    </strong>
-
-                                    <span class="order-status pending">
-                                        Pending
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                </section>
-
-
-                <!-- =========================================
-                     CUSTOMERS + QUICK ACTIONS
-                ========================================== -->
-
-                <section class="bottom-grid">
-
-
-                    <!-- CUSTOMERS -->
-
-                    <article
-                        class="dashboard-card"
-                        id="customers"
-                    >
-
-                        <div class="card-header">
-
-                            <div>
-
-                                <h3>
-                                    Recent Customers
-                                </h3>
-
-                                <p>
-                                    Latest customers
-                                </p>
-
-                            </div>
-
-                            <a href="#">
-                                View All
-                            </a>
-
-                        </div>
-
-
-                        <div class="customer-list">
-
-                            <div class="customer">
-
-                                <div class="customer-avatar">
-                                    AM
-                                </div>
-
-                                <div>
-
-                                    <strong>
-                                        Arjun Mehta
-                                    </strong>
-
-                                    <span>
-                                        Residential
-                                    </span>
-
-                                </div>
-
-                                <i class="fa-solid fa-chevron-right"></i>
-
-                            </div>
-
-
-                            <div class="customer">
-
-                                <div class="customer-avatar">
-                                    PS
-                                </div>
-
-                                <div>
-
-                                    <strong>
-                                        Priya Sharma
-                                    </strong>
-
-                                    <span>
-                                        Commercial
-                                    </span>
-
-                                </div>
-
-                                <i class="fa-solid fa-chevron-right"></i>
-
-                            </div>
-
-
-                            <div class="customer">
-
-                                <div class="customer-avatar">
-                                    RK
-                                </div>
-
-                                <div>
-
-                                    <strong>
-                                        Ravi Kumar
-                                    </strong>
-
-                                    <span>
-                                        Residential
-                                    </span>
-
-                                </div>
-
-                                <i class="fa-solid fa-chevron-right"></i>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- QUICK ACTIONS -->
-
-                    <article class="dashboard-card">
-
-                        <div class="card-header">
-
-                            <div>
-
-                                <h3>
-                                    Quick Actions
-                                </h3>
-
-                                <p>
-                                    Manage your solar business
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="quick-actions">
-
-                            <button class="quick-action">
 
                                 <span>
-                                    <i class="fa-solid fa-plus"></i>
+                                    25 kW Commercial System
                                 </span>
 
-                                <strong>
-                                    New Installation
-                                </strong>
-
-                            </button>
+                            </div>
 
 
-                            <button class="quick-action">
+                            <span class="status-badge scheduled">
+                                Scheduled
+                            </span>
 
-                                <span>
-                                    <i class="fa-solid fa-file-invoice"></i>
-                                </span>
-
-                                <strong>
-                                    Create Order
-                                </strong>
-
-                            </button>
-
-
-                            <button class="quick-action">
-
-                                <span>
-                                    <i class="fa-solid fa-user-plus"></i>
-                                </span>
-
-                                <strong>
-                                    Add Customer
-                                </strong>
-
-                            </button>
-
-
-                            <button class="quick-action">
-
-                                <span>
-                                    <i class="fa-solid fa-chart-column"></i>
-                                </span>
-
-                                <strong>
-                                    View Reports
-                                </strong>
-
-                            </button>
 
                         </div>
 
-                    </article>
-
-                </section>
 
 
-                <!-- =========================================
-                     NOTIFICATIONS
-                ========================================== -->
+                        <div class="installation-row">
 
-                <section
-                    class="dashboard-card notifications-card"
-                    id="notifications"
-                >
 
-                    <div class="card-header">
+                            <div class="date-box">
+
+                                <strong>
+                                    15
+                                </strong>
+
+                                <span>
+                                    SEP
+                                </span>
+
+                            </div>
+
+
+                            <div class="installation-info">
+
+                                <strong>
+                                    Priya Reddy
+                                </strong>
+
+                                <span>
+                                    8 kW Residential System
+                                </span>
+
+                            </div>
+
+
+                            <span class="status-badge survey-badge">
+                                Survey
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- SYSTEM TYPES -->
+
+                <div class="panel">
+
+
+                    <div class="panel-header">
 
                         <div>
 
                             <h3>
-                                Notifications
+                                Solar Systems
                             </h3>
 
                             <p>
-                                Latest system updates
+                                Installed capacity
                             </p>
 
                         </div>
 
-                        <span class="notification-count">
-                            4 New
+                    </div>
+
+
+                    <div class="system-list">
+
+
+                        <div class="system-item">
+
+                            <div class="system-icon">
+
+                                <i class="fa-solid fa-house"></i>
+
+                            </div>
+
+
+                            <div class="system-content">
+
+                                <div>
+
+                                    <strong>
+                                        Residential
+                                    </strong>
+
+                                    <span>
+                                        68%
+                                    </span>
+
+                                </div>
+
+
+                                <div class="system-progress">
+
+                                    <span style="width:68%">
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="system-item">
+
+                            <div class="system-icon">
+
+                                <i class="fa-solid fa-building"></i>
+
+                            </div>
+
+
+                            <div class="system-content">
+
+                                <div>
+
+                                    <strong>
+                                        Commercial
+                                    </strong>
+
+                                    <span>
+                                        22%
+                                    </span>
+
+                                </div>
+
+
+                                <div class="system-progress">
+
+                                    <span style="width:22%">
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="system-item">
+
+                            <div class="system-icon">
+
+                                <i class="fa-solid fa-industry"></i>
+
+                            </div>
+
+
+                            <div class="system-content">
+
+                                <div>
+
+                                    <strong>
+                                        Industrial
+                                    </strong>
+
+                                    <span>
+                                        10%
+                                    </span>
+
+                                </div>
+
+
+                                <div class="system-progress">
+
+                                    <span style="width:10%">
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="capacity-total">
+
+                        <span>
+                            Total installed capacity
+                        </span>
+
+                        <strong>
+                            1.86 MW
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             ORDERS
+        ================================================== -->
+
+        <section class="page-section"
+                 id="page-orders">
+
+
+            <div class="page-heading">
+
+                <span class="eyebrow">
+                    SOLARPRO
+                </span>
+
+                <h2>
+                    Orders
+                </h2>
+
+                <p>
+                    Manage all solar installation orders.
+                </p>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card simple-stat">
+
+                    <span>
+                        TOTAL ORDERS
+                    </span>
+
+                    <strong>
+                        143
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card simple-stat">
+
+                    <span>
+                        PENDING
+                    </span>
+
+                    <strong>
+                        18
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card simple-stat">
+
+                    <span>
+                        PROCESSING
+                    </span>
+
+                    <strong>
+                        32
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card simple-stat">
+
+                    <span>
+                        COMPLETED
+                    </span>
+
+                    <strong>
+                        93
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="panel table-panel">
+
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h3>
+                            Recent Orders
+                        </h3>
+
+                        <p>
+                            Latest solar installation orders
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    ORDER
+                                </th>
+
+                                <th>
+                                    CUSTOMER
+                                </th>
+
+                                <th>
+                                    SYSTEM
+                                </th>
+
+                                <th>
+                                    STATUS
+                                </th>
+
+                                <th>
+                                    AMOUNT
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        #SOL-1024
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Rahul Sharma
+                                </td>
+
+                                <td>
+                                    5 kW Residential
+                                </td>
+
+                                <td>
+
+                                    <span class="table-badge completed">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                                <td>
+                                    ₹3,85,000
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        #SOL-1023
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    GreenTech Pvt Ltd
+                                </td>
+
+                                <td>
+                                    25 kW Commercial
+                                </td>
+
+                                <td>
+
+                                    <span class="table-badge processing">
+                                        Processing
+                                    </span>
+
+                                </td>
+
+                                <td>
+                                    ₹12,45,000
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        #SOL-1022
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Priya Reddy
+                                </td>
+
+                                <td>
+                                    8 kW Residential
+                                </td>
+
+                                <td>
+
+                                    <span class="table-badge pending">
+                                        Pending
+                                    </span>
+
+                                </td>
+
+                                <td>
+                                    ₹5,80,000
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        #SOL-1021
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Arjun Developers
+                                </td>
+
+                                <td>
+                                    50 kW Commercial
+                                </td>
+
+                                <td>
+
+                                    <span class="table-badge processing">
+                                        Processing
+                                    </span>
+
+                                </td>
+
+                                <td>
+                                    ₹24,80,000
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             INSTALLATIONS
+        ================================================== -->
+
+        <section class="page-section"
+                 id="page-installations">
+
+
+            <div class="page-heading">
+
+                <span class="eyebrow">
+                    PROJECT MANAGEMENT
+                </span>
+
+                <h2>
+                    Solar Installations
+                </h2>
+
+                <p>
+                    Track every residential, commercial and
+                    industrial installation.
+                </p>
+
+            </div>
+
+
+            <div class="project-cards">
+
+
+                <div class="project-summary">
+
+                    <div class="project-summary-icon">
+
+                        <i class="fa-solid fa-house"></i>
+
+                    </div>
+
+                    <span>
+                        RESIDENTIAL
+                    </span>
+
+                    <strong>
+                        86
+                    </strong>
+
+                    <small>
+                        installations
+                    </small>
+
+                    <div class="mini-progress">
+                        <span style="width:75%">
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="project-summary">
+
+                    <div class="project-summary-icon">
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </div>
+
+                    <span>
+                        COMMERCIAL
+                    </span>
+
+                    <strong>
+                        42
+                    </strong>
+
+                    <small>
+                        installations
+                    </small>
+
+                    <div class="mini-progress">
+                        <span style="width:55%">
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="project-summary">
+
+                    <div class="project-summary-icon">
+
+                        <i class="fa-solid fa-industry"></i>
+
+                    </div>
+
+                    <span>
+                        INDUSTRIAL
+                    </span>
+
+                    <strong>
+                        15
+                    </strong>
+
+                    <small>
+                        installations
+                    </small>
+
+                    <div class="mini-progress">
+                        <span style="width:35%">
+                        </span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="panel table-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h3>
+                            Installation Schedule
+                        </h3>
+
+                        <p>
+                            Current and upcoming installations
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    PROJECT
+                                </th>
+
+                                <th>
+                                    CUSTOMER
+                                </th>
+
+                                <th>
+                                    CAPACITY
+                                </th>
+
+                                <th>
+                                    DATE
+                                </th>
+
+                                <th>
+                                    STATUS
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        SOL-1024
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Sharma Residence
+                                </td>
+
+                                <td>
+                                    5 kW
+                                </td>
+
+                                <td>
+                                    10 Sep 2026
+                                </td>
+
+                                <td>
+                                    <span class="table-badge processing">
+                                        Scheduled
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        SOL-1023
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    GreenTech Pvt Ltd
+                                </td>
+
+                                <td>
+                                    25 kW
+                                </td>
+
+                                <td>
+                                    12 Sep 2026
+                                </td>
+
+                                <td>
+                                    <span class="table-badge processing">
+                                        Installation
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        SOL-1022
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Priya Reddy
+                                </td>
+
+                                <td>
+                                    8 kW
+                                </td>
+
+                                <td>
+                                    15 Sep 2026
+                                </td>
+
+                                <td>
+                                    <span class="table-badge pending">
+                                        Survey
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROJECTS
+        ================================================== -->
+
+        <section class="page-section"
+                 id="page-projects">
+
+
+            <div class="page-heading">
+
+                <span class="eyebrow">
+                    SOLAR ENERGY
+                </span>
+
+                <h2>
+                    Solar Projects
+                </h2>
+
+                <p>
+                    Monitor your active solar energy projects.
+                </p>
+
+            </div>
+
+
+            <div class="large-project-grid">
+
+
+                <div class="large-project-card">
+
+                    <div class="large-project-top">
+
+                        <span>
+                            COMMERCIAL
+                        </span>
+
+                        <i class="fa-solid fa-solar-panel"></i>
+
+                    </div>
+
+                    <h3>
+                        GreenTech Solar Plant
+                    </h3>
+
+                    <p>
+                        250 kW commercial rooftop solar
+                        installation.
+                    </p>
+
+                    <div class="large-project-info">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Bengaluru
+                        </span>
+
+                        <strong>
+                            72%
+                        </strong>
+
+                    </div>
+
+                    <div class="large-progress">
+
+                        <span style="width:72%">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="large-project-card">
+
+                    <div class="large-project-top">
+
+                        <span>
+                            RESIDENTIAL
+                        </span>
+
+                        <i class="fa-solid fa-house"></i>
+
+                    </div>
+
+                    <h3>
+                        Sharma Residence
+                    </h3>
+
+                    <p>
+                        5 kW rooftop solar energy system.
+                    </p>
+
+                    <div class="large-project-info">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Hyderabad
+                        </span>
+
+                        <strong>
+                            90%
+                        </strong>
+
+                    </div>
+
+                    <div class="large-progress">
+
+                        <span style="width:90%">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="large-project-card">
+
+                    <div class="large-project-top">
+
+                        <span>
+                            INDUSTRIAL
+                        </span>
+
+                        <i class="fa-solid fa-industry"></i>
+
+                    </div>
+
+                    <h3>
+                        Eco Manufacturing Unit
+                    </h3>
+
+                    <p>
+                        500 kW industrial solar power
+                        installation.
+                    </p>
+
+                    <div class="large-project-info">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Chennai
+                        </span>
+
+                        <strong>
+                            48%
+                        </strong>
+
+                    </div>
+
+                    <div class="large-progress">
+
+                        <span style="width:48%">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             CUSTOMERS
+        ================================================== -->
+
+        <section class="page-section"
+                 id="page-customers">
+
+
+            <div class="page-heading">
+
+                <span class="eyebrow">
+                    CUSTOMER MANAGEMENT
+                </span>
+
+                <h2>
+                    Customers
+                </h2>
+
+                <p>
+                    Manage your solar customers and their projects.
+                </p>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card simple-stat">
+
+                    <span>
+                        TOTAL CUSTOMERS
+                    </span>
+
+                    <strong>
+                        324
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card simple-stat">
+
+                    <span>
+                        NEW THIS MONTH
+                    </span>
+
+                    <strong>
+                        24
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card simple-stat">
+
+                    <span>
+                        RESIDENTIAL
+                    </span>
+
+                    <strong>
+                        218
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card simple-stat">
+
+                    <span>
+                        COMMERCIAL
+                    </span>
+
+                    <strong>
+                        106
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="customer-list">
+
+
+                    <div class="customer-row">
+
+                        <div class="customer-avatar">
+                            RS
+                        </div>
+
+                        <div class="customer-info">
+
+                            <strong>
+                                Rahul Sharma
+                            </strong>
+
+                            <span>
+                                5 kW Residential • Hyderabad
+                            </span>
+
+                        </div>
+
+                        <span class="table-badge completed">
+                            Active
                         </span>
 
                     </div>
 
 
-                    <div class="notification-list">
+                    <div class="customer-row">
 
-                        <div class="notification-item">
+                        <div class="customer-avatar">
+                            GT
+                        </div>
 
-                            <div class="notification-icon success">
-                                <i class="fa-solid fa-check"></i>
-                            </div>
+                        <div class="customer-info">
 
-                            <div>
+                            <strong>
+                                GreenTech Pvt Ltd
+                            </strong>
 
-                                <strong>
-                                    Installation completed
-                                </strong>
-
-                                <p>
-                                    Green Valley Residence installation
-                                    has been completed successfully.
-                                </p>
-
-                            </div>
-
-                            <time>
-                                10 min
-                            </time>
+                            <span>
+                                25 kW Commercial • Bengaluru
+                            </span>
 
                         </div>
 
-
-                        <div class="notification-item">
-
-                            <div class="notification-icon warning">
-                                <i class="fa-solid fa-triangle-exclamation"></i>
-                            </div>
-
-                            <div>
-
-                                <strong>
-                                    System requires attention
-                                </strong>
-
-                                <p>
-                                    Solar system #ST-2048 requires
-                                    a maintenance inspection.
-                                </p>
-
-                            </div>
-
-                            <time>
-                                1 hr
-                            </time>
-
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-                <!-- =========================================
-                     SETTINGS
-                ========================================== -->
-
-                <section
-                    class="dashboard-card settings-card"
-                    id="settings"
-                >
-
-                    <div class="card-header">
-
-                        <div>
-
-                            <h3>
-                                Account Settings
-                            </h3>
-
-                            <p>
-                                Manage your SolarTech dashboard
-                            </p>
-
-                        </div>
+                        <span class="table-badge processing">
+                            Installation
+                        </span>
 
                     </div>
 
 
-                    <div class="settings-grid">
+                    <div class="customer-row">
 
-                        <button class="setting-item">
+                        <div class="customer-avatar">
+                            PR
+                        </div>
 
-                            <span class="setting-icon">
-                                <i class="fa-solid fa-user"></i>
-                            </span>
+                        <div class="customer-info">
 
-                            <span>
-                                Profile Settings
-                            </span>
-
-                            <i class="fa-solid fa-chevron-right"></i>
-
-                        </button>
-
-
-                        <button class="setting-item">
-
-                            <span class="setting-icon">
-                                <i class="fa-solid fa-lock"></i>
-                            </span>
+                            <strong>
+                                Priya Reddy
+                            </strong>
 
                             <span>
-                                Security
+                                8 kW Residential • Chennai
                             </span>
 
-                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
 
-                        </button>
-
-
-                        <button class="setting-item">
-
-                            <span class="setting-icon">
-                                <i class="fa-solid fa-bell"></i>
-                            </span>
-
-                            <span>
-                                Notifications
-                            </span>
-
-                            <i class="fa-solid fa-chevron-right"></i>
-
-                        </button>
+                        <span class="table-badge pending">
+                            Pending
+                        </span>
 
                     </div>
 
-                </section>
+
+                    <div class="customer-row">
+
+                        <div class="customer-avatar">
+                            AD
+                        </div>
+
+                        <div class="customer-info">
+
+                            <strong>
+                                Arjun Developers
+                            </strong>
+
+                            <span>
+                                50 kW Commercial • Pune
+                            </span>
+
+                        </div>
+
+                        <span class="table-badge processing">
+                            Installation
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRICING
+        ================================================== -->
+
+        <section class="page-section"
+                 id="page-pricing">
+
+
+            <div class="page-heading">
+
+                <span class="eyebrow">
+                    SOLAR PACKAGES
+                </span>
+
+                <h2>
+                    Pricing
+                </h2>
+
+                <p>
+                    Manage your residential and commercial
+                    solar packages.
+                </p>
+
+            </div>
+
+
+            <div class="pricing-grid">
+
+
+                <div class="pricing-card">
+
+                    <span class="pricing-label">
+                        RESIDENTIAL
+                    </span>
+
+                    <h3>
+                        Essential Solar
+                    </h3>
+
+                    <strong>
+                        ₹1,85,000
+                    </strong>
+
+                    <p>
+                        3 kW Solar System
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            High efficiency panels
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Installation included
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            5 year service
+                        </li>
+
+                    </ul>
+
+
+                    <button>
+                        Manage Package
+                    </button>
+
+                </div>
+
+
+
+                <div class="pricing-card featured-pricing">
+
+                    <div class="popular">
+                        MOST POPULAR
+                    </div>
+
+                    <span class="pricing-label">
+                        RESIDENTIAL
+                    </span>
+
+                    <h3>
+                        Smart Solar
+                    </h3>
+
+                    <strong>
+                        ₹3,85,000
+                    </strong>
+
+                    <p>
+                        5 kW Solar System
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Premium solar panels
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Smart monitoring
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            10 year service
+                        </li>
+
+                    </ul>
+
+
+                    <button>
+                        Manage Package
+                    </button>
+
+                </div>
+
+
+
+                <div class="pricing-card">
+
+                    <span class="pricing-label">
+                        COMMERCIAL
+                    </span>
+
+                    <h3>
+                        Business Solar
+                    </h3>
+
+                    <strong>
+                        ₹12,45,000
+                    </strong>
+
+                    <p>
+                        25 kW Solar System
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Commercial panels
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Monitoring system
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Annual maintenance
+                        </li>
+
+                    </ul>
+
+
+                    <button>
+                        Manage Package
+                    </button>
+
+                </div>
 
 
             </div>
 
-        </main>
+
+        </section>
+
+
+
+        <!-- =================================================
+             NOTIFICATIONS
+        ================================================== -->
+
+        <section class="page-section"
+                 id="page-notifications">
+
+
+            <div class="page-heading">
+
+                <span class="eyebrow">
+                    ALERT CENTER
+                </span>
+
+                <h2>
+                    Notifications
+                </h2>
+
+                <p>
+                    Important updates from your solar projects.
+                </p>
+
+            </div>
+
+
+            <div class="notification-list">
+
+
+                <div class="notification-card">
+
+                    <div class="notification-icon success">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Installation completed
+                        </strong>
+
+                        <p>
+                            Sharma Residence installation
+                            has been completed successfully.
+                        </p>
+
+                        <small>
+                            20 minutes ago
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="notification-card">
+
+                    <div class="notification-icon warning">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Installation scheduled
+                        </strong>
+
+                        <p>
+                            GreenTech commercial installation
+                            is scheduled for September 12.
+                        </p>
+
+                        <small>
+                            2 hours ago
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="notification-card">
+
+                    <div class="notification-icon info">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            New customer
+                        </strong>
+
+                        <p>
+                            A new customer has requested
+                            a solar installation quote.
+                        </p>
+
+                        <small>
+                            Yesterday
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             ANALYTICS
+        ================================================== -->
+
+        <section class="page-section"
+                 id="page-analytics">
+
+
+            <div class="page-heading">
+
+                <span class="eyebrow">
+                    BUSINESS INSIGHTS
+                </span>
+
+                <h2>
+                    Analytics
+                </h2>
+
+                <p>
+                    Track your solar business performance.
+                </p>
+
+            </div>
+
+
+            <div class="analytics-grid">
+
+
+                <div class="analytics-card">
+
+                    <span>
+                        MONTHLY REVENUE
+                    </span>
+
+                    <strong>
+                        ₹8,45,800
+                    </strong>
+
+                    <small>
+                        ↑ 18.6%
+                    </small>
+
+                </div>
+
+
+                <div class="analytics-card">
+
+                    <span>
+                        ENERGY GENERATED
+                    </span>
+
+                    <strong>
+                        86.4 MWh
+                    </strong>
+
+                    <small>
+                        ↑ 8.2%
+                    </small>
+
+                </div>
+
+
+                <div class="analytics-card">
+
+                    <span>
+                        CUSTOMER GROWTH
+                    </span>
+
+                    <strong>
+                        +24
+                    </strong>
+
+                    <small>
+                        this month
+                    </small>
+
+                </div>
+
+
+                <div class="analytics-card">
+
+                    <span>
+                        INSTALLATION RATE
+                    </span>
+
+                    <strong>
+                        82%
+                    </strong>
+
+                    <small>
+                        ↑ 6.4%
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="panel analytics-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h3>
+                            Revenue Performance
+                        </h3>
+
+                        <p>
+                            Monthly revenue overview
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="revenue-chart">
+
+
+                    <div style="height:42%">
+                        <span>Jan</span>
+                    </div>
+
+                    <div style="height:55%">
+                        <span>Feb</span>
+                    </div>
+
+                    <div style="height:48%">
+                        <span>Mar</span>
+                    </div>
+
+                    <div style="height:67%">
+                        <span>Apr</span>
+                    </div>
+
+                    <div style="height:74%">
+                        <span>May</span>
+                    </div>
+
+                    <div style="height:82%">
+                        <span>Jun</span>
+                    </div>
+
+                    <div style="height:91%">
+                        <span>Jul</span>
+                    </div>
+
+                    <div style="height:100%">
+                        <span>Aug</span>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             SETTINGS
+        ================================================== -->
+
+        <section class="page-section"
+                 id="page-settings">
+
+
+            <div class="page-heading">
+
+                <span class="eyebrow">
+                    SYSTEM
+                </span>
+
+                <h2>
+                    Settings
+                </h2>
+
+                <p>
+                    Manage your SolarPro dashboard settings.
+                </p>
+
+            </div>
+
+
+            <div class="settings-list">
+
+
+                <div class="settings-card">
+
+                    <div class="settings-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+                    <div class="settings-content">
+
+                        <h3>
+                            Profile Settings
+                        </h3>
+
+                        <p>
+                            Update administrator information.
+                        </p>
+
+                    </div>
+
+                    <button>
+                        Edit
+                    </button>
+
+                </div>
+
+
+
+                <div class="settings-card">
+
+                    <div class="settings-icon">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                    </div>
+
+                    <div class="settings-content">
+
+                        <h3>
+                            Notifications
+                        </h3>
+
+                        <p>
+                            Manage dashboard notifications.
+                        </p>
+
+                    </div>
+
+                    <button>
+                        Manage
+                    </button>
+
+                </div>
+
+
+
+                <div class="settings-card">
+
+                    <div class="settings-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <div class="settings-content">
+
+                        <h3>
+                            Security
+                        </h3>
+
+                        <p>
+                            Manage password and security settings.
+                        </p>
+
+                    </div>
+
+                    <button>
+                        Manage
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
 
     </div>
 
 
-    <!-- =====================================================
-         TOAST
-    ====================================================== -->
-
-    <div class="toast" id="toast">
-
-        <i class="fa-solid fa-circle-check"></i>
-
-        <span id="toastMessage">
-            Action completed
-        </span>
-
-    </div>
+</main>
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
 
-    /* =====================================================
-       ELEMENTS
-    ====================================================== */
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
 
-    const body =
-        document.body;
-
-    const sidebar =
-        document.getElementById("sidebar");
-
-    const sidebarOverlay =
-        document.getElementById("sidebarOverlay");
-
-    const mobileMenuButton =
-        document.getElementById("mobileMenuButton");
-
-    const themeToggle =
-        document.getElementById("themeToggle");
-
-    const directionToggle =
-        document.getElementById("directionToggle");
-
-    const notificationButton =
-        document.getElementById("notificationButton");
-
-    const logoutButton =
-        document.getElementById("logoutButton");
-
-    const toast =
-        document.getElementById("toast");
-
-    const toastMessage =
-        document.getElementById("toastMessage");
+<script>
+    /* =========================================================
+   SOLARPRO DASHBOARD
+========================================================= */
 
 
-    /* =====================================================
-       THEME
-    ====================================================== */
+/* =========================================================
+   ELEMENTS
+========================================================= */
 
-    const savedTheme =
-        localStorage.getItem("solarTheme");
+const menuLinks =
+    document.querySelectorAll(".menu-link");
+
+const pageSections =
+    document.querySelectorAll(".page-section");
+
+const pageTitle =
+    document.getElementById("pageTitle");
+
+const directionToggle =
+    document.getElementById("directionToggle");
+
+const themeToggle =
+    document.getElementById("themeToggle");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+const sidebar =
+    document.getElementById("sidebar");
+
+const sidebarOverlay =
+    document.getElementById("sidebarOverlay");
 
 
-    if (savedTheme === "dark") {
 
-        body.classList.add("dark");
+/* =========================================================
+   PAGE TITLES
+========================================================= */
 
-        themeToggle.innerHTML =
-            '<i class="fa-regular fa-sun"></i>';
+const pageNames = {
+
+    dashboard:
+        "Dashboard",
+
+    orders:
+        "Orders",
+
+    installations:
+        "Solar Installations",
+
+    projects:
+        "Solar Projects",
+
+    customers:
+        "Customers",
+
+    pricing:
+        "Pricing",
+
+    notifications:
+        "Notifications",
+
+    analytics:
+        "Analytics",
+
+    settings:
+        "Settings"
+
+};
+
+
+
+/* =========================================================
+   OPEN PAGE
+========================================================= */
+
+function openPage(page) {
+
+
+    /* ---------------------------------------------
+       CHECK PAGE
+    --------------------------------------------- */
+
+    const targetPage =
+        document.getElementById(
+            "page-" + page
+        );
+
+
+    if (!targetPage) {
+
+        page = "dashboard";
+
     }
 
 
-    themeToggle.addEventListener(
-        "click",
-        function () {
+    /* ---------------------------------------------
+       HIDE ALL PAGES
+    --------------------------------------------- */
 
-            body.classList.toggle("dark");
+    pageSections.forEach(function(section) {
 
+        section.classList.remove(
+            "active-page"
+        );
 
-            const isDark =
-                body.classList.contains("dark");
-
-
-            if (isDark) {
-
-                themeToggle.innerHTML =
-                    '<i class="fa-regular fa-sun"></i>';
-
-                localStorage.setItem(
-                    "solarTheme",
-                    "dark"
-                );
-
-            } else {
-
-                themeToggle.innerHTML =
-                    '<i class="fa-regular fa-moon"></i>';
-
-                localStorage.setItem(
-                    "solarTheme",
-                    "light"
-                );
-
-            }
-
-        }
-    );
+    });
 
 
-    /* =====================================================
-       RTL / LTR
-    ====================================================== */
+    /* ---------------------------------------------
+       SHOW SELECTED PAGE
+    --------------------------------------------- */
 
-    const savedDirection =
-        localStorage.getItem(
-            "solarDirection"
+    const selectedPage =
+        document.getElementById(
+            "page-" + page
         );
 
 
-    if (savedDirection === "rtl") {
+    if (selectedPage) {
 
-        document.documentElement.setAttribute(
-            "dir",
-            "rtl"
+        selectedPage.classList.add(
+            "active-page"
         );
 
-        directionToggle.textContent = "LTR";
-
-    } else {
-
-        document.documentElement.setAttribute(
-            "dir",
-            "ltr"
-        );
-
-        directionToggle.textContent = "RTL";
     }
 
 
-    directionToggle.addEventListener(
-        "click",
-        function () {
+    /* ---------------------------------------------
+       UPDATE SIDEBAR
+    --------------------------------------------- */
 
-            const current =
-                document.documentElement
-                    .getAttribute("dir");
+    menuLinks.forEach(function(link) {
 
+        link.classList.remove(
+            "active"
+        );
 
-            if (current === "ltr") {
-
-                document.documentElement.setAttribute(
-                    "dir",
-                    "rtl"
-                );
-
-                directionToggle.textContent =
-                    "LTR";
-
-                localStorage.setItem(
-                    "solarDirection",
-                    "rtl"
-                );
-
-            } else {
-
-                document.documentElement.setAttribute(
-                    "dir",
-                    "ltr"
-                );
-
-                directionToggle.textContent =
-                    "RTL";
-
-                localStorage.setItem(
-                    "solarDirection",
-                    "ltr"
-                );
-            }
-
-        }
-    );
+    });
 
 
-    /* =====================================================
-       MOBILE SIDEBAR
-    ====================================================== */
-
-    mobileMenuButton.addEventListener(
-        "click",
-        function () {
-
-            sidebar.classList.add("open");
-
-            sidebarOverlay.classList.add("active");
-
-        }
-    );
+    const selectedLink =
+        document.querySelector(
+            '[data-page="' + page + '"]'
+        );
 
 
-    sidebarOverlay.addEventListener(
-        "click",
-        closeSidebar
-    );
+    if (selectedLink) {
 
-
-    function closeSidebar() {
-
-        sidebar.classList.remove("open");
-
-        sidebarOverlay.classList.remove(
+        selectedLink.classList.add(
             "active"
         );
 
     }
 
 
-    /* =====================================================
-       NAVIGATION
-    ====================================================== */
+    /* ---------------------------------------------
+       UPDATE TOP TITLE
+    --------------------------------------------- */
 
-    const navLinks =
-        document.querySelectorAll(".nav-link");
+    if (pageTitle) {
+
+        pageTitle.textContent =
+            pageNames[page] || "Dashboard";
+
+    }
 
 
-    navLinks.forEach(function (link) {
+    /* ---------------------------------------------
+       UPDATE URL
+    --------------------------------------------- */
 
-        link.addEventListener(
-            "click",
-            function () {
+    history.replaceState(
+        null,
+        "",
+        "#" + page
+    );
 
-                navLinks.forEach(
-                    function (item) {
 
-                        item.classList.remove(
-                            "active"
-                        );
+    /* ---------------------------------------------
+       CLOSE MOBILE SIDEBAR
+    --------------------------------------------- */
 
-                    }
+    closeSidebar();
+
+
+    /* ---------------------------------------------
+       SCROLL MAIN CONTENT TO TOP
+    --------------------------------------------- */
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+
+/* =========================================================
+   SIDEBAR LINKS
+========================================================= */
+
+menuLinks.forEach(function(link) {
+
+
+    link.addEventListener(
+        "click",
+        function(event) {
+
+
+            event.preventDefault();
+
+
+            const page =
+                this.getAttribute(
+                    "data-page"
                 );
 
 
-                link.classList.add("active");
+            /* Logout */
+
+            if (page === "logout") {
+
+                handleLogout();
+
+                return;
+
+            }
 
 
-                if (
-                    window.innerWidth <= 900
-                ) {
+            openPage(page);
 
-                    closeSidebar();
+        }
+    );
 
-                }
+});
+
+
+
+/* =========================================================
+   LOAD PAGE FROM URL
+========================================================= */
+
+function loadPageFromHash() {
+
+
+    let page =
+        window.location.hash
+            .replace("#", "")
+            .trim();
+
+
+    /* Default */
+
+    if (!page) {
+
+        page = "dashboard";
+
+    }
+
+
+    /* Check whether page exists */
+
+    if (!document.getElementById(
+        "page-" + page
+    )) {
+
+        page = "dashboard";
+
+    }
+
+
+    openPage(page);
+
+}
+
+
+loadPageFromHash();
+
+
+
+/* =========================================================
+   BROWSER BACK / FORWARD
+========================================================= */
+
+window.addEventListener(
+    "hashchange",
+    loadPageFromHash
+);
+
+
+
+/* =========================================================
+   LTR / RTL
+========================================================= */
+
+function updateDirection() {
+
+
+    const html =
+        document.documentElement;
+
+
+    const currentDirection =
+        html.getAttribute("dir");
+
+
+    if (currentDirection === "ltr") {
+
+        html.setAttribute(
+            "dir",
+            "rtl"
+        );
+
+        directionToggle.textContent =
+            "RTL";
+
+        localStorage.setItem(
+            "solarDirection",
+            "rtl"
+        );
+
+    } else {
+
+        html.setAttribute(
+            "dir",
+            "ltr"
+        );
+
+        directionToggle.textContent =
+            "LTR";
+
+        localStorage.setItem(
+            "solarDirection",
+            "ltr"
+        );
+
+    }
+
+}
+
+
+directionToggle.addEventListener(
+    "click",
+    updateDirection
+);
+
+
+
+/* =========================================================
+   LOAD SAVED DIRECTION
+========================================================= */
+
+const savedDirection =
+    localStorage.getItem(
+        "solarDirection"
+    );
+
+
+if (savedDirection) {
+
+    document.documentElement.setAttribute(
+        "dir",
+        savedDirection
+    );
+
+}
+
+
+function updateDirectionButton() {
+
+    const direction =
+        document.documentElement
+            .getAttribute("dir");
+
+
+    directionToggle.textContent =
+        direction === "rtl"
+            ? "RTL"
+            : "LTR";
+
+}
+
+
+updateDirectionButton();
+
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+function updateThemeIcon() {
+
+
+    if (document.body.classList.contains("dark")) {
+
+        themeToggle.innerHTML =
+            '<i class="fa-regular fa-sun"></i>';
+
+    } else {
+
+        themeToggle.innerHTML =
+            '<i class="fa-regular fa-moon"></i>';
+
+    }
+
+}
+
+
+themeToggle.addEventListener(
+    "click",
+    function() {
+
+
+        document.body.classList.toggle(
+            "dark"
+        );
+
+
+        const darkMode =
+            document.body.classList.contains(
+                "dark"
+            );
+
+
+        localStorage.setItem(
+            "solarTheme",
+            darkMode
+                ? "dark"
+                : "light"
+        );
+
+
+        updateThemeIcon();
+
+    }
+);
+
+
+
+/* =========================================================
+   LOAD SAVED THEME
+========================================================= */
+
+const savedTheme =
+    localStorage.getItem(
+        "solarTheme"
+    );
+
+
+if (savedTheme === "dark") {
+
+    document.body.classList.add(
+        "dark"
+    );
+
+}
+
+
+updateThemeIcon();
+
+
+
+/* =========================================================
+   MOBILE SIDEBAR
+========================================================= */
+
+function openSidebar() {
+
+    sidebar.classList.add(
+        "open"
+    );
+
+    sidebarOverlay.classList.add(
+        "show"
+    );
+
+}
+
+
+function closeSidebar() {
+
+    sidebar.classList.remove(
+        "open"
+    );
+
+    sidebarOverlay.classList.remove(
+        "show"
+    );
+
+}
+
+
+mobileMenu.addEventListener(
+    "click",
+    openSidebar
+);
+
+
+sidebarOverlay.addEventListener(
+    "click",
+    closeSidebar
+);
+
+
+
+/* =========================================================
+   ESCAPE KEY
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            closeSidebar();
+
+        }
+
+    }
+);
+
+
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+function handleLogout() {
+
+
+    const confirmLogout =
+        confirm(
+            "Are you sure you want to logout?"
+        );
+
+
+    if (!confirmLogout) {
+
+        return;
+
+    }
+
+
+    /*
+       Since this is a single-page demo,
+       we simply return to Dashboard.
+    */
+
+    openPage("dashboard");
+
+
+    alert(
+        "You have been logged out."
+    );
+
+}
+
+
+
+/* =========================================================
+   BUTTON HOVER / INTERACTION
+========================================================= */
+
+document
+    .querySelectorAll(".pricing-card button")
+    .forEach(function(button) {
+
+
+        button.addEventListener(
+            "click",
+            function() {
+
+                alert(
+                    "Solar package selected."
+                );
 
             }
         );
@@ -1685,238 +3238,29 @@
     });
 
 
-    /* =====================================================
-       NOTIFICATIONS
-    ====================================================== */
 
-    notificationButton.addEventListener(
-        "click",
-        function () {
+/* =========================================================
+   SETTINGS BUTTONS
+========================================================= */
 
-            const notificationSection =
-                document.getElementById(
-                    "notifications"
+document
+    .querySelectorAll(".settings-card button")
+    .forEach(function(button) {
+
+
+        button.addEventListener(
+            "click",
+            function() {
+
+                alert(
+                    "Settings option selected."
                 );
-
-
-            notificationSection.scrollIntoView(
-                {
-                    behavior: "smooth",
-                    block: "start"
-                }
-            );
-
-
-            showToast(
-                "Showing latest notifications"
-            );
-
-        }
-    );
-
-
-    /* =====================================================
-       LOGOUT
-    ====================================================== */
-
-    logoutButton.addEventListener(
-        "click",
-        function (event) {
-
-            event.preventDefault();
-
-            showToast(
-                "You have been logged out."
-            );
-
-        }
-    );
-
-
-    /* =====================================================
-       PRIMARY ACTION
-    ====================================================== */
-
-    const primaryAction =
-        document.querySelector(
-            ".primary-action"
-        );
-
-
-    primaryAction.addEventListener(
-        "click",
-        function () {
-
-            const installations =
-                document.getElementById(
-                    "installations"
-                );
-
-
-            installations.scrollIntoView(
-                {
-                    behavior: "smooth",
-                    block: "start"
-                }
-            );
-
-        }
-    );
-
-
-    /* =====================================================
-       QUICK ACTIONS
-    ====================================================== */
-
-    const quickActions =
-        document.querySelectorAll(
-            ".quick-action"
-        );
-
-
-    quickActions.forEach(
-        function (button) {
-
-            button.addEventListener(
-                "click",
-                function () {
-
-                    const action =
-                        button
-                            .querySelector("strong")
-                            .textContent
-                            .trim();
-
-
-                    showToast(
-                        `${action} selected`
-                    );
-
-                }
-            );
-
-        }
-    );
-
-
-    /* =====================================================
-       SETTINGS
-    ====================================================== */
-
-    const settingItems =
-        document.querySelectorAll(
-            ".setting-item"
-        );
-
-
-    settingItems.forEach(
-        function (button) {
-
-            button.addEventListener(
-                "click",
-                function () {
-
-                    const name =
-                        button
-                            .querySelector(
-                                "span:nth-child(2)"
-                            )
-                            .textContent
-                            .trim();
-
-
-                    showToast(
-                        `${name} selected`
-                    );
-
-                }
-            );
-
-        }
-    );
-
-
-    /* =====================================================
-       CARD LINKS
-    ====================================================== */
-
-    const cardLinks =
-        document.querySelectorAll(
-            ".card-header a"
-        );
-
-
-    cardLinks.forEach(
-        function (link) {
-
-            link.addEventListener(
-                "click",
-                function (event) {
-
-                    event.preventDefault();
-
-                    showToast(
-                        "Opening complete list..."
-                    );
-
-                }
-            );
-
-        }
-    );
-
-
-    /* =====================================================
-       TOAST
-    ====================================================== */
-
-    function showToast(message) {
-
-        toastMessage.textContent =
-            message;
-
-        toast.classList.add("show");
-
-
-        clearTimeout(
-            window.dashboardToastTimer
-        );
-
-
-        window.dashboardToastTimer =
-            setTimeout(
-                function () {
-
-                    toast.classList.remove(
-                        "show"
-                    );
-
-                },
-                2600
-            );
-
-    }
-
-
-    /* =====================================================
-       CLOSE SIDEBAR ON RESIZE
-    ====================================================== */
-
-    window.addEventListener(
-        "resize",
-        function () {
-
-            if (window.innerWidth > 900) {
-
-                closeSidebar();
 
             }
+        );
 
-        }
-    );
-
-});
-    </script>
+    });
+</script>
 
 </body>
 

@@ -51,7 +51,7 @@ body.dark {
     --bg-soft: #0d2024;
     --border: #1d3b40;
 
-    --primary-light: #123b41;
+    --primary-light:  #30cbe3;
     --secondary-light: #0c3036;
 
     --shadow-sm: 0 8px 25px rgba(0, 0, 0, 0.25);
@@ -242,7 +242,9 @@ body.dark .site-header {
     color: var(--primary);
     background: var(--primary-light);
 }
-
+body.dark .nav-link.active{
+    color: white;
+}
 .nav-link i {
     font-size: 11px;
 }
@@ -335,6 +337,10 @@ body.dark .site-header {
     border-radius: 12px;
 
     transition: var(--transition);
+}
+body.dark .header-icon{
+    color: white;
+    background: black;
 }
 
 .header-icon:hover {
@@ -486,7 +492,9 @@ body.dark .site-header {
 
     letter-spacing: 1.5px;
 }
-
+body.dark .eyebrow{
+    color: white;
+}
 .eyebrow-line {
     width: 32px;
     height: 2px;
@@ -495,7 +503,9 @@ body.dark .site-header {
 
     border-radius: 20px;
 }
-
+body.dark .eyebrow-line{
+    color: white;
+}
 .hero-content h1 {
     max-width: 650px;
 
@@ -941,7 +951,9 @@ body.dark .site-header {
 
     letter-spacing: 1.7px;
 }
-
+body.dark .section-label{
+    color: white;
+}
 .section-header h2,
 .process-intro h2 {
     max-width: 650px;
@@ -1448,7 +1460,7 @@ body.dark .process-intro h2 span {
 }
 
 
-/* ================= RTL ================= */
+/* ================= ================= */
 
 html[dir="rtl"] .solution-link:hover i,
 html[dir="rtl"] .solutions-btn:hover i {
@@ -2428,14 +2440,17 @@ html[dir="rtl"] .solution-link:hover {
     font-size: 14px;
     font-weight: 700;
 
-    color: #095763;
+    color: var(--primary);
     background: #ffffff;
 
     border: 1px solid var(--black);
     border-radius: 14px;
 
     cursor: pointer;
-    transition: all 0.25s ease;
+    transition: all 0.25s }
+body.dark #rtlBtn{
+    color: var(--black);
+    background: var(--white);
 }
 
 #rtlBtn:hover {
@@ -2911,4 +2926,7 @@ html[dir="rtl"] .solution-link:hover {
     .footer-brand {
         grid-column: auto;
     }
+}
+body.dark .solution-content h3{
+    color: white;
 }

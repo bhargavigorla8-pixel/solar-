@@ -337,6 +337,9 @@ body.dark .site-header {
     background:
         var(--primary-light);
 }
+body.dark .nav-link.active{
+    color: white;
+}
 
 
 .nav-link i {
@@ -482,6 +485,11 @@ body.dark .site-header {
 
     font-weight: 700;
 }
+body.dark .header-icon{
+    color: white;
+    background: black;
+    border-color: white;
+}
 
 
 .header-icon:hover {
@@ -549,7 +557,11 @@ body.dark .site-header {
     transition:
         all 0.25s ease;
 }
-
+body.dark #rtlBtn{
+    color: white;
+    background: black;
+    border-color: white;
+}
 
 #rtlBtn:hover {
 

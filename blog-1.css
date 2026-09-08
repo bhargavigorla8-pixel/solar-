@@ -348,7 +348,9 @@ button {
         var(--primary);
 }
 
-
+body.dark .nav-link.active{
+    color: white;
+}
 .nav-link i {
 
     font-size:

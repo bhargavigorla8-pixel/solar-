@@ -340,6 +340,9 @@ html.dark .site-header {
     background:
         var(--primary-light);
 }
+html.dark .nav-link.active{
+    color: white;
+}
 
 .nav-link i {
     font-size: 11px;
@@ -494,6 +497,9 @@ html.dark .site-header {
 
     font-weight: 700;
 }
+html.dark .header-icon{
+    color:white
+}
 
 .header-icon:hover {
 
@@ -549,6 +555,10 @@ html.dark .site-header {
 
     transition:
         all 0.25s ease;
+}
+html.dark #rtlBtn{
+    color: white;
+    background: black;
 }
 
 #rtlBtn:hover {

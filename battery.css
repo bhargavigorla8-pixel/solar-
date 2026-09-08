@@ -231,7 +231,7 @@ body.dark-mode .site-header {
 
 body.dark-mode .nav-link:hover,
 body.dark-mode .nav-link.active {
-    color: var(--secondary);
+    color: var(--white);
 }
 
 .nav-link i {
