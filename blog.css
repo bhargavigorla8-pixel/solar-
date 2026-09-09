@@ -699,7 +699,7 @@ html[dir="rtl"] .dropdown-menu {
 
     overflow: hidden;
 
-    padding: 90px 0 105px;
+    padding: 40px 0 40px;
 
     background:
         linear-gradient(
@@ -707,6 +707,9 @@ html[dir="rtl"] .dropdown-menu {
             var(--soft-background),
             var(--background)
         );
+        padding-bottom:
+        250px;
+
 }
 
 
@@ -795,7 +798,7 @@ html[dir="rtl"] .dropdown-menu {
         sans-serif;
 
     font-size:
-        clamp(45px, 5vw, 70px);
+        clamp(45px, 5vw, 50px);
 
     line-height: 1.05;
 
@@ -3523,4 +3526,206 @@ body.dark .footer-bottom a:hover {
 body.dark ::selection {
     background: #30cbe3;
     color: #062328;
+}/* =====================================================
+   ADJUSTED SECTION SPACING
+===================================================== */
+
+/* ================= BLOG HERO ================= */
+
+.blog-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 60px 0 60px;
+
+    background:
+        linear-gradient(
+            125deg,
+            var(--soft-background),
+            var(--background)
+        );
+}
+
+
+/* ================= FEATURED ================= */
+
+.featured-section {
+    padding: 75px 0;
+}
+
+
+/* ================= TOPICS ================= */
+
+.topics-section {
+    padding: 70px 0 45px;
+
+    background:
+        var(--soft-background);
+}
+
+
+/* ================= LATEST ================= */
+
+.latest-section {
+    padding: 45px 0 75px;
+
+    background:
+        var(--soft-background);
+}
+
+
+/* ================= INFO ================= */
+
+.info-section {
+    padding: 75px 0;
+}
+
+
+/* ================= FAQ ================= */
+
+.faq-section {
+    padding: 75px 0;
+
+    background:
+        var(--soft-background);
+}
+
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter-section {
+    padding: 0 0 75px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    padding-top: 60px;
+}
+
+
+/* =====================================================
+   MOBILE SECTION SPACING
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+
+    .blog-hero {
+        padding: 55px 0 65px;
+    }
+
+
+    /* FEATURED */
+
+    .featured-section {
+        padding: 60px 0;
+    }
+
+
+    /* TOPICS */
+
+    .topics-section {
+        padding: 55px 0 35px;
+    }
+
+
+    /* LATEST */
+
+    .latest-section {
+        padding: 35px 0 60px;
+    }
+
+
+    /* INFO */
+
+    .info-section {
+        padding: 60px 0;
+    }
+
+
+    /* FAQ */
+
+    .faq-section {
+        padding: 60px 0;
+    }
+
+
+    /* NEWSLETTER */
+
+    .newsletter-section {
+        padding: 0 0 60px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding-top: 45px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* HERO */
+
+    .blog-hero {
+        padding: 45px 0 55px;
+    }
+
+
+    /* FEATURED */
+
+    .featured-section {
+        padding: 50px 0;
+    }
+
+
+    /* TOPICS */
+
+    .topics-section {
+        padding: 45px 0 30px;
+    }
+
+
+    /* LATEST */
+
+    .latest-section {
+        padding: 30px 0 50px;
+    }
+
+
+    /* INFO */
+
+    .info-section {
+        padding: 50px 0;
+    }
+
+
+    /* FAQ */
+
+    .faq-section {
+        padding: 50px 0;
+    }
+
+
+    /* NEWSLETTER */
+
+    .newsletter-section {
+        padding-bottom: 50px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding-top: 40px;
+    }
 }

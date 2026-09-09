@@ -836,7 +836,9 @@ body.dark-mode .control-btn {
 
     transition: var(--transition);
 }
-
+body.dark-mode .register-text a{
+    color: var(--secondary);
+}
 
 .register-text a:hover {
 

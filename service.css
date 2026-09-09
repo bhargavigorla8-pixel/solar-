@@ -653,7 +653,7 @@ body.dark #rtlBtn{
     overflow: hidden;
 
     padding:
-        90px 0 100px;
+        40px 0 40px;
 
     background:
         linear-gradient(
@@ -746,7 +746,7 @@ body.dark #rtlBtn{
         sans-serif;
 
     font-size:
-        clamp(45px, 5vw, 70px);
+        clamp(45px, 5vw, 50px);
 
     line-height: 1.05;
 
@@ -1720,7 +1720,7 @@ body.dark .cta-container{
         sans-serif;
 
     font-size:
-        clamp(35px,4vw,52px);
+        clamp(35px,4vw,25px);
 
     line-height: 1.1;
 

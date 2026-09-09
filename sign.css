@@ -813,7 +813,9 @@ body.dark .control-btn{
 
     transition: var(--transition);
 }
-
+body.dark .signin-text a{
+    color: var(--secondary);
+}
 
 .signin-text a:hover {
 

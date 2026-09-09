@@ -274,7 +274,9 @@ body.dark .brand-details h1 span{
 
 }
 
-
+body.dark .menu-title{
+    color: var(--secondary);
+}
 .management-title {
 
     margin-top: 27px;
@@ -357,12 +359,16 @@ body.dark .brand-details h1 span{
 
     display: flex;
 
+
     align-items: center;
 
     justify-content: center;
 
     font-size: 8px;
 
+}
+body.dark .menu-link b{
+    color: white;
 }
 
 
@@ -650,7 +656,10 @@ body.dark .brand-details h1 span{
     font-weight: 700;
 
 }
-
+body.dark .profile-avatar{
+    background: white;
+    color: black;
+}
 
 .profile-details {
 
