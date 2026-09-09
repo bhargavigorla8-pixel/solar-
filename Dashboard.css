@@ -209,12 +209,14 @@ a {
     margin-bottom: 5px;
 }
 
-
+body.dark .brand-details h1{
+    color: #30cbe3;
+}
 .brand-details h1 span {
     color: #30cbe3;
 }
 body.dark .brand-details h1 span{
-    color:#30cbe3 ;
+    color:white ;
 }
 
 

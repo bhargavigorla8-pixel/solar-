@@ -2990,6 +2990,7 @@ body.dark .logo-text strong:last-child {
 }
 
 
+
 /* =========================================================
    NAVIGATION
    ========================================================= */
@@ -3497,7 +3498,7 @@ body.dark .footer-logo-text span {
 }
 
 body.dark .footer-logo-text strong {
-    color: #30cbe3;
+    color: white;
 }
 
 body.dark .footer-column h4 {

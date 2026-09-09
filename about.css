@@ -3479,7 +3479,7 @@ body.dark .logo-text strong:first-child {
 }
 
 body.dark .logo-text strong:last-child {
-    color: #30cbe3;
+    color: white;
 }
 
 
@@ -3765,7 +3765,7 @@ body.dark .footer-logo-text span {
 }
 
 body.dark .footer-logo-text strong {
-    color: #30cbe3;
+    color: white;
 }
 
 body.dark .footer-brand p {
